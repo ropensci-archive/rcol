@@ -1,0 +1,32 @@
+Package: colpluz
+Type: Package
+Title: Catalogue of Life Plus Client
+Description: Client for the Catalogue of Life Plus (CoL+) webservice 
+    (<https://github.com/Sp2000/colplus>). The CoL+ webservice is a new
+    interface to the Catalogue of Life (<http://www.catalogueoflife.org/>).
+    Includes functions for each of the API methods, including searching for
+    names, etc.
+Version: 0.0.1.91
+Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com",
+    comment = c(ORCID = "0000-0003-1444-9135"))
+License: MIT + file LICENSE
+URL: https://docs.ropensci.org/colpluz, https://github.com/ropensci/colpluz (devel)
+BugReports: https://github.com/ropensci/colpluz/issues
+LazyData: true
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+Language: en-US
+Imports:
+    crul,
+    tibble,
+    jsonlite
+Suggests:
+    knitr,
+    testthat,
+    vcr
+RoxygenNote: 7.0.2
+X-schema.org-applicationCategory: Biology
+X-schema.org-keywords: biology, science, API, web, api-client, taxonomy, species
+X-schema.org-isPartOf: https://ropensci.org

@@ -1,0 +1,15 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^CODE_OF_CONDUCT\.md$
+.travis.yml
+appveyor.yml
+cran-comments.md
+man-roxygen
+appveyor.yml
+^README\.Rmd$
+^README-.*\.png$
+Makefile
+inst/vign
+revdep
+^codemeta\.json$
+.github

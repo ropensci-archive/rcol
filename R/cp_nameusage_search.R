@@ -1,4 +1,4 @@
-#' Search Catalogue of Life Plus
+#' Name Usage: Search
 #'
 #' @export
 #' @param q (character) main query string
@@ -36,22 +36,22 @@
 #' Default: 10; max: 1000
 #' @param ... curl options passed on to [crul::verb-GET]
 #' @examples \dontrun{
-#' colp_search(q="Apis")
-#' colp_search(q="Agapostemon")
-#' colp_search(q="Agapostemon", datasetKey = 3)
-#' colp_search(q="Agapostemon", rank = "genus")
-#' colp_search(q="Agapostemon", nomstatus = "doubtful")
-#' colp_search(q="Agapostemon", status = "accepted")
-#' colp_search(type = "virus")
-#' colp_search(q="Bombus", facet = "rank")
+#' cp_nameusage_search(q="Apis")
+#' cp_nameusage_search(q="Agapostemon")
+#' cp_nameusage_search(q="Agapostemon", datasetKey = 3)
+#' cp_nameusage_search(q="Agapostemon", rank = "genus")
+#' cp_nameusage_search(q="Agapostemon", nomstatus = "doubtful")
+#' cp_nameusage_search(q="Agapostemon", status = "accepted")
+#' cp_nameusage_search(type = "virus")
+#' cp_nameusage_search(q="Bombus", facet = "rank")
 #' 
-#' x <- colp_search(q="Poa")
+#' x <- cp_nameusage_search(q="Poa")
 #' x
 #' x$result
 #' x$result$usage
 #' x$result$usage$name
 #' }
-colp_search <- function(q = NULL, id = NULL, datasetKey = NULL, rank = NULL,
+cp_nameusage_search <- function(q = NULL, id = NULL, datasetKey = NULL, rank = NULL,
   nomstatus = NULL, status = NULL, issue = NULL, type = NULL,
   publishedIn = NULL, hasField = NULL, facet = NULL, sortBy = NULL,
   start = 0, limit = 10, ...) {

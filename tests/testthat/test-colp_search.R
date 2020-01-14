@@ -1,6 +1,6 @@
-test_that("colp_search", {
-  vcr::use_cassette("colp_search", {
-    x <- colp_search(q = "Apis")
+test_that("cp_nameusage_search", {
+  vcr::use_cassette("cp_nameusage_search", {
+    x <- cp_nameusage_search(q = "Apis")
   })
 
   expect_is(x, "list")

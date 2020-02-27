@@ -3,7 +3,7 @@
 #' @export
 #' @param q (character) main query string
 #' @param id (character) the name identifier
-#' @param datasetKey (character) dataset key
+#' @param dataset_key (character) dataset key
 #' @param rank (character) filter by rank. one of: domain, superkingdom,
 #' kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
 #' infraphylum, superclass, class, subclass, infraclass, parvclass,
@@ -36,9 +36,9 @@
 #' Default: 10; max: 1000
 #' @param ... curl options passed on to [crul::verb-GET]
 #' @examples \dontrun{
-#' cp_nameusage_search(q="Apis")
+#' cp_nameusage_search(q="Apis", rank = "genus")
 #' cp_nameusage_search(q="Agapostemon")
-#' cp_nameusage_search(q="Agapostemon", datasetKey = 3)
+#' cp_nameusage_search(q="Agapostemon", dataset_key = 3)
 #' cp_nameusage_search(q="Agapostemon", rank = "genus")
 #' cp_nameusage_search(q="Agapostemon", nomstatus = "doubtful")
 #' cp_nameusage_search(q="Agapostemon", status = "accepted")
@@ -51,14 +51,14 @@
 #' x$result$usage
 #' x$result$usage$name
 #' }
-cp_nameusage_search <- function(q = NULL, id = NULL, datasetKey = NULL, rank = NULL,
+cp_nameusage_search <- function(q = NULL, id = NULL, dataset_key = NULL, rank = NULL,
   nomstatus = NULL, status = NULL, issue = NULL, type = NULL,
   publishedIn = NULL, hasField = NULL, facet = NULL, sortBy = NULL,
   start = 0, limit = 10, ...) {
 
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
-  args <- cc(list(q = q, id = id, datasetKey = datasetKey, rank = rank,
+  args <- cc(list(q = q, id = id, dataset_key = dataset_key, rank = rank,
     nomstatus = nomstatus, status = status, issue = issue, type = type,
     publishedIn = publishedIn, hasField = hasField, facet = facet,
     sortBy = sortBy, offset = start, limit = limit))

@@ -7,7 +7,7 @@
 cp_nameusage_search(
   q = NULL,
   id = NULL,
-  datasetKey = NULL,
+  dataset_key = NULL,
   rank = NULL,
   nomstatus = NULL,
   status = NULL,
@@ -27,7 +27,7 @@ cp_nameusage_search(
 
 \item{id}{(character) the name identifier}
 
-\item{datasetKey}{(character) dataset key}
+\item{dataset_key}{(character) dataset key}
 
 \item{rank}{(character) filter by rank. one of: domain, superkingdom,
 kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
@@ -77,9 +77,9 @@ Name Usage: Search
 }
 \examples{
 \dontrun{
-cp_nameusage_search(q="Apis")
+cp_nameusage_search(q="Apis", rank = "genus")
 cp_nameusage_search(q="Agapostemon")
-cp_nameusage_search(q="Agapostemon", datasetKey = 3)
+cp_nameusage_search(q="Agapostemon", dataset_key = 3)
 cp_nameusage_search(q="Agapostemon", rank = "genus")
 cp_nameusage_search(q="Agapostemon", nomstatus = "doubtful")
 cp_nameusage_search(q="Agapostemon", status = "accepted")

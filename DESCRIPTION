@@ -6,7 +6,7 @@ Description: Client for the Catalogue of Life Plus (CoL+) webservice
     interface to the Catalogue of Life (<http://www.catalogueoflife.org/>).
     Includes functions for each of the API methods, including searching for
     names, etc.
-Version: 0.0.1.91
+Version: 0.0.1.93
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com",
     comment = c(ORCID = "0000-0003-1444-9135"))

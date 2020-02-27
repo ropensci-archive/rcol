@@ -18,13 +18,14 @@ knitr::opts_chunk$set(
 
 `colpluz` is a R client for the Catalogue of Life Plus
 
-* [Catalogue of Life Plus](https://github.com/Sp2000/colplus)
-* [Catalogue of Life](http://www.catalogueoflife.org/)
+* Catalogue of Life: http://www.catalogueoflife.org/
+* Catalogue of Life Plus: https://github.com/Sp2000/colplus
+* COL+ API docs: https://sp2000.github.io/colplus/api/api.html
 
 ## Installation
 
 ```{r eval=FALSE}
-devtools::install_github("ropensci/colpluz")
+remotes::install_github("ropensci/colpluz")
 ```
 
 ```{r}

@@ -4,18 +4,12 @@
 \alias{cp_nameusage_suggest}
 \title{Name Usage: Suggest}
 \usage{
-cp_nameusage_suggest(
-  q = NULL,
-  datasetKey = NULL,
-  vernaculars = FALSE,
-  limit = 10,
-  ...
-)
+cp_nameusage_suggest(q, datasetKey, vernaculars = FALSE, limit = 10, ...)
 }
 \arguments{
-\item{q}{(character) main query string}
+\item{q}{(character) main query string. required}
 
-\item{datasetKey}{(character) dataset key}
+\item{datasetKey}{(character) dataset key. required}
 
 \item{vernaculars}{(logical) Whether or not to include vernacular names
 in the suggestions (default: \code{FALSE})}
@@ -25,6 +19,14 @@ Default: 10; max: 1000}
 
 \item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
+\value{
+a tibble
+}
 \description{
 Name Usage: Suggest
+}
+\examples{
+\dontrun{
+cp_nameusage_suggest(q="Apis", datasetKey = 3)
+}
 }

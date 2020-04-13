@@ -20,7 +20,11 @@ knitr::opts_chunk$set(
 
 * Catalogue of Life: http://www.catalogueoflife.org/
 * Catalogue of Life Plus: https://github.com/Sp2000/colplus
-* COL+ API docs: https://sp2000.github.io/colplus/api/api.html
+* COL+ API docs: https://catalogueoflife.github.io/general/api/api.html
+
+## API notes
+
+* `/dataset/{dataset_key}/taxon/` routes contain the data given in `/dataset/{dataset_key}/name/` routes
 
 ## Installation
 

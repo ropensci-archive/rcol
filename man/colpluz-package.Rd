@@ -4,7 +4,7 @@
 \name{colpluz-package}
 \alias{colpluz-package}
 \alias{colpluz}
-\title{Catalogue of Life Plus Client}
+\title{colpluz}
 \description{
 Catalogue of Life Plus Client
 }

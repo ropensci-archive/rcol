@@ -1,5 +1,9 @@
-#' Catalogue of Life Plus Client
-#'
+#' @title colpluz
+#' @description Catalogue of Life Plus Client
+#' @importFrom crul HttpClient
+#' @importFrom tibble tibble
+#' @importFrom jsonlite fromJSON
+#' @importFrom data.table setDF rbindlist
 #' @name colpluz-package
 #' @aliases colpluz
 #' @docType package

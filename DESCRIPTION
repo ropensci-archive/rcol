@@ -21,12 +21,13 @@ Language: en-US
 Imports:
     crul,
     tibble,
-    jsonlite
+    jsonlite,
+    data.table
 Suggests:
     knitr,
     testthat,
     vcr
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 X-schema.org-applicationCategory: Biology
 X-schema.org-keywords: biology, science, API, web, api-client, taxonomy, species
 X-schema.org-isPartOf: https://ropensci.org

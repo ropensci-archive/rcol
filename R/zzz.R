@@ -26,13 +26,23 @@ cp_meta <- function(x) {
   return(x)
 }
 
-# br <- function(x) {
-#   (x <- data.table::setDF(
-#     data.table::rbindlist(x, use.names = TRUE, fill = TRUE, idcol = "id")))
-# }
+move_cols <- function(x, cols) {
+  x[c(cols, names(x)[!names(x) %in% cols])]
+}
 
-# run_bind <- function(id, fun, ...) {
-#   tibble::as_tibble(br(ccn(
-#     stats::setNames(lapply(id, fun, ...), id)
-#   )))
-# }
+bind <- function(x) {
+  (x <- data.table::setDF(
+    data.table::rbindlist(x, use.names = TRUE, fill = TRUE, idcol = "id")))
+}
+
+bindtbl <- function(x) tibble::as_tibble(bind(x))
+
+handle_taxon <- function(x) {
+  rmv <- c("created", "createdBy", "modified", "modifiedBy", "datasetKey",
+    "id", "verbatimKey")
+  for (i in rmv) x[[i]] <- NULL
+  df <- cbind(x$name, x[c("status", "parentId", "synonym", "taxon", "bareName")])
+  first_cols <- c("scientificName", "rank", "id", "status")
+  df <- move_cols(df, first_cols)
+  return(tibble::as_tibble(df))
+}

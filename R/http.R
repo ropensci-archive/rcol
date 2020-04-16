@@ -9,11 +9,12 @@ cp_ua <- function() {
 cp_ual <- list(`User-Agent` = cp_ua(), `X-USER-AGENT` = cp_ua())
 
 cp_GET <- function(url, path = NULL, query = list(), headers = list(),
-  opts = list(), ...) {
+  opts = list(), parse = TRUE, ...) {
+  
   cli <- crul::HttpClient$new(url,
     headers = c(headers, cp_ual), opts = c(opts, list(...)))
   out <- cli$get(path = path, query = query)
-  return(cp_error_handle(out))
+  return(cp_error_handle(out, parse = parse))
 }
 
 cp_error_handle <- function(x, parse = TRUE) {

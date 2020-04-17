@@ -31,10 +31,7 @@
 #' dataset_key, rank, nom_status, status, issue, type, field. facet
 #' limit default: 50
 #' @param sortBy (character) one of: "relevance", "name", "key"
-#' @param start (integer) requested number of offset records. Default: 0
-#' @param limit (integer) requested number of maximum records to be returned.
-#' Default: 10; max: 1000
-#' @param ... curl options passed on to [crul::verb-GET]
+#' @template args
 #' @examples \dontrun{
 #' cp_nu_search(q="Apis", rank = "genus")
 #' cp_nu_search(q="Agapostemon")

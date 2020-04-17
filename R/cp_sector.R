@@ -5,6 +5,7 @@
 #' to a target (the attachment point) in a managed catalogue.
 #'
 #' @export
+#' @template args
 #' @param id (character) The subjects taxon id. optional
 #' @param dataset_key (character) The catalogue dataset the sector is attached
 #' to. optional
@@ -17,11 +18,6 @@
 #' @param mode (character) The sector mode, e.g. ATTACH. optional
 #' @param broken (logical) If `TRUE` only show decisions which cannot be linked
 #' to a source name usage. optional
-#' @param start (integer) requested number of offset records. Default: 0
-#' @param limit (integer) requested number of maximum records to be returned.
-#' Default: 10; max: 1000
-#' @param  (character) a dataset key to filter by. optional
-#' @param ... curl options passed on to [crul::verb-GET]
 #' @return list
 #' @examples \dontrun{
 #' cp_sector()

@@ -3,6 +3,7 @@
 #' Match name against the name index
 #'
 #' @export
+#' @template args
 #' @param q (character) scientific name to match
 #' @param rank (character) rank to restrict matches to. one of: domain,
 #' superkingdom,
@@ -24,10 +25,6 @@
 #' the names index. default: `FALSE`
 #' @param ver_bose (logical) if `TRUE`, list alternatively considered name
 #' matches. default: `FALSE`
-#' @param start (integer) requested number of offset records. Default: 0
-#' @param limit (integer) requested number of maximum records to be returned.
-#' Default: 10; max: 1000
-#' @param ... curl options passed on to [crul::verb-GET]
 #' @examples \dontrun{
 #' cp_name_match(q="Apis", rank = "genus")
 #' cp_name_match(q="Agapostemon")

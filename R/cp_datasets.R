@@ -1,12 +1,9 @@
 #' Datasets
 #'
 #' @export
+#' @template args
 #' @param q (character) main query string. optional
-#' @param start (integer) requested number of offset records. Default: 0
-#' @param limit (integer) requested number of maximum records to be returned.
-#' Default: 10; max: 1000
 #' @param dataset_keys (character) one or more dataset keys. required
-#' @param ... curl options passed on to [crul::verb-GET]
 #' @details for `cp_dataset()`, separate http requests are made for each 
 #' dataset key. unfortunately, the output of `cp_dataset()` is a list for 
 #' each dataset key because the nested structure of the data is hard to 

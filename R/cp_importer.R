@@ -1,17 +1,13 @@
 #' Importer metrics
 #'
 #' @export
+#' @template args
 #' @param dataset_key (character) a dataset key to filter by. optional
 #' @param state (character) filter listed import metrics by their state,
 #' e.g. the last failed import. one of: downloading, processing, inserting,
 #' unchanged, finished, canceled, failed. optional
 #' @param running (logical) if only a list of running imports should
 #' be returned. default: `FALSE`. optional
-#' @param start (integer) requested number of offset records. Default: 0
-#' @param limit (integer) requested number of maximum records to be returned.
-#' Default: 10; max: 1000
-#' @param  (character) a dataset key to filter by. optional
-#' @param ... curl options passed on to [crul::verb-GET]
 #' @return list
 #' @examples \dontrun{
 #' cp_importer()

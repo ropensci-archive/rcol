@@ -47,7 +47,7 @@ matches. default: \code{FALSE}}
 \item{limit}{(integer) requested number of maximum records to be returned.
 Default: 10; max: 1000}
 
-\item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
+\item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
 }
 \description{
 Match name against the name index

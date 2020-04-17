@@ -28,9 +28,7 @@ be returned. default: \code{FALSE}. optional}
 \item{limit}{(integer) requested number of maximum records to be returned.
 Default: 10; max: 1000}
 
-\item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
-
-\item{(character)}{a dataset key to filter by. optional}
+\item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
 }
 \value{
 list

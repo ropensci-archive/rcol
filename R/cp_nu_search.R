@@ -36,22 +36,22 @@
 #' Default: 10; max: 1000
 #' @param ... curl options passed on to [crul::verb-GET]
 #' @examples \dontrun{
-#' cp_nameusage_search(q="Apis", rank = "genus")
-#' cp_nameusage_search(q="Agapostemon")
-#' cp_nameusage_search(q="Agapostemon", dataset_key = 3)
-#' cp_nameusage_search(q="Agapostemon", rank = "genus")
-#' cp_nameusage_search(q="Agapostemon", nomstatus = "doubtful")
-#' cp_nameusage_search(q="Agapostemon", status = "accepted")
-#' cp_nameusage_search(type = "virus")
-#' cp_nameusage_search(q="Bombus", facet = "rank")
+#' cp_nu_search(q="Apis", rank = "genus")
+#' cp_nu_search(q="Agapostemon")
+#' cp_nu_search(q="Agapostemon", dataset_key = 3)
+#' cp_nu_search(q="Agapostemon", rank = "genus")
+#' cp_nu_search(q="Agapostemon", nomstatus = "doubtful")
+#' cp_nu_search(q="Agapostemon", status = "accepted")
+#' cp_nu_search(type = "virus")
+#' cp_nu_search(q="Bombus", facet = "rank")
 #' 
-#' x <- cp_nameusage_search(q="Poa")
+#' x <- cp_nu_search(q="Poa")
 #' x
 #' x$result
 #' x$result$usage
 #' x$result$usage$name
 #' }
-cp_nameusage_search <- function(q = NULL, id = NULL, dataset_key = NULL, rank = NULL,
+cp_nu_search <- function(q = NULL, id = NULL, dataset_key = NULL, rank = NULL,
   nomstatus = NULL, status = NULL, issue = NULL, type = NULL,
   publishedIn = NULL, hasField = NULL, facet = NULL, sortBy = NULL,
   start = 0, limit = 10, ...) {

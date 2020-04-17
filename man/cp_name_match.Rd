@@ -9,7 +9,7 @@ cp_name_match(
   rank = NULL,
   code = NULL,
   trusted = NULL,
-  verbose = NULL,
+  ver_bose = NULL,
   start = 0,
   limit = 10,
   ...
@@ -39,7 +39,7 @@ bacterial, botanical, cultivated, viral, zoological, unknown}
 \item{trusted}{(logical) if \code{TRUE}, unmatched name will be inserted into
 the names index. default: \code{FALSE}}
 
-\item{verbose}{(logical) if \code{TRUE}, list alternatively considered name
+\item{ver_bose}{(logical) if \code{TRUE}, list alternatively considered name
 matches. default: \code{FALSE}}
 
 \item{start}{(integer) requested number of offset records. Default: 0}

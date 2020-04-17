@@ -1,0 +1,171 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://api.catalogue.life/dataset/1000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:03 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '674'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T17:43:32.521608","modifiedBy":0,"key":1000,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+        of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
+        of life to embrace the more than 1.6 million species \nalready provided by
+        more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
+        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":["Species2000","ITIS"],"contact":"Markus
+        Döring <markus@mailinator.com>","authorsAndEditors":["Michael A. Ruggiero","Dennis
+        P. Gordon","Thomas M. Orrell","Nicolas Bailly orcid:0000-0003-4994-0653","Thierry
+        Bourgoin","Richard C. Brusca","Thomas Cavalier-Smith","Michael D. Guiry","Paul
+        M. Kirk"],"license":"cc by","version":"1.4","released":"2019-05-06","dataFormat":"coldp","dataAccess":"https://github.com/Sp2000/col-hierarchy/archive/master.zip","importFrequency":"daily","size":5688,"imported":"2019-12-23T17:43:41.65462"}'
+  recorded_at: 2020-04-17 23:49:05 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://api.catalogue.life/dataset/3
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:04 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '583'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"created":"2019-11-20T11:07:46.123046","createdBy":103,"modified":"2020-01-08T16:22:47.59351","modifiedBy":103,"key":3,"type":"taxonomic","origin":"managed","locked":false,"title":"Catalogue
+        of Life - Working Draft","alias":"col-draft","organisations":["Species 2000"],"contact":"Yury
+        Roskov","authorsAndEditors":["Roskov Y.","Ower G.","Orrell T.","Nicolson D.","Bailly
+        N.","Kirk P.M.","Bourgoin T.","DeWalt R.E.","Decock W.","Nieukerken E. van","Penev
+        L."],"license":"cc by","citation":"Roskov Y.; Ower G.; Orrell T.; Nicolson
+        D.; Bailly N.; Kirk P.M.; Bourgoin T.; DeWalt R.E.; Decock W.; Nieukerken
+        E. van; Penev L.; eds. (2019). Species 2000 & ITIS Catalogue of Life, [YYYY-MM-DD]
+        Beta. Digital resource at www.catalogueoflife.org/col. Species 2000: Naturalis,
+        Leiden, the Netherlands. ISSN 2405-8858. ","geographicScope":"Global","website":"https://www.catalogueoflife.org","group":"Biota","importFrequency":"never","confidence":4,"completeness":80}'
+  recorded_at: 2020-04-17 23:49:05 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://api.catalogue.life/dataset/1000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:04 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '674'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T17:43:32.521608","modifiedBy":0,"key":1000,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+        of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
+        of life to embrace the more than 1.6 million species \nalready provided by
+        more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
+        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":["Species2000","ITIS"],"contact":"Markus
+        Döring <markus@mailinator.com>","authorsAndEditors":["Michael A. Ruggiero","Dennis
+        P. Gordon","Thomas M. Orrell","Nicolas Bailly orcid:0000-0003-4994-0653","Thierry
+        Bourgoin","Richard C. Brusca","Thomas Cavalier-Smith","Michael D. Guiry","Paul
+        M. Kirk"],"license":"cc by","version":"1.4","released":"2019-05-06","dataFormat":"coldp","dataAccess":"https://github.com/Sp2000/col-hierarchy/archive/master.zip","importFrequency":"daily","size":5688,"imported":"2019-12-23T17:43:41.65462"}'
+  recorded_at: 2020-04-17 23:49:05 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://api.catalogue.life/dataset/1014
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:05 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '795'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T19:08:19.652725","modifiedBy":103,"key":1014,"type":"taxonomic","origin":"external","locked":false,"title":"International
+        Committee on Taxonomy of Viruses / Master Species List","alias":"ICTV_MSL","description":"The
+        International Union of Microbiological Societies (IUMS) has charged the International
+        Committee on Taxonomy of Viruses (ICTV) with the task of developing, refining,
+        and maintaining a universal virus taxonomy. The goal of this undertaking is
+        to categorize the multitude of known virus into a single classification scheme
+        that reflects their evolutionary relationships, i.e. their individual phylogenies.","organisations":["International
+        Committee on the Taxonomy of Viruses (ICTV)"],"contact":"E Lefkowitz","authorsAndEditors":["Lefkowitz
+        E.J. (ed)."],"version":"Oct 2015","released":"2015-10-23","website":"http://ictvonline.org","group":"Viruses
+        and subviral agents","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/ICTV_MSL.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/14.tar.gz","importFrequency":"daily","code":"virus","size":3188,"confidence":5,"completeness":100,"contributesTo":[2081,3,2083,2123,2079],"imported":"2019-12-23T19:08:30.067934","settings":{"csv
+        quote escape":"\\","distribution gazetteer":"text"}}'
+  recorded_at: 2020-04-17 23:49:05 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

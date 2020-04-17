@@ -1,0 +1,81 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://api.catalogue.life/dataset?offset=0&limit=5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:05 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '2457'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"offset":0,"limit":5,"total":269,"result":[{"created":"2019-11-20T11:07:46.123046","createdBy":103,"modified":"2020-01-08T16:22:47.59351","modifiedBy":103,"key":3,"type":"taxonomic","origin":"managed","locked":false,"title":"Catalogue
+        of Life - Working Draft","alias":"col-draft","organisations":["Species 2000"],"contact":"Yury
+        Roskov","authorsAndEditors":["Roskov Y.","Ower G.","Orrell T.","Nicolson D.","Bailly
+        N.","Kirk P.M.","Bourgoin T.","DeWalt R.E.","Decock W.","Nieukerken E. van","Penev
+        L."],"license":"cc by","citation":"Roskov Y.; Ower G.; Orrell T.; Nicolson
+        D.; Bailly N.; Kirk P.M.; Bourgoin T.; DeWalt R.E.; Decock W.; Nieukerken
+        E. van; Penev L.; eds. (2019). Species 2000 & ITIS Catalogue of Life, [YYYY-MM-DD]
+        Beta. Digital resource at www.catalogueoflife.org/col. Species 2000: Naturalis,
+        Leiden, the Netherlands. ISSN 2405-8858. ","geographicScope":"Global","website":"https://www.catalogueoflife.org","group":"Biota","importFrequency":"never","confidence":4,"completeness":80},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T17:43:32.521608","modifiedBy":0,"key":1000,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+        of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
+        of life to embrace the more than 1.6 million species \nalready provided by
+        more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
+        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":["Species2000","ITIS"],"contact":"Markus
+        Döring <markus@mailinator.com>","authorsAndEditors":["Michael A. Ruggiero","Dennis
+        P. Gordon","Thomas M. Orrell","Nicolas Bailly orcid:0000-0003-4994-0653","Thierry
+        Bourgoin","Richard C. Brusca","Thomas Cavalier-Smith","Michael D. Guiry","Paul
+        M. Kirk"],"license":"cc by","version":"1.4","released":"2019-05-06","dataFormat":"coldp","dataAccess":"https://github.com/Sp2000/col-hierarchy/archive/master.zip","importFrequency":"daily","size":5688,"imported":"2019-12-23T17:43:41.65462"},{"created":"2019-11-20T11:07:46.255777","createdBy":102,"modified":"2020-02-10T17:09:11.015297","modifiedBy":102,"key":1005,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+        of Craneflies of the World","alias":"CCW","description":"The Catalogue of
+        the Craneflies of the World (CCW) covers all genera, subgenera, species, subspecies,
+        and synonyms of the World Tipuloidea (Insecta – Diptera – Nematocera – families
+        Pediciidae, Limoniidae, Cylindrotomidae, Tipulidae), in total 17,307 taxa.
+        It also includes up to date information on the distribution of the species
+        and subspecies, specified by countries and, for the larger countries, states,
+        provinces, islands.","organisations":["Entomology Section","Zoological Museum","University
+        of Amsterdam / ETI BioInformatics","The  Netherlands"],"contact":"P Oosterbroek","authorsAndEditors":["Oosterbroek
+        P."],"license":"other","version":"Jul 2013","released":"2013-07-17","geographicScope":"Global","website":"http://nlbif.eti.uva.nl/ccw/","group":"Craneflies","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/CCW.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/5.tar.gz","importFrequency":"daily","code":"zoological","size":32212,"confidence":5,"completeness":100,"contributesTo":[2081,3,2083,2123,2079],"imported":"2020-02-10T17:09:56.840215"},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T18:58:53.654972","modifiedBy":103,"key":1006,"type":"taxonomic","origin":"external","locked":false,"title":"Computer
+        Aided Identification of Phlebotomine sandflies of Americas","alias":"CIPA","description":"CIPA
+        includes information on 418 neotropical sandfly (Phlebotominae) species. These
+        blood-sucking insects are important as vectors transmitting human and animal
+        diseases, e.g. leishmaniasis, bartonellosis, arboviruses. In addition to the
+        data contributed to the Catalogue of Life, CIPA also provides an interactive
+        key and data on the ecology and epidemiology of the group. CIPA is an international
+        project involving experts from 9 countries and was supported by the Program
+        for Science & Technology Cooperation, Office of the Science Advisor, USA;
+        Agency for International Development, and the Scientific & Technical Cooperation,
+        Ministry of Foreign Affairs, France.","organisations":["Université Pierre
+        et Marie Curie","Paris","France"],"contact":"R Vignes-Lebbe & C Gallut","authorsAndEditors":["Vignes-Lebbe
+        R. & Gallut C."],"version":"3, Mar 2011","released":"2011-03-16","website":"http://cipa.snv.jussieu.fr","group":"Phlebotomine
+        sandflies","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/CIPA.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/6.tar.gz","importFrequency":"daily","code":"zoological","size":2440,"confidence":3,"completeness":50,"contributesTo":[2081,3,2083,2123,2079],"imported":"2019-12-23T17:43:35.816291","settings":{"csv
+        quote escape":"\\","distribution gazetteer":"text"}},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T18:58:54.164504","modifiedBy":103,"key":1008,"type":"taxonomic","origin":"external","locked":false,"title":"The
+        Reptile Database","alias":"ReptileDB","description":"The Reptile Database
+        is a taxonomic database that provides basic information about all living reptile
+        species, such as turtles, snakes, lizards, and crocodiles, as well as tuataras
+        and amphisbaenians, but does not include dinosaurs.","organisations":["Virginia
+        Commonwealth University","Richmond VA","USA"],"contact":"P Uetz","authorsAndEditors":["Uetz
+        P. & Hošek J."],"version":"Dec 2015","released":"2015-12-15","website":"http://www.reptile-database.org","group":"Reptiles","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/ReptileDB.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/8.tar.gz","importFrequency":"daily","code":"zoological","size":110703,"confidence":4,"completeness":99,"contributesTo":[2081,3,2083,2123,2079],"imported":"2019-12-23T17:47:55.449305","settings":{"csv
+        quote escape":"\\","distribution gazetteer":"text"}}],"last":false,"empty":false}'
+  recorded_at: 2020-04-17 23:49:05 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

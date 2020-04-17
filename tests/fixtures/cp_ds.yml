@@ -1,0 +1,55 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://api.catalogue.life/dataset/1014/name
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:06 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '613'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"offset":0,"limit":10,"total":3827,"result":[{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1","verbatimKey":875,"homotypicNameId":"1","nameIndexId":"49T7L","nameIndexMatchType":"exact","scientificName":"Campylobacter
+        phage CP21 ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Campylobacter
+        phage CP21 ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"10","verbatimKey":1560,"homotypicNameId":"10","nameIndexId":"49UFN","nameIndexMatchType":"exact","scientificName":"Haemophilus
+        phage HP2 ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Haemophilus
+        phage HP2 ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"100","verbatimKey":2381,"homotypicNameId":"100","nameIndexId":"49VWL","nameIndexMatchType":"exact","scientificName":"Enterobacteria
+        phage K5 ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Enterobacteria
+        phage K5 ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1000","verbatimKey":55,"homotypicNameId":"1000","nameIndexId":"49UZN","nameIndexMatchType":"exact","scientificName":"Cherry
+        green ring mottle virus ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Cherry
+        green ring mottle virus ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1001","verbatimKey":2491,"homotypicNameId":"1001","nameIndexId":"49TJP","nameIndexMatchType":"exact","scientificName":"Cherry
+        necrotic rusty mottle virus ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Cherry
+        necrotic rusty mottle virus ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1002","verbatimKey":1450,"homotypicNameId":"1002","nameIndexId":"49U4K","nameIndexMatchType":"exact","scientificName":"Diuris
+        virus A ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Diuris
+        virus A ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1003","verbatimKey":985,"homotypicNameId":"1003","nameIndexId":"49VKH","nameIndexMatchType":"exact","scientificName":"Diuris
+        virus B ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Diuris
+        virus B ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1004","verbatimKey":2956,"homotypicNameId":"1004","nameIndexId":"49VCR","nameIndexMatchType":"exact","scientificName":"Hardenbergia
+        virus A ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Hardenbergia
+        virus A ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1005","verbatimKey":520,"homotypicNameId":"1005","nameIndexId":"49TVS","nameIndexMatchType":"exact","scientificName":"Sugarcane
+        striate mosaic-associated virus ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Sugarcane
+        striate mosaic-associated virus ICTV"},{"created":"2019-12-23T19:08:18.749893","createdBy":10,"modified":"2019-12-23T19:08:18.749893","modifiedBy":10,"datasetKey":1014,"id":"1006","verbatimKey":1916,"homotypicNameId":"1006","nameIndexId":"49TRG","nameIndexMatchType":"exact","scientificName":"Actinidia
+        virus A ICTV","rank":"species","code":"virus","origin":"source","type":"virus","parsed":false,"formattedName":"Actinidia
+        virus A ICTV"}],"last":false,"empty":false}'
+  recorded_at: 2020-04-17 23:49:06 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

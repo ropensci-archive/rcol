@@ -1,0 +1,35 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://api.catalogue.life/dataset/1000/taxon/1/children
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:02 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '421'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"offset":0,"limit":10,"total":2,"result":[{"created":"2019-12-23T17:43:32.069142","createdBy":10,"modified":"2019-12-23T17:43:32.069142","modifiedBy":10,"datasetKey":1000,"id":"2","verbatimKey":856,"name":{"created":"2019-12-23T17:43:31.408887","createdBy":10,"modified":"2019-12-23T17:43:31.408887","modifiedBy":10,"datasetKey":1000,"id":"2","verbatimKey":1660,"homotypicNameId":"2","nameIndexId":"D6J","nameIndexMatchType":"exact","scientificName":"Archaea","rank":"kingdom","uninomial":"Archaea","origin":"source","type":"scientific","parsed":true,"formattedName":"<i>Archaea</i>"},"status":"accepted","origin":"source","parentId":"1","label":"Archaea","labelHtml":"<i>Archaea</i>","synonym":false,"taxon":true,"bareName":false},{"created":"2019-12-23T17:43:32.069142","createdBy":10,"modified":"2019-12-23T17:43:32.069142","modifiedBy":10,"datasetKey":1000,"id":"41","verbatimKey":319,"name":{"created":"2019-12-23T17:43:31.408887","createdBy":10,"modified":"2019-12-23T17:43:31.408887","modifiedBy":10,"datasetKey":1000,"id":"41","verbatimKey":4830,"homotypicNameId":"41","nameIndexId":"AS6","nameIndexMatchType":"exact","scientificName":"Bacteria","rank":"kingdom","uninomial":"Bacteria","origin":"source","type":"scientific","parsed":true,"formattedName":"<i>Bacteria</i>"},"status":"accepted","origin":"source","parentId":"1","label":"Bacteria","labelHtml":"<i>Bacteria</i>","synonym":false,"taxon":true,"bareName":false}],"last":true,"empty":false}'
+  recorded_at: 2020-04-17 23:49:02 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

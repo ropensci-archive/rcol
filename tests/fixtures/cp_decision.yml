@@ -1,0 +1,84 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://api.catalogue.life/decision?offset=0&limit=10
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:05 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '815'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"offset":0,"limit":10,"total":7302,"result":[{"created":"2020-04-14T21:11:10.704248","createdBy":102,"modified":"2020-04-14T21:11:10.704248","modifiedBy":102,"key":17301,"datasetKey":3,"subject":{"id":"xSA4","name":"Blastocladiomycetes","rank":"class","status":"accepted","parent":"Chytridiomycota"},"originalSubjectId":"xSA4","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T21:01:26.734231","createdBy":102,"modified":"2020-04-14T21:01:26.734231","modifiedBy":102,"key":17300,"datasetKey":3,"subject":{"id":"xNQQ","name":"Saccharomycodaceae","rank":"order","status":"accepted","parent":"Saccharomycetes"},"originalSubjectId":"xNQQ","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:58:46.818468","createdBy":102,"modified":"2020-04-14T20:58:46.818468","modifiedBy":102,"key":17299,"datasetKey":3,"subject":{"id":"493251","name":"Schizoblastosporon
+        chiloense","authorship":"C.Ramírez & A.E.González","rank":"species","code":"botanical","status":"accepted","parent":"Schizoblastosporon"},"originalSubjectId":"493251","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:57:05.16794","createdBy":102,"modified":"2020-04-14T20:57:05.16794","modifiedBy":102,"key":17298,"datasetKey":3,"subject":{"id":"xR5Y","name":"Peronosporea","rank":"phylum","status":"accepted","parent":"Fungi"},"originalSubjectId":"xR5Y","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:54:17.460982","createdBy":102,"modified":"2020-04-14T20:54:17.460982","modifiedBy":102,"key":17297,"datasetKey":3,"subject":{"id":"xR62","name":"Peronosporomycetes","rank":"class","status":"accepted","parent":"Peronosporea"},"originalSubjectId":"xR62","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:53:24.758182","createdBy":102,"modified":"2020-04-14T20:53:24.758182","modifiedBy":102,"key":17296,"datasetKey":3,"subject":{"id":"xR68","name":"Frankbaronia","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xR68","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:53:24.719984","createdBy":102,"modified":"2020-04-14T20:53:24.719984","modifiedBy":102,"key":17295,"datasetKey":3,"subject":{"id":"563300","name":"Frankbaronia
+        polyspora","authorship":"M.Krings, T.N.Taylor, Ed.L.Taylor, Kerp, Hass, Dotzler
+        & C.J.Harper","rank":"species","code":"botanical","status":"accepted","parent":"Frankbaronia"},"originalSubjectId":"563300","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:49:42.941533","createdBy":102,"modified":"2020-04-14T20:49:42.941533","modifiedBy":102,"key":17294,"datasetKey":3,"subject":{"id":"338865","name":"Schizostoma
+        jaczevskii","authorship":"Marzina & Marcich","rank":"species","code":"botanical","status":"accepted","parent":"Schizostoma"},"originalSubjectId":"338865","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:49:42.66923","createdBy":102,"modified":"2020-04-14T20:49:42.66923","modifiedBy":102,"key":17293,"datasetKey":3,"subject":{"id":"xJSN","name":"Schizostoma","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xJSN","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:44:05.51337","createdBy":102,"modified":"2020-04-14T20:44:05.51337","modifiedBy":102,"key":17292,"datasetKey":3,"subject":{"id":"186844","name":"Patouillardina
+        cinerea","authorship":"Bres.","rank":"species","code":"botanical","status":"accepted","parent":"Patouillardina"},"originalSubjectId":"186844","subjectDatasetKey":2073,"mode":"block"}],"last":false,"empty":false}'
+  recorded_at: 2020-04-17 23:49:06 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://api.catalogue.life/decision?rank=genus&offset=0&limit=10
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:06 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '615'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"offset":0,"limit":10,"total":13,"result":[{"created":"2020-04-14T20:53:24.758182","createdBy":102,"modified":"2020-04-14T20:53:24.758182","modifiedBy":102,"key":17296,"datasetKey":3,"subject":{"id":"xR68","name":"Frankbaronia","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xR68","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:49:42.66923","createdBy":102,"modified":"2020-04-14T20:49:42.66923","modifiedBy":102,"key":17293,"datasetKey":3,"subject":{"id":"xJSN","name":"Schizostoma","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xJSN","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:44:05.337899","createdBy":102,"modified":"2020-04-14T20:44:05.337899","modifiedBy":102,"key":17291,"datasetKey":3,"subject":{"id":"xC2L","name":"Patouillardina","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xC2L","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:10:45.483432","createdBy":102,"modified":"2020-04-14T20:10:45.483432","modifiedBy":102,"key":17286,"datasetKey":3,"subject":{"id":"xQJ6","name":"Leptospora","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xQJ6","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:05:02.042363","createdBy":102,"modified":"2020-04-14T20:05:02.042363","modifiedBy":102,"key":17284,"datasetKey":3,"subject":{"id":"xUGL","name":"Lepra","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xUGL","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T20:01:34.87872","createdBy":102,"modified":"2020-04-14T20:01:34.87872","modifiedBy":102,"key":17283,"datasetKey":3,"subject":{"id":"xB8Q","name":"Hyphoscypha","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xB8Q","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T19:59:12.918412","createdBy":102,"modified":"2020-04-14T19:59:12.918412","modifiedBy":102,"key":17280,"datasetKey":3,"subject":{"id":"x8UQ","name":"Hawksworthiana","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"x8UQ","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T19:53:49.243177","createdBy":102,"modified":"2020-04-14T19:53:49.243177","modifiedBy":102,"key":17279,"datasetKey":3,"subject":{"id":"xDSY","name":"Dermatina","rank":"genus","status":"accepted","parent":"Dermateaceae"},"originalSubjectId":"xDSY","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T19:34:08.617041","createdBy":102,"modified":"2020-04-14T19:34:08.617041","modifiedBy":102,"key":17274,"datasetKey":3,"subject":{"id":"xLEQ","name":"Palaeoclavaria","rank":"genus","status":"accepted","parent":"Clavariaceae"},"originalSubjectId":"xLEQ","subjectDatasetKey":2073,"mode":"block"},{"created":"2020-04-14T19:32:51.771972","createdBy":102,"modified":"2020-04-14T19:32:51.771972","modifiedBy":102,"key":17273,"datasetKey":3,"subject":{"id":"xFBY","name":"Cenangiopsis","rank":"genus","status":"accepted","parent":"Not
+        assigned"},"originalSubjectId":"xFBY","subjectDatasetKey":2073,"mode":"block"}],"last":false,"empty":false}'
+  recorded_at: 2020-04-17 23:49:06 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

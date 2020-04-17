@@ -18,6 +18,7 @@
 #' cp_dataset(dataset_keys = c(3, 1000, 1014))
 #' }
 cp_datasets <- function(q = NULL, start = 0, limit = 10, ...) {
+  assert(q, "character")
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
   args <- cc(list(q = q, offset = start, limit = limit))
@@ -32,6 +33,7 @@ cp_datasets <- function(q = NULL, start = 0, limit = 10, ...) {
 #' @export
 #' @rdname cp_datasets
 cp_dataset <- function(dataset_keys, ...) {
+  assert(dataset_keys, c("numeric", "integer", "character"))
   paths <- file.path("dataset", dataset_keys)
   lapply(paths, function(z) cp_GET(colplus_base(), z, ...))
 }

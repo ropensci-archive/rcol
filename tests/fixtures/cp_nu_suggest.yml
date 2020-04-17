@@ -1,0 +1,46 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://api.catalogue.life/nameusage/suggest?q=Apis&datasetKey=3&vernaculars=false&limit=10
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:10 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '530'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"suggestions":[{"match":"Candida apis var. apis","rank":"variety","nomCode":"botanical","score":13.3089075,"suggestion":"Candida
+        apis var. apis (nomen nudum)"},{"match":"Torulopsis apis var. apis","rank":"variety","nomCode":"botanical","score":12.620583,"suggestion":"Torulopsis
+        apis var. apis (nomen nudum)"},{"match":"Ascosphaera apis var. apis","rank":"variety","nomCode":"botanical","score":12.620583,"suggestion":"Ascosphaera
+        apis var. apis (nomen nudum)"},{"match":"Pericystis apis var. apis","rank":"variety","nomCode":"botanical","score":12.598628,"suggestion":"Pericystis
+        apis var. apis (nomen nudum)"},{"match":"Apis rufa","acceptedName":"Osmia
+        rufa","usageId":"cbad67c7-1b60-4adb-9735-4d77abdd645f","rank":"species","status":"synonym","nomCode":"zoological","score":12.523764,"suggestion":"Apis
+        rufa (synonym of Osmia rufa)"},{"match":"Apis cerana","usageId":"381fe54a-28c4-4329-84eb-79c1f90249c3","rank":"species","status":"accepted","nomCode":"zoological","score":11.740428,"suggestion":"Apis
+        cerana"},{"match":"Apis florea","usageId":"a8e36e63-3f84-4366-9b28-4b674276f4cd","rank":"species","status":"accepted","nomCode":"zoological","score":11.740428,"suggestion":"Apis
+        florea"},{"match":"Hister apis","usageId":"5c56b923-ae14-445a-a42e-20f21b0c2e16","rank":"species","status":"accepted","nomCode":"zoological","score":11.740428,"suggestion":"Hister
+        apis"},{"match":"Apis alpina","acceptedName":"Bombus alpinus","usageId":"eb255132-9506-4d85-bca3-a403245b1958","rank":"species","status":"synonym","nomCode":"zoological","score":11.720157,"suggestion":"Apis
+        alpina (synonym of Bombus alpinus)"},{"match":"Apisa cleta","usageId":"012da2f3-6a95-45e2-a794-be569bde840c","rank":"species","status":"accepted","nomCode":"zoological","score":11.720157,"suggestion":"Apisa
+        cleta"}]}'
+  recorded_at: 2020-04-17 23:49:10 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

@@ -22,7 +22,8 @@ Imports:
     crul,
     tibble,
     jsonlite,
-    data.table
+    data.table,
+    glue
 Suggests:
     knitr,
     testthat,

@@ -7,9 +7,9 @@
 cp_classification(dataset_key, taxon_id, ...)
 }
 \arguments{
-\item{dataset_key}{(character) dataset identifier}
+\item{dataset_key}{(character/integer/numeric) dataset identifier}
 
-\item{taxon_id}{(character) taxon identifier}
+\item{taxon_id}{(character/integer/numeric) taxon identifier}
 
 \item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
@@ -18,9 +18,9 @@ Classification
 }
 \examples{
 \dontrun{
-z <- cp_classification(dataset_key=1000, taxon_id='10')
+z <- cp_classification(dataset_key=1000, taxon_id=10)
 z
-cp_classification(dataset_key=1000, taxon_id='20')
+cp_classification(dataset_key=1000, taxon_id=20)
 cp_classification(dataset_key=3,
  taxon_id='709dfa66-43fe-4736-a774-59f821a2ee23')
 }

@@ -22,7 +22,7 @@
 #' bacterial, botanical, cultivated, viral, zoological, unknown
 #' @param trusted (logical) if `TRUE`, unmatched name will be inserted into
 #' the names index. default: `FALSE`
-#' @param verbose (logical) if `TRUE`, list alternatively considered name
+#' @param ver_bose (logical) if `TRUE`, list alternatively considered name
 #' matches. default: `FALSE`
 #' @param start (integer) requested number of offset records. Default: 0
 #' @param limit (integer) requested number of maximum records to be returned.
@@ -35,14 +35,16 @@
 #' cp_name_match(q="Apis mellifer")
 #' }
 cp_name_match <- function(q = NULL, rank = NULL, code = NULL, trusted = NULL,
-  verbose = NULL, start = 0, limit = 10, ...) {
+  ver_bose = NULL, start = 0, limit = 10, ...) {
 
+  assert(q, "character")
+  assert(rank, "character")
+  assert(code, "character")
+  assert(trusted, "logical")
+  assert(ver_bose, "logical")
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
   args <- cc(list(q = q, rank = rank, code = code, trusted = trusted,
-    verbose = verbose, offset = start, limit = limit))
-  tmp <- cp_GET(colplus_base(), "name/matching", query = args, ...)
-  tmp$result <- tibble::as_tibble(tmp$result)
-  tmp <- cp_meta(tmp)
-  return(tmp)
+    verbose = ver_bose, offset = start, limit = limit))
+  cp_GET(colplus_base(), "name/matching", query = args, ...)
 }

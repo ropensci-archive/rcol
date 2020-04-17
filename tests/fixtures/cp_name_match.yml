@@ -1,0 +1,69 @@
+http_interactions:
+- request:
+    method: get
+    uri: http://api.catalogue.life/name/matching?q=Apis&rank=genus&offset=0&limit=10
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:09 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '242'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"name":{"created":"2019-11-20T11:09:57.999149","createdBy":11,"modified":"2019-11-20T11:09:57.999149","modifiedBy":11,"datasetKey":1,"id":"5U73","sectorKey":4452,"homotypicNameId":"5U73","scientificName":"Apis","rank":"genus","uninomial":"Apis","nomStatus":"doubtful","origin":"name
+        matching","type":"scientific","parsed":true,"formattedName":"<i>Apis</i>"},"type":"exact"}'
+  recorded_at: 2020-04-17 23:49:09 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
+- request:
+    method: get
+    uri: http://api.catalogue.life/name/matching?q=Apis%20mellifer&offset=0&limit=10
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 17 Apr 2020 23:49:09 GMT
+      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      content-type: application/json
+      access-control-allow-origin: '*'
+      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
+        X-Requested-With
+      vary: Accept-Encoding
+      content-length: '15'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"type":"none"}'
+  recorded_at: 2020-04-17 23:49:09 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

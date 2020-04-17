@@ -7,9 +7,9 @@
 cp_children(dataset_key, taxon_id, ...)
 }
 \arguments{
-\item{dataset_key}{(character) dataset identifier}
+\item{dataset_key}{(character/integer/numeric) dataset identifier}
 
-\item{taxon_id}{(character) taxon identifier}
+\item{taxon_id}{(character/integer/numeric) taxon identifier}
 
 \item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }

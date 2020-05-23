@@ -1,8 +1,8 @@
 #' CoL+ Vocabularies
 #'
 #' @export
-#' @template args
 #' @param vocab (character) a vocabulary name
+#' @param ... curl options passed on to [crul::verb-GET]
 #' @return character vector of words
 #' @references https://catalogueoflife.github.io/general/api/api.html#vocabs
 #' @examples \dontrun{

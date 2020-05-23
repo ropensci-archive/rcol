@@ -9,12 +9,7 @@ cp_vocab(vocab, ...)
 \arguments{
 \item{vocab}{(character) a vocabulary name}
 
-\item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
-
-\item{start}{(integer) requested number of offset records. Default: 0}
-
-\item{limit}{(integer) requested number of maximum records to be returned.
-Default: 10; max: 1000}
+\item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
 \value{
 character vector of words

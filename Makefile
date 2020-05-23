@@ -21,6 +21,9 @@ installvign:
 readme: README.Rmd
 	${RSCRIPT} -e "knitr::knit('$<')"
 
+eg:
+	${RSCRIPT} -e "devtools::run_examples(run = TRUE)"	
+
 checkwin:
 	${RSCRIPT} -e "devtools::check_win_devel(quiet = TRUE); devtools::check_win_release(quiet = TRUE)"
 

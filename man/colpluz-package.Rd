@@ -6,7 +6,10 @@
 \alias{colpluz}
 \title{colpluz}
 \description{
-Catalogue of Life Plus Client
+Catalogue of Life Plus (CoL+) Client
+}
+\note{
+CoL+ API docs are at http://api.catalogue.life/
 }
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}

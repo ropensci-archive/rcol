@@ -13,7 +13,7 @@ colpluz
 
 * Catalogue of Life: http://www.catalogueoflife.org/
 * Catalogue of Life Plus: https://github.com/Sp2000/colplus
-* COL+ API docs: https://catalogueoflife.github.io/general/api/api.html
+* COL+ API docs: http://api.catalogue.life/
 
 ## API notes
 

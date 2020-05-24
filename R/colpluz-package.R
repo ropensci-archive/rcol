@@ -1,5 +1,6 @@
 #' @title colpluz
-#' @description Catalogue of Life Plus Client
+#' @description Catalogue of Life Plus (CoL+) Client
+#' @note CoL+ API docs are at http://api.catalogue.life/
 #' @importFrom crul HttpClient
 #' @importFrom tibble tibble
 #' @importFrom jsonlite fromJSON

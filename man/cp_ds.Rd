@@ -12,7 +12,13 @@ part is added internally; so just include the route following that.
 required.}
 
 \item{...}{named parameters, passed on to \code{\link[glue:glue]{glue::glue()}}. required.
-param names must match \verb{\\\\\{key\\\\\}} given in the \code{route}}
+param names must match must match names given in the \code{route}. For
+example, if you have \verb{route = \\\\\{key\\\\\}/name\\\\\{id\\\\\}}, then you need
+to pass in a \code{key} and an \code{id} parameter. The names in the route
+(here, key and id) don't have to match the names in the API route you
+are trying to use - they just need to match the named parameters you
+pass in. Having said that, it may be easier to remember what you're
+doing if you match the names to the route parts.}
 }
 \description{
 Datasets API route catch all method
@@ -34,4 +40,5 @@ cp_ds(route = "{key}/namesdiff", key = "1000")
 cp_ds(route = "{key}/reference", key = "1000")
 cp_ds(route = "{key}/tree", key = "1000")
 cp_ds(route = "{key}/tree", key = "1014")
+cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)
 }

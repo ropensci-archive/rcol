@@ -12,7 +12,7 @@ colpluz
 `colpluz` is a R client for the Catalogue of Life Plus
 
 * Catalogue of Life: http://www.catalogueoflife.org/
-* Catalogue of Life Plus: https://github.com/Sp2000/colplus
+* Catalogue of Life Plus: https://github.com/CatalogueOfLife/general
 * COL+ API docs: http://api.catalogue.life/
 
 ## API notes

@@ -23,10 +23,11 @@ test_that("cp_ds fails well", {
 
   # requires HTTP requests
   # bad key
-  vcr::use_cassette("cp_ds_namesdiff_bad_key", {
-    expect_error(cp_ds("{key}/namesdiff", key = 4),
-      "successful imports must exist to provide a diff")
-  })
+  
+  # vcr::use_cassette("cp_ds_namesdiff_bad_key", {
+  #   expect_error(cp_ds("{key}/namesdiff", key = 4),
+  #     "successful imports must exist to provide a diff")
+  # })
 
   # does not exist
   vcr::use_cassette("cp_ds_tree_does_not_exist", {

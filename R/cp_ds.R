@@ -19,12 +19,12 @@
 #' @section Not supported dataset routes:
 #' Some dataset routes do not return JSON so we don't support those. 
 #' Thus far, the only route we don't support is `/dataset/\\{key\\}/logo`
-#' @examples
-#' cp_ds(route = "{key}/namesdiff", key = "1000")
+#' @examples \dontrun{
 #' cp_ds(route = "{key}/reference", key = "1000")
 #' cp_ds(route = "{key}/tree", key = "1000")
 #' cp_ds(route = "{key}/tree", key = "1014")
 #' cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)
+#' }
 cp_ds <- function(route, ...) {
   route <- file.path("dataset", route)
   if (grepl("logo", route)) stop("logo route not supported", call.=FALSE)

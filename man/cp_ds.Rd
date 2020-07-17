@@ -36,9 +36,10 @@ Thus far, the only route we don't support is \verb{/dataset/\\\\\{key\\\\\}/logo
 }
 
 \examples{
-cp_ds(route = "{key}/namesdiff", key = "1000")
+\dontrun{
 cp_ds(route = "{key}/reference", key = "1000")
 cp_ds(route = "{key}/tree", key = "1000")
 cp_ds(route = "{key}/tree", key = "1014")
 cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)
+}
 }

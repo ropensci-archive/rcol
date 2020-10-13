@@ -5,8 +5,6 @@ colpluz
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<!-- [![Build Status](https://travis-ci.com/ropensci/colpluz.svg?branch=master)](https://travis-ci.com/ropensci/colpluz) -->
-<!-- [![Build status](https://ci.appveyor.com/api/projects/status/wybrsqmo4kp75a96?svg=true)](https://ci.appveyor.com/project/sckott/colpluz) -->
 [![Build Status](https://github.com/ropensci/colpluz/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/colpluz/actions)
 [![codecov](https://codecov.io/gh/ropensci/colpluz/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/colpluz)
 
@@ -14,7 +12,7 @@ colpluz
 
 * Catalogue of Life: http://www.catalogueoflife.org/
 * Catalogue of Life Plus: https://github.com/CatalogueOfLife/general
-* COL+ API docs: http://api.catalogue.life/
+* COL+ API docs: https://api.catalogue.life/
 
 ## API notes
 
@@ -25,6 +23,8 @@ colpluz
 
 ```r
 remotes::install_github("ropensci/colpluz")
+# OR
+install.packages("colpluz", repos="https://dev.ropensci.org")
 ```
 
 
@@ -37,9 +37,6 @@ library("colpluz")
 * Please [report any issues or bugs](https://github.com/ropensci/colpluz/issues).
 * License: MIT
 * Get citation information for `colpluz` in R doing `citation(package = 'colpluz')`
-* Please note that this project is released with a [Contributor Code of Conduct][coc].
-By participating in this project you agree to abide by its terms.
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
 
 [![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
-
-[coc]: https://github.com/ropensci/colpluz/blob/master/CODE_OF_CONDUCT.md

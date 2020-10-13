@@ -13,6 +13,7 @@ jobs:
       matrix:
         config:
         - { os: windows-latest, r: 'latest'}
+        - { os: macOS-latest, r: 'oldrel'}
         - { os: macOS-latest, r: 'latest'}
         - { os: macOS-latest, r: 'devel'}
         - { os: ubuntu-16.04, r: '3.6', cran: "https://demo.rstudiopm.com/all/__linux__/xenial/latest"}
@@ -23,17 +24,17 @@ jobs:
       CRAN: ${{ matrix.config.cran }}
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib/actions/setup-r@v1
         with:
           r-version: ${{ matrix.config.r }}
 
-      - uses: r-lib/actions/setup-pandoc@master
+      - uses: r-lib/actions/setup-pandoc@v1
 
       - name: Cache R packages
         if: runner.os != 'Windows'
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-r-${{ matrix.config.r }}-${{ hashFiles('DESCRIPTION') }}
@@ -54,7 +55,7 @@ jobs:
 
       - name: Upload check results
         if: failure()
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v2
         with:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check

@@ -1,12 +1,11 @@
 Package: colpluz
 Type: Package
 Title: Catalogue of Life Plus Client
-Description: Client for the Catalogue of Life Plus (CoL+) webservice 
-    (<https://github.com/Sp2000/colplus>). The CoL+ webservice is a new
-    interface to the Catalogue of Life (<http://www.catalogueoflife.org/>).
-    Includes functions for each of the API methods, including searching for
-    names, etc.
-Version: 0.0.2.91
+Description: Client for the Catalogue of Life Plus ('CoL+') webservice 
+    (<https://github.com/CatalogueOfLife/general>). The CoL+ webservice is
+    a new interface to the Catalogue of Life. Includes functions for each
+    of the API methods, including searching for names, and more.
+Version: 0.1.0
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com",
     comment = c(ORCID = "0000-0003-1444-9135"))
@@ -25,7 +24,6 @@ Imports:
     data.table,
     glue
 Suggests:
-    knitr,
     testthat,
     vcr
 RoxygenNote: 7.1.1

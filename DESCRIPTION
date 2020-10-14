@@ -10,7 +10,7 @@ Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com",
     comment = c(ORCID = "0000-0003-1444-9135"))
 License: MIT + file LICENSE
-URL: https://docs.ropensci.org/colpluz, https://github.com/ropensci/colpluz (devel)
+URL: https://docs.ropensci.org/colpluz/, https://github.com/ropensci/colpluz
 BugReports: https://github.com/ropensci/colpluz/issues
 LazyData: true
 VignetteBuilder: knitr

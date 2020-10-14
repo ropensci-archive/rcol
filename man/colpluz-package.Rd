@@ -9,9 +9,9 @@
 Catalogue of Life Plus (CoL+) Client
 }
 \note{
-CoL+ API docs are at http://api.catalogue.life/
+CoL+ API docs are at https://api.catalogue.life/
 }
 \author{
-Scott Chamberlain \email{myrmecocystus@gmail.com}
+Scott Chamberlain
 }
 \keyword{package}

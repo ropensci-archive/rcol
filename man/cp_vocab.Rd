@@ -26,6 +26,3 @@ cp_vocab("matchtype")
 cp_vocab("taxonomicstatus")
 }
 }
-\references{
-https://catalogueoflife.github.io/general/api/api.html#vocabs
-}

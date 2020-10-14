@@ -1,4 +1,4 @@
-colplus_base <- function() "http://api.catalogue.life"
+colplus_base <- function() "https://api.catalogue.life"
 
 cp_ua <- function() {
   versions <- c(paste0("r-curl/", utils::packageVersion("curl")),

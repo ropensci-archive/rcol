@@ -1,6 +1,6 @@
 #' @title colpluz
 #' @description Catalogue of Life Plus (CoL+) Client
-#' @note CoL+ API docs are at http://api.catalogue.life/
+#' @note CoL+ API docs are at https://api.catalogue.life/
 #' @importFrom crul HttpClient
 #' @importFrom tibble tibble
 #' @importFrom jsonlite fromJSON
@@ -9,5 +9,5 @@
 #' @aliases colpluz
 #' @docType package
 #' @keywords package
-#' @author Scott Chamberlain \email{myrmecocystus@@gmail.com}
+#' @author Scott Chamberlain
 NULL

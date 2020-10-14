@@ -5,7 +5,7 @@ colpluz
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Build Status](https://github.com/ropensci/colpluz/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/colpluz/actions)
+[![R-CMD-check](https://github.com/ropensci/colpluz/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/colpluz/actions)
 [![codecov](https://codecov.io/gh/ropensci/colpluz/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/colpluz)
 
 `colpluz` is a R client for the Catalogue of Life Plus
@@ -13,10 +13,6 @@ colpluz
 * Catalogue of Life: http://www.catalogueoflife.org/
 * Catalogue of Life Plus: https://github.com/CatalogueOfLife/general
 * COL+ API docs: https://api.catalogue.life/
-
-## API notes
-
-* `/dataset/{dataset_key}/taxon/` routes contain the data given in `/dataset/{dataset_key}/name/` routes
 
 ## Installation
 
@@ -31,6 +27,10 @@ install.packages("colpluz", repos="https://dev.ropensci.org")
 ```r
 library("colpluz")
 ```
+
+## API notes
+
+* `/dataset/{dataset_key}/taxon/` routes contain the data given in `/dataset/{dataset_key}/name/` routes
 
 ## Meta
 

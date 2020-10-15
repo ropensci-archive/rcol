@@ -13,7 +13,6 @@ License: MIT + file LICENSE
 URL: https://docs.ropensci.org/colpluz/, https://github.com/ropensci/colpluz
 BugReports: https://github.com/ropensci/colpluz/issues
 LazyData: true
-VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 Language: en-US

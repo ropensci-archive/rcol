@@ -12,6 +12,9 @@
 #' are trying to use - they just need to match the named parameters you
 #' pass in. Having said that, it may be easier to remember what you're
 #' doing if you match the names to the route parts.
+#' @param .list a named list. instead of passing in named parameters
+#' through `...`, you can pre-prepare a named list and give to this
+#' parameter
 #' @details There are A LOT of datasets API routes. Instead of making
 #' an R function for each route, we have R functions for some of the
 #' "more important" routes, then `cp_ds()` will allow you to make
@@ -20,14 +23,16 @@
 #' Some dataset routes do not return JSON so we don't support those. 
 #' Thus far, the only route we don't support is `/dataset/\\{key\\}/logo`
 #' @examples \dontrun{
-#' cp_ds(route = "{key}/reference", key = "1000")
 #' cp_ds(route = "{key}/tree", key = "1000")
 #' cp_ds(route = "{key}/tree", key = "1014")
 #' cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)
 #' }
-cp_ds <- function(route, ...) {
+cp_ds <- function(route, ..., .list = list()) {
   route <- file.path("dataset", route)
   if (grepl("logo", route)) stop("logo route not supported", call.=FALSE)
-  path <- glue::glue(route, ...)
+  path <- if (length(.list))
+    glue::glue_data(.list, route)
+  else 
+    glue::glue(route, ...)
   cp_GET(colplus_base(), path)
 }

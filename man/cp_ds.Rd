@@ -4,7 +4,7 @@
 \alias{cp_ds}
 \title{Datasets API route catch all method}
 \usage{
-cp_ds(route, ...)
+cp_ds(route, ..., .list = list())
 }
 \arguments{
 \item{route}{(character) an API route. the \verb{/dataset} route
@@ -19,6 +19,10 @@ to pass in a \code{key} and an \code{id} parameter. The names in the route
 are trying to use - they just need to match the named parameters you
 pass in. Having said that, it may be easier to remember what you're
 doing if you match the names to the route parts.}
+
+\item{.list}{a named list. instead of passing in named parameters
+through \code{...}, you can pre-prepare a named list and give to this
+parameter}
 }
 \description{
 Datasets API route catch all method
@@ -37,7 +41,6 @@ Thus far, the only route we don't support is \verb{/dataset/\\\\\{key\\\\\}/logo
 
 \examples{
 \dontrun{
-cp_ds(route = "{key}/reference", key = "1000")
 cp_ds(route = "{key}/tree", key = "1000")
 cp_ds(route = "{key}/tree", key = "1014")
 cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)

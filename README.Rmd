@@ -35,9 +35,8 @@ install.packages("colpluz", repos="https://dev.ropensci.org")
 library("colpluz")
 ```
 
-## API notes
-
-* `/dataset/{dataset_key}/taxon/` routes contain the data given in `/dataset/{dataset_key}/name/` routes
+<!-- API notes
+* `/dataset/{dataset_key}/taxon/` routes contain the data given in `/dataset/{dataset_key}/name/` routes -->
 
 ## Meta
 

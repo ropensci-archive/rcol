@@ -30,5 +30,10 @@ checkwin:
 test:
 	${RSCRIPT} -e "devtools::test()"
 
+vign:
+	cd vignettes;\
+	${RSCRIPT} -e "Sys.setenv(NOT_CRAN='true'); knitr::knit('colpluz.Rmd.og', output = 'colpluz.Rmd')";\
+	cd ..
+
 # No real targets!
 .PHONY: all check document install

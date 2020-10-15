@@ -17,6 +17,16 @@ cp_GET <- function(url, path = NULL, query = list(), headers = list(),
   return(cp_error_handle(out, parse = parse))
 }
 
+cp_POST <- function(url, path = NULL, query = list(), body = list(),
+  headers = list(), opts = list(), parse = TRUE, ...) {
+  
+  cli <- crul::HttpClient$new(url,
+    headers = c(headers, cp_ual, "Content-Type" = "text/plain"),
+    opts = c(opts, list(...)))
+  out <- cli$post(path = path, query = query, body = body)
+  return(cp_error_handle(out, parse = parse))
+}
+
 cp_error_handle <- function(x, parse = TRUE) {
   if (x$status_code > 203) {
     txt <- tryCatch(x$parse("utf-8"), error = function(e) e)

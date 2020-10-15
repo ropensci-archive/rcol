@@ -1,71 +1,64 @@
 http_interactions:
 - request:
-    method: get
-    uri: https://api.catalogue.life/parser/name?name=Apis%20mellifera
+    method: post
+    uri: https://api.catalogue.life/parser/name
     body:
       encoding: ''
-      string: ''
+      string: Apis mellifera
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
+      Content-Type: text/plain
   response:
     status:
-      status_code: '200'
-      message: OK
-      explanation: Request fulfilled, document follows
+      status_code: '201'
+      message: Created
+      explanation: Document created, URL follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:10 GMT
+      status: HTTP/1.1 201 Created
+      date: Thu, 15 Oct 2020 22:59:21 GMT
       server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
-      content-length: '189'
+      cache-control: must-revalidate,no-cache,no-store
+      content-length: '133'
     body:
       encoding: UTF-8
       file: no
-      string: '[{"name":{"scientificName":"Apis mellifera","rank":"species","genus":"Apis","specificEpithet":"mellifera","type":"scientific","parsed":true,"formattedName":"<i>Apis</i>
-        <i>mellifera</i>"}}]'
-  recorded_at: 2020-04-17 23:49:11 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '[{"scientificName":"Apis mellifera","rank":"species","genus":"Apis","specificEpithet":"mellifera","type":"scientific","parsed":true}]'
+  recorded_at: 2020-10-15 22:59:22 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
-    method: get
-    uri: https://api.catalogue.life/parser/name?name=Apis%20mellifera&name=Homo%20sapiens%20var.%20sapiens
+    method: post
+    uri: https://api.catalogue.life/parser/name
     body:
       encoding: ''
-      string: ''
+      string: |-
+        Apis mellifera
+        Homo sapiens var. sapiens
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
+      Content-Type: text/plain
   response:
     status:
-      status_code: '200'
-      message: OK
-      explanation: Request fulfilled, document follows
+      status_code: '201'
+      message: Created
+      explanation: Document created, URL follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:11 GMT
+      status: HTTP/1.1 201 Created
+      date: Thu, 15 Oct 2020 22:59:22 GMT
       server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
-      content-encoding: gzip
-      content-length: '201'
+      cache-control: must-revalidate,no-cache,no-store
+      content-length: '307'
     body:
       encoding: UTF-8
       file: no
-      string: '[{"name":{"scientificName":"Apis mellifera","rank":"species","genus":"Apis","specificEpithet":"mellifera","type":"scientific","parsed":true,"formattedName":"<i>Apis</i>
-        <i>mellifera</i>"}},{"name":{"scientificName":"Homo sapiens var. sapiens","rank":"variety","genus":"Homo","specificEpithet":"sapiens","infraspecificEpithet":"sapiens","type":"scientific","parsed":true,"formattedName":"<i>Homo</i>
-        <i>sapiens</i> var. <i>sapiens</i>"}}]'
-  recorded_at: 2020-04-17 23:49:11 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '[{"scientificName":"Apis mellifera","rank":"species","genus":"Apis","specificEpithet":"mellifera","type":"scientific","parsed":true},{"scientificName":"Homo
+        sapiens var. sapiens","rank":"variety","genus":"Homo","specificEpithet":"sapiens","infraspecificEpithet":"sapiens","type":"scientific","parsed":true}]'
+  recorded_at: 2020-10-15 22:59:22 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

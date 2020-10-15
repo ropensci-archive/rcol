@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/importer?running=FALSE&offset=0&limit=10
+    uri: https://api.catalogue.life/importer?running=FALSE&offset=0&limit=10
     body:
       encoding: ''
       string: ''
@@ -99,7 +99,7 @@ http_interactions:
   recorded_with: vcr/0.5.4, webmockr/0.6.2
 - request:
     method: get
-    uri: http://api.catalogue.life/importer?running=FALSE&offset=0&limit=10
+    uri: https://api.catalogue.life/importer?running=FALSE&offset=0&limit=10
     body:
       encoding: ''
       string: ''

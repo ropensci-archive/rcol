@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset/1000
+    uri: https://api.catalogue.life/dataset/1000
     body:
       encoding: ''
       string: ''
@@ -43,7 +43,7 @@ http_interactions:
   recorded_with: vcr/0.5.4, webmockr/0.6.2
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset/3
+    uri: https://api.catalogue.life/dataset/3
     body:
       encoding: ''
       string: ''
@@ -85,7 +85,7 @@ http_interactions:
   recorded_with: vcr/0.5.4, webmockr/0.6.2
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset/1000
+    uri: https://api.catalogue.life/dataset/1000
     body:
       encoding: ''
       string: ''
@@ -127,7 +127,7 @@ http_interactions:
   recorded_with: vcr/0.5.4, webmockr/0.6.2
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset/1014
+    uri: https://api.catalogue.life/dataset/1014
     body:
       encoding: ''
       string: ''

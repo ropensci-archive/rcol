@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset/3/taxon/709dfa66-43fe-4736-a774-59f821a2ee23/classification
+    uri: https://api.catalogue.life/dataset/3/taxon/709dfa66-43fe-4736-a774-59f821a2ee23/classification
     body:
       encoding: ''
       string: ''

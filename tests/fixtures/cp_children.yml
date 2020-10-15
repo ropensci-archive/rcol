@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset/1000/taxon/1/children
+    uri: https://api.catalogue.life/dataset/1000/taxon/1/children
     body:
       encoding: ''
       string: ''

@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset/2/tree
+    uri: https://api.catalogue.life/dataset/2/tree
     body:
       encoding: ''
       string: ''

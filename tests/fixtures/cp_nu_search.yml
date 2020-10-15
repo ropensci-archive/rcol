@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/nameusage/search?q=Apis&offset=0&limit=10
+    uri: https://api.catalogue.life/nameusage/search?q=Apis&offset=0&limit=10
     body:
       encoding: ''
       string: ''

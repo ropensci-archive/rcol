@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/dataset?offset=0&limit=5
+    uri: https://api.catalogue.life/dataset?offset=0&limit=5
     body:
       encoding: ''
       string: ''

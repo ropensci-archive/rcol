@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.catalogue.life/vocab/rank
+    uri: https://api.catalogue.life/vocab/rank
     body:
       encoding: ''
       string: ''

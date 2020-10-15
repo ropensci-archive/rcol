@@ -26,6 +26,10 @@
 #' cp_ds(route = "{key}/tree", key = "1000")
 #' cp_ds(route = "{key}/tree", key = "1014")
 #' cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)
+#' 
+#' # pass a named list to the .list parameter
+#' args <- list(key = 1005, id = 100003)
+#' cp_ds("{key}/name/{id}", .list = args)
 #' }
 cp_ds <- function(route, ..., .list = list()) {
   route <- file.path("dataset", route)

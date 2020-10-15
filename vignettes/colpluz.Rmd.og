@@ -1,0 +1,120 @@
+---
+title: "copluz"
+author: "Scott Chamberlain"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: readable
+vignette: >
+  %\VignetteIndexEntry{Introduction to copluz}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+`colpluz` is a R client for the Catalogue of Life Plus (COL+)
+
+COL+ is a follow up to the original Catalogue of Life. The API is
+completely different so don't expect the same interface. The 
+`taxize` package used to have some COL functionality but was 
+deprecated when the old COL API was just too unreliable. COL+
+has a lot of different routes, many of which aren't relavant to
+us here (e.g., creating/editing data in COL+, user profile actions,
+etc.). 
+
+Package documentation: https://docs.ropensci.org/colpluz/
+
+Check out COL+ API docs https://api.catalogue.life/ where you
+can get more info on each API route and try the routes.
+
+The following are a few examples.
+
+## Installation
+
+```{r eval=FALSE}
+remotes::install_github("ropensci/colpluz")
+# OR
+install.packages("colpluz", repos="https://dev.ropensci.org")
+```
+
+```{r}
+library("colpluz")
+```
+
+## Search
+
+Two function `cp_nu_suggest()` and `cp_nu_search()` can be used for searching
+for taxa. The former returns very minimal information and is meant to return
+a response very quickly, while the latter is a bit slower but more comprehensive.
+
+```{r}
+cp_nu_suggest(q="Apis", dataset_key = 3)
+cp_nu_search(q="Apis", rank = "genus")
+```
+
+## Parsing names
+
+`cp_parser()` parses scientitic names into their components. See also the 
+package `rgnparser` (docs: https://ropensci.github.io/rgnparser/) for much
+more powerul scientitic name parsing.
+
+```{r}
+cp_parser(names = c("Apis mellifera", "Homo sapiens var. sapiens"))
+```
+
+## Vocab
+
+If you're curious about COL+ vocabularies see the function `cp_vocab()`
+
+```{r}
+cp_vocab("rank")
+```
+
+## Datasets
+
+To search datasets, see the function `cp_datasets()`
+
+```{r}
+cp_datasets(q = "life")
+```
+
+There are A LOT of datasets API routes. Instead of making
+an R function for each route, we have R functions for some of the
+"more important" routes, then `cp_ds()` will allow you to make
+requests to the remainder of the datasets API routes. The `route`
+parameter accepts the route as the examples below, with the 
+preceding `/dataset` part of the route. Then pass in named parameters
+to the function to fill in the templated route.
+
+```{r}
+cp_ds(route = "{key}/tree", key = "1000")
+cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)
+```
+
+Alternatively, pass a named list to the `.list` parameter.
+
+```{r}
+args <- list(key = 1005, id = 100003)
+cp_ds("{key}/name/{id}", .list = args)
+```
+
+## Classification
+
+```{r}
+cp_classification(dataset_key=1000, taxon_id=10)
+```
+
+## Children
+
+```{r}
+cp_children(dataset_key=1000, taxon_id='1')
+```
+

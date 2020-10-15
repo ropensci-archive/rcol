@@ -38,10 +38,12 @@ bind <- function(x) {
 bindtbl <- function(x) tibble::as_tibble(bind(x))
 
 handle_taxon <- function(x) {
+  if (!length(x)) return(tibble::tibble())
   rmv <- c("created", "createdBy", "modified", "modifiedBy", "datasetKey",
     "id", "verbatimKey")
   for (i in rmv) x[[i]] <- NULL
-  df <- cbind(x$name, x[c("status", "parentId", "synonym", "taxon", "bareName")])
+  df <- cbind(x$name,
+    x[names(x) %in% c("status", "parentId", "synonym", "taxon", "bareName")])
   first_cols <- c("scientificName", "rank", "id", "status")
   df <- move_cols(df, first_cols)
   return(tibble::as_tibble(df))

@@ -9,7 +9,7 @@ cp_parser(names, ...)
 \arguments{
 \item{names}{(character) one or more scientific names to parse}
 
-\item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
+\item{...}{curl options passed on to \link[crul:verb-POST]{crul::verb-POST}}
 }
 \value{
 tibble, with one row for each parsed name

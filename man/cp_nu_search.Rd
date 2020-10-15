@@ -12,7 +12,6 @@ cp_nu_search(
   nomstatus = NULL,
   status = NULL,
   issue = NULL,
-  type = NULL,
   publishedIn = NULL,
   hasField = NULL,
   facet = NULL,
@@ -51,9 +50,6 @@ doubtful, ambiguous synonym}
 
 \item{issue}{(character) filter by issue found}
 
-\item{type}{(character) filter by name type. one of: scientific, virus,
-hybrid-formula, cultivar, otu, placeholder, none}
-
 \item{publishedIn}{(character) reference id to filter names by}
 
 \item{hasField}{(logical) filter that only includes name where the
@@ -83,7 +79,6 @@ cp_nu_search(q="Agapostemon", dataset_key = 3)
 cp_nu_search(q="Agapostemon", rank = "genus")
 cp_nu_search(q="Agapostemon", nomstatus = "doubtful")
 cp_nu_search(q="Agapostemon", status = "accepted")
-cp_nu_search(type = "virus")
 cp_nu_search(q="Bombus", facet = "rank")
 
 x <- cp_nu_search(q="Poa")

@@ -22,8 +22,6 @@
 #' @param status (character) filter by taxonomic status. one of: accepted,
 #' doubtful, ambiguous synonym
 #' @param issue (character) filter by issue found
-#' @param type (character) filter by name type. one of: scientific, virus,
-#' hybrid-formula, cultivar, otu, placeholder, none
 #' @param publishedIn (character) reference id to filter names by
 #' @param hasField (logical) filter that only includes name where the
 #' requested name property is not `NULL`
@@ -39,7 +37,6 @@
 #' cp_nu_search(q="Agapostemon", rank = "genus")
 #' cp_nu_search(q="Agapostemon", nomstatus = "doubtful")
 #' cp_nu_search(q="Agapostemon", status = "accepted")
-#' cp_nu_search(type = "virus")
 #' cp_nu_search(q="Bombus", facet = "rank")
 #' 
 #' x <- cp_nu_search(q="Poa")
@@ -49,14 +46,14 @@
 #' x$result$usage$name
 #' }
 cp_nu_search <- function(q = NULL, id = NULL, dataset_key = NULL, rank = NULL,
-  nomstatus = NULL, status = NULL, issue = NULL, type = NULL,
+  nomstatus = NULL, status = NULL, issue = NULL,
   publishedIn = NULL, hasField = NULL, facet = NULL, sortBy = NULL,
   start = 0, limit = 10, ...) {
 
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
   args <- cc(list(q = q, id = id, dataset_key = dataset_key, rank = rank,
-    nomstatus = nomstatus, status = status, issue = issue, type = type,
+    nomstatus = nomstatus, status = status, issue = issue,
     publishedIn = publishedIn, hasField = hasField, facet = facet,
     sortBy = sortBy, offset = start, limit = limit))
   tmp <- cp_GET(colplus_base(), "nameusage/search", query = args, ...)

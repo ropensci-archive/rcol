@@ -22,7 +22,6 @@ z <- cp_children(dataset_key=1000, taxon_id='1')
 z
 z$result
 z$result$scientificName
-z$result$formattedName
 z$result$created
 }
 }

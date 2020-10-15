@@ -9,7 +9,6 @@
 #' z
 #' z$result
 #' z$result$scientificName
-#' z$result$formattedName
 #' z$result$created
 #' }
 cp_children <- function(dataset_key, taxon_id, ...) {

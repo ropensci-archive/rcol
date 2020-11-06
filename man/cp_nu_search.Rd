@@ -6,14 +6,13 @@
 \usage{
 cp_nu_search(
   q = NULL,
-  id = NULL,
   dataset_key = NULL,
-  rank = NULL,
+  minRank = NULL,
+  maxRank = NULL,
   nomstatus = NULL,
   status = NULL,
   issue = NULL,
   publishedIn = NULL,
-  hasField = NULL,
   facet = NULL,
   sortBy = NULL,
   start = 0,
@@ -22,13 +21,11 @@ cp_nu_search(
 )
 }
 \arguments{
-\item{q}{(character) main query string}
-
-\item{id}{(character) the name identifier}
+\item{q}{(character) vector of one or more scientific names}
 
 \item{dataset_key}{(character) dataset key}
 
-\item{rank}{(character) filter by rank. one of: domain, superkingdom,
+\item{minRank, maxRank}{(character) filter by rank. one of: domain, superkingdom,
 kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
 infraphylum, superclass, class, subclass, infraclass, parvclass,
 superlegion, legion, sublegion, infralegion, supercohort, cohort,
@@ -52,14 +49,12 @@ doubtful, ambiguous synonym}
 
 \item{publishedIn}{(character) reference id to filter names by}
 
-\item{hasField}{(logical) filter that only includes name where the
-requested name property is not \code{NULL}}
-
 \item{facet}{(character) request a facet to be returned. one of:
 dataset_key, rank, nom_status, status, issue, type, field. facet
 limit default: 50}
 
-\item{sortBy}{(character) one of: "relevance", "name", "key"}
+\item{sortBy}{(character) one of: "relevance", "name", "taxonomic",
+"index_name_id", or "native"}
 
 \item{start}{(integer) requested number of offset records. Default: 0}
 
@@ -67,19 +62,30 @@ limit default: 50}
 Default: 10; max: 1000}
 
 \item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
+
+\item{content}{(character) one of: 'scientific_name' or 'authorship'}
+
+\item{highlight}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
+
+\item{reverse}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
+
+\item{fuzzy}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
+
+\item{type}{(character) one of: 'prefix', 'whole_words', 'exact'}
 }
 \description{
 Name Usage: Search
 }
 \examples{
 \dontrun{
-cp_nu_search(q="Apis", rank = "genus")
+cp_nu_search(q="Apis", minRank = "genus")
 cp_nu_search(q="Agapostemon")
 cp_nu_search(q="Agapostemon", dataset_key = 3)
-cp_nu_search(q="Agapostemon", rank = "genus")
+cp_nu_search(q="Agapostemon", minRank = "genus")
 cp_nu_search(q="Agapostemon", nomstatus = "doubtful")
 cp_nu_search(q="Agapostemon", status = "accepted")
 cp_nu_search(q="Bombus", facet = "rank")
+cp_nu_search(q="Agapostemon", dataset_key = 3, hasField="uninomial")
 
 x <- cp_nu_search(q="Poa")
 x

@@ -1,10 +1,10 @@
 #' Name Usage: Search
 #'
 #' @export
-#' @param q (character) main query string
-#' @param id (character) the name identifier
+#' @param q (character) vector of one or more scientific names
 #' @param dataset_key (character) dataset key
-#' @param rank (character) filter by rank. one of: domain, superkingdom,
+#' @param content (character) one of: 'scientific_name' or 'authorship'
+#' @param minRank,maxRank (character) filter by rank. one of: domain, superkingdom,
 #' kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
 #' infraphylum, superclass, class, subclass, infraclass, parvclass,
 #' superlegion, legion, sublegion, infralegion, supercohort, cohort,
@@ -23,21 +23,25 @@
 #' doubtful, ambiguous synonym
 #' @param issue (character) filter by issue found
 #' @param publishedIn (character) reference id to filter names by
-#' @param hasField (logical) filter that only includes name where the
-#' requested name property is not `NULL`
 #' @param facet (character) request a facet to be returned. one of:
 #' dataset_key, rank, nom_status, status, issue, type, field. facet
 #' limit default: 50
-#' @param sortBy (character) one of: "relevance", "name", "key"
+#' @param sortBy (character) one of: "relevance", "name", "taxonomic",
+#' "index_name_id", or "native"
+#' @param highlight (logical) `TRUE` or `FALSE`. default: `NULL`
+#' @param reverse (logical) `TRUE` or `FALSE`. default: `NULL`
+#' @param fuzzy (logical) `TRUE` or `FALSE`. default: `NULL`
+#' @param type (character) one of: 'prefix', 'whole_words', 'exact'
 #' @template args
 #' @examples \dontrun{
-#' cp_nu_search(q="Apis", rank = "genus")
+#' cp_nu_search(q="Apis", minRank = "genus")
 #' cp_nu_search(q="Agapostemon")
 #' cp_nu_search(q="Agapostemon", dataset_key = 3)
-#' cp_nu_search(q="Agapostemon", rank = "genus")
+#' cp_nu_search(q="Agapostemon", minRank = "genus")
 #' cp_nu_search(q="Agapostemon", nomstatus = "doubtful")
 #' cp_nu_search(q="Agapostemon", status = "accepted")
 #' cp_nu_search(q="Bombus", facet = "rank")
+#' cp_nu_search(q="Agapostemon", dataset_key = 3, hasField="uninomial")
 #' 
 #' x <- cp_nu_search(q="Poa")
 #' x
@@ -45,16 +49,16 @@
 #' x$result$usage
 #' x$result$usage$name
 #' }
-cp_nu_search <- function(q = NULL, id = NULL, dataset_key = NULL, rank = NULL,
-  nomstatus = NULL, status = NULL, issue = NULL,
-  publishedIn = NULL, hasField = NULL, facet = NULL, sortBy = NULL,
+cp_nu_search <- function(q = NULL, dataset_key = NULL, minRank = NULL,
+  maxRank = NULL, nomstatus = NULL, status = NULL, issue = NULL,
+  publishedIn = NULL, facet = NULL, sortBy = NULL,
   start = 0, limit = 10, ...) {
 
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
-  args <- cc(list(q = q, id = id, dataset_key = dataset_key, rank = rank,
+  args <- cc(list(q = q, dataset_key = dataset_key, rank = rank,
     nomstatus = nomstatus, status = status, issue = issue,
-    publishedIn = publishedIn, hasField = hasField, facet = facet,
+    publishedIn = publishedIn, facet = facet,
     sortBy = sortBy, offset = start, limit = limit))
   tmp <- cp_GET(colplus_base(), "nameusage/search", query = args, ...)
   tmp$result <- tibble::as_tibble(tmp$result)

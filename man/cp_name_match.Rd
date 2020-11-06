@@ -19,22 +19,24 @@ cp_name_match(
 \item{q}{(character) scientific name to match}
 
 \item{rank}{(character) rank to restrict matches to. one of: domain,
-superkingdom,
-kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
-infraphylum, superclass, class, subclass, infraclass, parvclass,
-superlegion, legion, sublegion, infralegion, supercohort, cohort,
-subcohort, infracohort, magnorder, superorder, grandorder, order,
-suborder, infraorder, parvorder, superfamily, family, subfamily,
-infrafamily, supertribe, tribe, subtribe, infratribe, suprageneric name,
-genus, subgenus, infragenus, supersection, section, subsection, superseries,
-series, subseries, infrageneric name, species aggregate, species,
-infraspecific name, grex, subspecies, cultivar group, convariety,
-infrasubspecific name, proles, natio, aberration, morph, variety,
-subvariety, form, subform, pathovar, biovar, chemovar, morphovar, phagovar,
-serovar, chemoform, forma specialis, cultivar, strain, other, unranked}
+realm, subrealm, superkingdom, kingdom, subkingdom, infrakingdom,
+superphylum, phylum, subphylum, infraphylum, superclass, class,
+subclass, infraclass, parvclass, superdivision, division, subdivision,
+infradivision, superlegion, legion, sublegion, infralegion, supercohort,
+cohort, subcohort, infracohort, gigaorder, magnorder, grandorder, mirorder,
+superorder, order, nanorder, hypoorder, minorder, suborder, infraorder,
+parvorder, megafamily, grandfamily, superfamily, epifamily, family,
+subfamily, infrafamily, supertribe, tribe, subtribe, infratribe,
+suprageneric_name, genus, subgenus, infragenus, supersection, section,
+subsection, superseries, series, subseries, infrageneric_name,
+species_aggregate, species, infraspecific_name, grex, subspecies,
+cultivar_group, convariety, infrasubspecific_name, proles, natio,
+aberration, morph, variety, subvariety, form, subform, pathovar, biovar,
+chemovar, morphovar, phagovar, serovar, chemoform, forma_specialis,
+cultivar, strain, other, unranked}
 
 \item{code}{(character) nomenclatural code to restrict matches to. one of:
-bacterial, botanical, cultivated, viral, zoological, unknown}
+bacterial, botanical, cultivars, viral, zoological, phytosociological}
 
 \item{trusted}{(logical) if \code{TRUE}, unmatched name will be inserted into
 the names index. default: \code{FALSE}}
@@ -52,11 +54,19 @@ Default: 10; max: 1000}
 \description{
 Match name against the name index
 }
+\details{
+Matches by the canonical name, it's authorship and rank.
+Authorship matching is somewhat loose, but name matching is quite strict
+and only allows for a few common misspellings frequently found in
+epithets (silent h, gender suffix, double letters, i/y), but not in
+uninomials. Suprageneric ranks are all considered to be the same,
+otherwise a different rank results in a different match.
+}
 \examples{
 \dontrun{
 cp_name_match(q="Apis", rank = "genus")
 cp_name_match(q="Agapostemon")
 cp_name_match(q="Apis mellifera")
-cp_name_match(q="Apis mellifer")
+cp_name_match(q="Apis mellifer") # no fuzzy match apparently
 }
 }

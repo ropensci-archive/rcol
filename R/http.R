@@ -18,7 +18,8 @@ cp_GET <- function(url, path = NULL, query = list(), headers = list(),
 }
 
 cp_POST <- function(url, path = NULL, query = list(), body = list(),
-  headers = list(), opts = list(), parse = TRUE, ...) {
+  headers = list(), opts = list(), parse = TRUE, ct = "text/plain",
+  ...) {
   
   cli <- crul::HttpClient$new(url,
     headers = c(headers, cp_ual, "Content-Type" = "text/plain"),

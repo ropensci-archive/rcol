@@ -35,5 +35,12 @@ vign:
 	${RSCRIPT} -e "Sys.setenv(NOT_CRAN='true'); knitr::knit('colpluz.Rmd.og', output = 'colpluz.Rmd')";\
 	cd ..
 
+# update api spec and params in functions
+spec_update:
+	${RSCRIPT} -e "source('inst/scripts/update_spec.R')"
+
+spec_pkg_update:
+	${RSCRIPT} -e "source('inst/scripts/update_package.R')"
+
 # No real targets!
 .PHONY: all check document install

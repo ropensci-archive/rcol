@@ -15,3 +15,5 @@ revdep
 .github
 ^LICENSE\.md$
 vignettes/colpluz.Rmd
+inst/scripts
+inst/spec

@@ -3,7 +3,6 @@
 #' @export
 #' @param q (character) vector of one or more scientific names
 #' @param dataset_key (character) dataset key
-#' @param content (character) one of: 'scientific_name' or 'authorship'
 #' @param minRank,maxRank (character) filter by rank. one of: domain, superkingdom,
 #' kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
 #' infraphylum, superclass, class, subclass, infraclass, parvclass,
@@ -28,6 +27,7 @@
 #' limit default: 50
 #' @param sortBy (character) one of: "relevance", "name", "taxonomic",
 #' "index_name_id", or "native"
+#' @param content (character) one of: 'scientific_name' or 'authorship'
 #' @param highlight (logical) `TRUE` or `FALSE`. default: `NULL`
 #' @param reverse (logical) `TRUE` or `FALSE`. default: `NULL`
 #' @param fuzzy (logical) `TRUE` or `FALSE`. default: `NULL`
@@ -50,13 +50,16 @@
 #' x$result$usage$name
 #' }
 cp_nu_search <- function(q = NULL, dataset_key = NULL, minRank = NULL,
-  maxRank = NULL, nomstatus = NULL, status = NULL, issue = NULL,
+  maxRank = NULL, content = NULL, highlight = NULL, reverse = NULL,
+  fuzzy = NULL, type = NULL, nomstatus = NULL, status = NULL, issue = NULL,
   publishedIn = NULL, facet = NULL, sortBy = NULL,
   start = 0, limit = 10, ...) {
 
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
-  args <- cc(list(q = q, dataset_key = dataset_key, rank = rank,
+  args <- cc(list(q = q, dataset_key = dataset_key, minRank = minRank,
+    maxRank = maxRank, content = content, highlight = highlight,
+    reverse = reverse, fuzzy = fuzzy, type = type,
     nomstatus = nomstatus, status = status, issue = issue,
     publishedIn = publishedIn, facet = facet,
     sortBy = sortBy, offset = start, limit = limit))

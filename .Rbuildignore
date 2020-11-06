@@ -14,6 +14,6 @@ revdep
 ^codemeta\.json$
 .github
 ^LICENSE\.md$
-vignettes/colpluz.Rmd
+vignettes/rcol.Rmd
 inst/scripts
 inst/spec

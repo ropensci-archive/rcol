@@ -3,7 +3,7 @@ colplus_base <- function() "https://api.catalogue.life"
 cp_ua <- function() {
   versions <- c(paste0("r-curl/", utils::packageVersion("curl")),
     paste0("crul/", utils::packageVersion("crul")),
-    sprintf("rOpenSci(colpluz/%s)", utils::packageVersion("colpluz")))
+    sprintf("rOpenSci(rcol/%s)", utils::packageVersion("rcol")))
   paste0(versions, collapse = " ")
 }
 cp_ual <- list(`User-Agent` = cp_ua(), `X-USER-AGENT` = cp_ua())

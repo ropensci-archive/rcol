@@ -9,6 +9,11 @@ cp_nu_search(
   dataset_key = NULL,
   minRank = NULL,
   maxRank = NULL,
+  content = NULL,
+  highlight = NULL,
+  reverse = NULL,
+  fuzzy = NULL,
+  type = NULL,
   nomstatus = NULL,
   status = NULL,
   issue = NULL,
@@ -39,6 +44,16 @@ infrasubspecific name, proles, natio, aberration, morph, variety,
 subvariety, form, subform, pathovar, biovar, chemovar, morphovar, phagovar,
 serovar, chemoform, forma specialis, cultivar, strain, other, unranked}
 
+\item{content}{(character) one of: 'scientific_name' or 'authorship'}
+
+\item{highlight}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
+
+\item{reverse}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
+
+\item{fuzzy}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
+
+\item{type}{(character) one of: 'prefix', 'whole_words', 'exact'}
+
 \item{nomstatus}{(character) filter by nomenclatural status. one of: ok,
 unavailable, illegitimate, variant, conserved, rejected, doubtful, unevaluated}
 
@@ -62,16 +77,6 @@ limit default: 50}
 Default: 10; max: 1000}
 
 \item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
-
-\item{content}{(character) one of: 'scientific_name' or 'authorship'}
-
-\item{highlight}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
-
-\item{reverse}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
-
-\item{fuzzy}{(logical) \code{TRUE} or \code{FALSE}. default: \code{NULL}}
-
-\item{type}{(character) one of: 'prefix', 'whole_words', 'exact'}
 }
 \description{
 Name Usage: Search

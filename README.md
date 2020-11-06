@@ -1,16 +1,16 @@
-colpluz
-=======
+rcol
+====
 
 
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![R-CMD-check](https://github.com/ropensci/colpluz/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/colpluz/actions)
-[![codecov](https://codecov.io/gh/ropensci/colpluz/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/colpluz)
+[![R-CMD-check](https://github.com/ropensci/rcol/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/rcol/actions)
+[![codecov](https://codecov.io/gh/ropensci/rcol/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/rcol)
 
-`colpluz` is a R client for the Catalogue of Life Plus
+`rcol` is a R client for the Catalogue of Life Plus
 
-Package documentation: https://docs.ropensci.org/colpluz/
+Package documentation: https://docs.ropensci.org/rcol/
 
 * Catalogue of Life: http://www.catalogueoflife.org/
 * Catalogue of Life Plus: https://github.com/CatalogueOfLife/general
@@ -21,14 +21,14 @@ Package documentation: https://docs.ropensci.org/colpluz/
 
 
 ```r
-remotes::install_github("ropensci/colpluz")
+remotes::install_github("ropensci/rcol")
 # OR
-install.packages("colpluz", repos="https://dev.ropensci.org")
+install.packages("rcol", repos="https://dev.ropensci.org")
 ```
 
 
 ```r
-library("colpluz")
+library("rcol")
 ```
 
 <!-- API notes
@@ -36,9 +36,9 @@ library("colpluz")
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropensci/colpluz/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/rcol/issues).
 * License: MIT
-* Get citation information for `colpluz` in R doing `citation(package = 'colpluz')`
+* Get citation information for `rcol` in R doing `citation(package = 'rcol')`
 * Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
 
 [![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)

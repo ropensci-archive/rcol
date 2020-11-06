@@ -15,6 +15,7 @@ Package documentation: https://docs.ropensci.org/colpluz/
 * Catalogue of Life: http://www.catalogueoflife.org/
 * Catalogue of Life Plus: https://github.com/CatalogueOfLife/general
 * COL+ API docs: https://api.catalogue.life/
+* Web portal for COL+: https://data.catalogue.life/
 
 ## Installation
 

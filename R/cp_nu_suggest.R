@@ -2,6 +2,7 @@
 #'
 #' @export
 #' @param q (character) main query string. required
+#' @param dataset_key (character) a dataset key. required
 #' @param fuzzy (logical) Whether or not to do fuzzy search (default: `FALSE`)
 #' @param min_rank,max_rank (character) See rank options in [cp_name_match()]
 #' @param sort (character) one of name, taxonomic, index_name_id, native, relevance

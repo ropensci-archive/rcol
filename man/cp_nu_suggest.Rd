@@ -20,6 +20,8 @@ cp_nu_suggest(
 \arguments{
 \item{q}{(character) main query string. required}
 
+\item{dataset_key}{(character) a dataset key. required}
+
 \item{fuzzy}{(logical) Whether or not to do fuzzy search (default: \code{FALSE})}
 
 \item{min_rank, max_rank}{(character) See rank options in \code{\link[=cp_name_match]{cp_name_match()}}}

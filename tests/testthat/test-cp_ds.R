@@ -68,6 +68,8 @@ ds_routes <- c(
 )
 
 test_that("cp_ds_all_routes", {
+  skip_on_ci()
+  
   estimate <- list(datasetKey=3, key=3, id=68)
   namez <- list(datasetKey=3, key=3, id=0)
   taxon <- latest <- namez

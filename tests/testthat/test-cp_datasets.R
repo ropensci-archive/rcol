@@ -3,7 +3,7 @@ test_that("cp_dataset", {
   vcr::use_cassette("cp_dataset", {
     x <- cp_dataset(dataset_keys = 1000)
     w <- cp_dataset(dataset_keys = c(3, 1000, 1014))
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(x, "list")
   expect_named(x, NULL)
@@ -27,7 +27,7 @@ context("cp_datasets")
 test_that("cp_datasets", {
   vcr::use_cassette("cp_datasets", {
     x <- cp_datasets(limit = 5)
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(x, "list")
   expect_named(x, c("result", "meta"))

@@ -17,33 +17,22 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: 'HTTP/2 200 '
-      date: Wed, 09 Dec 2020 01:42:35 GMT
+      date: Wed, 09 Dec 2020 02:16:51 GMT
       content-type: application/json
       cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
       content-length: '717'
       vary: Accept-Encoding
-      x-varnish: '8985342'
+      x-varnish: '6376937'
       age: '0'
       via: 1.1 varnish (Varnish/6.0)
       x-cache: miss uncacheable
       accept-ranges: bytes
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       file: no
-      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":101,"modified":"2020-10-09T12:01:27.209485","modifiedBy":101,"key":1000,"importAttempt":8,"type":"taxonomic","origin":"external","title":"Catalogue
-        of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
-        of life to embrace the more than 1.6 million species \nalready provided by
-        more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
-        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":[{"name":"Species2000","label":"Species2000"},{"name":"ITIS","label":"ITIS"}],"contact":{"familyName":"Markus
-        Döring <markus@mailinator.com>","name":"Markus Döring <markus@mailinator.com>"},"authors":[{"familyName":"Michael
-        A. Ruggiero","name":"Michael A. Ruggiero"},{"familyName":"Dennis P. Gordon","name":"Dennis
-        P. Gordon"},{"familyName":"Thomas M. Orrell","name":"Thomas M. Orrell"},{"givenName":"Nicolas","familyName":"Bailly","name":"Bailly
-        N."},{"givenName":"Thierry","familyName":"Bourgoin","name":"Bourgoin T."},{"familyName":"Richard
-        C. Brusca","name":"Richard C. Brusca"},{"givenName":"Thomas","familyName":"Cavalier-Smith","name":"Cavalier-Smith
-        T."},{"familyName":"Michael D. Guiry","name":"Michael D. Guiry"},{"familyName":"Paul
-        M. Kirk","name":"Paul M. Kirk"}],"license":"cc by","version":"1.4","released":"2019-05-06","completeness":0,"imported":"2020-07-02T23:50:55.486671","size":2844,"private":false}'
-  recorded_at: 2020-12-09 01:42:36 GMT
+      string: eyJjcmVhdGVkIjoiMjAxOS0xMS0yMFQxMTowNzo0Ni4yNTU3NzciLCJjcmVhdGVkQnkiOjEwMSwibW9kaWZpZWQiOiIyMDIwLTEwLTA5VDEyOjAxOjI3LjIwOTQ4NSIsIm1vZGlmaWVkQnkiOjEwMSwia2V5IjoxMDAwLCJpbXBvcnRBdHRlbXB0Ijo4LCJ0eXBlIjoidGF4b25vbWljIiwib3JpZ2luIjoiZXh0ZXJuYWwiLCJ0aXRsZSI6IkNhdGFsb2d1ZSBvZiBMaWZlIEhpZXJhcmNoeSIsImFsaWFzIjoiQ29sSCIsImRlc2NyaXB0aW9uIjoiV2UgcHJlc2VudCBhIGNvbnNlbnN1cyBjbGFzc2lmaWNhdGlvbiBvZiBsaWZlIHRvIGVtYnJhY2UgdGhlIG1vcmUgdGhhbiAxLjYgbWlsbGlvbiBzcGVjaWVzIFxuYWxyZWFkeSBwcm92aWRlZCBieSBtb3JlIHRoYW4gMywwMDAgdGF4b25vbWlzdHPigJkgZXhwZXJ0IG9waW5pb25zIFxuaW4gYSB1bmlmaWVkIGFuZCBjb2hlcmVudCwgaGllcmFyY2hpY2FsbHkgcmFua2VkIHN5c3RlbSBrbm93biBhcyB0aGUgQ2F0YWxvZ3VlIG9mIExpZmUgKENvTCkuIiwib3JnYW5pc2F0aW9ucyI6W3sibmFtZSI6IlNwZWNpZXMyMDAwIiwibGFiZWwiOiJTcGVjaWVzMjAwMCJ9LHsibmFtZSI6IklUSVMiLCJsYWJlbCI6IklUSVMifV0sImNvbnRhY3QiOnsiZmFtaWx5TmFtZSI6Ik1hcmt1cyBEw7ZyaW5nIDxtYXJrdXNAbWFpbGluYXRvci5jb20+IiwibmFtZSI6Ik1hcmt1cyBEw7ZyaW5nIDxtYXJrdXNAbWFpbGluYXRvci5jb20+In0sImF1dGhvcnMiOlt7ImZhbWlseU5hbWUiOiJNaWNoYWVsIEEuIFJ1Z2dpZXJvIiwibmFtZSI6Ik1pY2hhZWwgQS4gUnVnZ2llcm8ifSx7ImZhbWlseU5hbWUiOiJEZW5uaXMgUC4gR29yZG9uIiwibmFtZSI6IkRlbm5pcyBQLiBHb3Jkb24ifSx7ImZhbWlseU5hbWUiOiJUaG9tYXMgTS4gT3JyZWxsIiwibmFtZSI6IlRob21hcyBNLiBPcnJlbGwifSx7ImdpdmVuTmFtZSI6Ik5pY29sYXMiLCJmYW1pbHlOYW1lIjoiQmFpbGx5IiwibmFtZSI6IkJhaWxseSBOLiJ9LHsiZ2l2ZW5OYW1lIjoiVGhpZXJyeSIsImZhbWlseU5hbWUiOiJCb3VyZ29pbiIsIm5hbWUiOiJCb3VyZ29pbiBULiJ9LHsiZmFtaWx5TmFtZSI6IlJpY2hhcmQgQy4gQnJ1c2NhIiwibmFtZSI6IlJpY2hhcmQgQy4gQnJ1c2NhIn0seyJnaXZlbk5hbWUiOiJUaG9tYXMiLCJmYW1pbHlOYW1lIjoiQ2F2YWxpZXItU21pdGgiLCJuYW1lIjoiQ2F2YWxpZXItU21pdGggVC4ifSx7ImZhbWlseU5hbWUiOiJNaWNoYWVsIEQuIEd1aXJ5IiwibmFtZSI6Ik1pY2hhZWwgRC4gR3VpcnkifSx7ImZhbWlseU5hbWUiOiJQYXVsIE0uIEtpcmsiLCJuYW1lIjoiUGF1bCBNLiBLaXJrIn1dLCJsaWNlbnNlIjoiY2MgYnkiLCJ2ZXJzaW9uIjoiMS40IiwicmVsZWFzZWQiOiIyMDE5LTA1LTA2IiwiY29tcGxldGVuZXNzIjowLCJpbXBvcnRlZCI6IjIwMjAtMDctMDJUMjM6NTA6NTUuNDg2NjcxIiwic2l6ZSI6Mjg0NCwicHJpdmF0ZSI6ZmFsc2V9
+  recorded_at: 2020-12-09 02:16:52 GMT
   recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
@@ -63,40 +52,22 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: 'HTTP/2 200 '
-      date: Wed, 09 Dec 2020 01:42:36 GMT
+      date: Wed, 09 Dec 2020 02:16:51 GMT
       content-type: application/json
       cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
       content-length: '961'
       vary: Accept-Encoding
-      x-varnish: '8985343'
+      x-varnish: '6376938'
       age: '0'
       via: 1.1 varnish (Varnish/6.0)
       x-cache: miss uncacheable
       accept-ranges: bytes
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       file: no
-      string: '{"created":"2019-11-20T11:07:46.123046","createdBy":102,"modified":"2020-12-03T17:31:40.638259","modifiedBy":102,"key":3,"importAttempt":23,"type":"taxonomic","origin":"managed","title":"Catalogue
-        of Life - Working Draft","alias":"col-draft","description":"The Catalogue
-        of Life (CoL) is an assembly of expert-based global species checklists with
-        an aim to build a comprehensive catalogue of all known species of organisms
-        on Earth. Continuous progress is made towards completion, but for now, it
-        probably includes just over 80% of the world''s known species. The Catalogue
-        of Life estimates 2.2M extant species on the planet recognised by taxonomists
-        at present time. This means that for many groups it continues to be deficient,
-        and users may notice that many species are still missing from the Catalogue.
-        \n\nOnly ITIS checklists have been updated in this edition of the Catalogue
-        of Life.","organisations":[{"name":"Species 2000","label":"Species 2000"}],"contact":{"givenName":"Yuri","familyName":"Roskov","email":"yroskov@illinois.edu","orcid":"0000-0003-2137-2690","name":"Roskov
-        Y."},"editors":[{"givenName":"Y.","familyName":"Roskov","name":"Roskov Y."},{"givenName":"G.","familyName":"Ower","name":"Ower
-        G."},{"givenName":"T.","familyName":"Orrell","name":"Orrell T."},{"givenName":"D.","familyName":"Nicolson","name":"Nicolson
-        D."},{"givenName":"N.","familyName":"Bailly","name":"Bailly N."},{"givenName":"P.M.","familyName":"Kirk","name":"Kirk
-        P.M."},{"givenName":"T.","familyName":"Bourgoin","name":"Bourgoin T."},{"givenName":"R.E.","familyName":"DeWalt","name":"DeWalt
-        R.E."},{"givenName":"W.","familyName":"Decock","name":"Decock W."},{"givenName":"E.J.","familyName":"van
-        Nieukerken","name":"van Nieukerken E.J."},{"givenName":"L.","familyName":"Penev","name":"Penev
-        L."}],"license":"other","citation":"Species 2000 & ITIS. The Catalogue of
-        Life working draft.","geographicScope":"Global","website":"https://www.catalogueoflife.org","group":"Biota","confidence":4,"completeness":80,"imported":"2020-12-01T17:56:50.036638","size":3981745,"private":false}'
-  recorded_at: 2020-12-09 01:42:36 GMT
+      string: eyJjcmVhdGVkIjoiMjAxOS0xMS0yMFQxMTowNzo0Ni4xMjMwNDYiLCJjcmVhdGVkQnkiOjEwMiwibW9kaWZpZWQiOiIyMDIwLTEyLTAzVDE3OjMxOjQwLjYzODI1OSIsIm1vZGlmaWVkQnkiOjEwMiwia2V5IjozLCJpbXBvcnRBdHRlbXB0IjoyMywidHlwZSI6InRheG9ub21pYyIsIm9yaWdpbiI6Im1hbmFnZWQiLCJ0aXRsZSI6IkNhdGFsb2d1ZSBvZiBMaWZlIC0gV29ya2luZyBEcmFmdCIsImFsaWFzIjoiY29sLWRyYWZ0IiwiZGVzY3JpcHRpb24iOiJUaGUgQ2F0YWxvZ3VlIG9mIExpZmUgKENvTCkgaXMgYW4gYXNzZW1ibHkgb2YgZXhwZXJ0LWJhc2VkIGdsb2JhbCBzcGVjaWVzIGNoZWNrbGlzdHMgd2l0aCBhbiBhaW0gdG8gYnVpbGQgYSBjb21wcmVoZW5zaXZlIGNhdGFsb2d1ZSBvZiBhbGwga25vd24gc3BlY2llcyBvZiBvcmdhbmlzbXMgb24gRWFydGguIENvbnRpbnVvdXMgcHJvZ3Jlc3MgaXMgbWFkZSB0b3dhcmRzIGNvbXBsZXRpb24sIGJ1dCBmb3Igbm93LCBpdCBwcm9iYWJseSBpbmNsdWRlcyBqdXN0IG92ZXIgODAlIG9mIHRoZSB3b3JsZCdzIGtub3duIHNwZWNpZXMuIFRoZSBDYXRhbG9ndWUgb2YgTGlmZSBlc3RpbWF0ZXMgMi4yTSBleHRhbnQgc3BlY2llcyBvbiB0aGUgcGxhbmV0IHJlY29nbmlzZWQgYnkgdGF4b25vbWlzdHMgYXQgcHJlc2VudCB0aW1lLiBUaGlzIG1lYW5zIHRoYXQgZm9yIG1hbnkgZ3JvdXBzIGl0IGNvbnRpbnVlcyB0byBiZSBkZWZpY2llbnQsIGFuZCB1c2VycyBtYXkgbm90aWNlIHRoYXQgbWFueSBzcGVjaWVzIGFyZSBzdGlsbCBtaXNzaW5nIGZyb20gdGhlIENhdGFsb2d1ZS4gXG5cbk9ubHkgSVRJUyBjaGVja2xpc3RzIGhhdmUgYmVlbiB1cGRhdGVkIGluIHRoaXMgZWRpdGlvbiBvZiB0aGUgQ2F0YWxvZ3VlIG9mIExpZmUuIiwib3JnYW5pc2F0aW9ucyI6W3sibmFtZSI6IlNwZWNpZXMgMjAwMCIsImxhYmVsIjoiU3BlY2llcyAyMDAwIn1dLCJjb250YWN0Ijp7ImdpdmVuTmFtZSI6Ill1cmkiLCJmYW1pbHlOYW1lIjoiUm9za292IiwiZW1haWwiOiJ5cm9za292QGlsbGlub2lzLmVkdSIsIm9yY2lkIjoiMDAwMC0wMDAzLTIxMzctMjY5MCIsIm5hbWUiOiJSb3Nrb3YgWS4ifSwiZWRpdG9ycyI6W3siZ2l2ZW5OYW1lIjoiWS4iLCJmYW1pbHlOYW1lIjoiUm9za292IiwibmFtZSI6IlJvc2tvdiBZLiJ9LHsiZ2l2ZW5OYW1lIjoiRy4iLCJmYW1pbHlOYW1lIjoiT3dlciIsIm5hbWUiOiJPd2VyIEcuIn0seyJnaXZlbk5hbWUiOiJULiIsImZhbWlseU5hbWUiOiJPcnJlbGwiLCJuYW1lIjoiT3JyZWxsIFQuIn0seyJnaXZlbk5hbWUiOiJELiIsImZhbWlseU5hbWUiOiJOaWNvbHNvbiIsIm5hbWUiOiJOaWNvbHNvbiBELiJ9LHsiZ2l2ZW5OYW1lIjoiTi4iLCJmYW1pbHlOYW1lIjoiQmFpbGx5IiwibmFtZSI6IkJhaWxseSBOLiJ9LHsiZ2l2ZW5OYW1lIjoiUC5NLiIsImZhbWlseU5hbWUiOiJLaXJrIiwibmFtZSI6IktpcmsgUC5NLiJ9LHsiZ2l2ZW5OYW1lIjoiVC4iLCJmYW1pbHlOYW1lIjoiQm91cmdvaW4iLCJuYW1lIjoiQm91cmdvaW4gVC4ifSx7ImdpdmVuTmFtZSI6IlIuRS4iLCJmYW1pbHlOYW1lIjoiRGVXYWx0IiwibmFtZSI6IkRlV2FsdCBSLkUuIn0seyJnaXZlbk5hbWUiOiJXLiIsImZhbWlseU5hbWUiOiJEZWNvY2siLCJuYW1lIjoiRGVjb2NrIFcuIn0seyJnaXZlbk5hbWUiOiJFLkouIiwiZmFtaWx5TmFtZSI6InZhbiBOaWV1a2Vya2VuIiwibmFtZSI6InZhbiBOaWV1a2Vya2VuIEUuSi4ifSx7ImdpdmVuTmFtZSI6IkwuIiwiZmFtaWx5TmFtZSI6IlBlbmV2IiwibmFtZSI6IlBlbmV2IEwuIn1dLCJsaWNlbnNlIjoib3RoZXIiLCJjaXRhdGlvbiI6IlNwZWNpZXMgMjAwMCAmIElUSVMuIFRoZSBDYXRhbG9ndWUgb2YgTGlmZSB3b3JraW5nIGRyYWZ0LiIsImdlb2dyYXBoaWNTY29wZSI6Ikdsb2JhbCIsIndlYnNpdGUiOiJodHRwczovL3d3dy5jYXRhbG9ndWVvZmxpZmUub3JnIiwiZ3JvdXAiOiJCaW90YSIsImNvbmZpZGVuY2UiOjQsImNvbXBsZXRlbmVzcyI6ODAsImltcG9ydGVkIjoiMjAyMC0xMi0wMVQxNzo1Njo1MC4wMzY2MzgiLCJzaXplIjozOTgxNzQ1LCJwcml2YXRlIjpmYWxzZX0=
+  recorded_at: 2020-12-09 02:16:52 GMT
   recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
@@ -116,33 +87,22 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: 'HTTP/2 200 '
-      date: Wed, 09 Dec 2020 01:42:36 GMT
+      date: Wed, 09 Dec 2020 02:16:52 GMT
       content-type: application/json
       cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
       content-length: '717'
       vary: Accept-Encoding
-      x-varnish: '8985344'
+      x-varnish: '6376939'
       age: '0'
       via: 1.1 varnish (Varnish/6.0)
       x-cache: miss uncacheable
       accept-ranges: bytes
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       file: no
-      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":101,"modified":"2020-10-09T12:01:27.209485","modifiedBy":101,"key":1000,"importAttempt":8,"type":"taxonomic","origin":"external","title":"Catalogue
-        of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
-        of life to embrace the more than 1.6 million species \nalready provided by
-        more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
-        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":[{"name":"Species2000","label":"Species2000"},{"name":"ITIS","label":"ITIS"}],"contact":{"familyName":"Markus
-        Döring <markus@mailinator.com>","name":"Markus Döring <markus@mailinator.com>"},"authors":[{"familyName":"Michael
-        A. Ruggiero","name":"Michael A. Ruggiero"},{"familyName":"Dennis P. Gordon","name":"Dennis
-        P. Gordon"},{"familyName":"Thomas M. Orrell","name":"Thomas M. Orrell"},{"givenName":"Nicolas","familyName":"Bailly","name":"Bailly
-        N."},{"givenName":"Thierry","familyName":"Bourgoin","name":"Bourgoin T."},{"familyName":"Richard
-        C. Brusca","name":"Richard C. Brusca"},{"givenName":"Thomas","familyName":"Cavalier-Smith","name":"Cavalier-Smith
-        T."},{"familyName":"Michael D. Guiry","name":"Michael D. Guiry"},{"familyName":"Paul
-        M. Kirk","name":"Paul M. Kirk"}],"license":"cc by","version":"1.4","released":"2019-05-06","completeness":0,"imported":"2020-07-02T23:50:55.486671","size":2844,"private":false}'
-  recorded_at: 2020-12-09 01:42:36 GMT
+      string: eyJjcmVhdGVkIjoiMjAxOS0xMS0yMFQxMTowNzo0Ni4yNTU3NzciLCJjcmVhdGVkQnkiOjEwMSwibW9kaWZpZWQiOiIyMDIwLTEwLTA5VDEyOjAxOjI3LjIwOTQ4NSIsIm1vZGlmaWVkQnkiOjEwMSwia2V5IjoxMDAwLCJpbXBvcnRBdHRlbXB0Ijo4LCJ0eXBlIjoidGF4b25vbWljIiwib3JpZ2luIjoiZXh0ZXJuYWwiLCJ0aXRsZSI6IkNhdGFsb2d1ZSBvZiBMaWZlIEhpZXJhcmNoeSIsImFsaWFzIjoiQ29sSCIsImRlc2NyaXB0aW9uIjoiV2UgcHJlc2VudCBhIGNvbnNlbnN1cyBjbGFzc2lmaWNhdGlvbiBvZiBsaWZlIHRvIGVtYnJhY2UgdGhlIG1vcmUgdGhhbiAxLjYgbWlsbGlvbiBzcGVjaWVzIFxuYWxyZWFkeSBwcm92aWRlZCBieSBtb3JlIHRoYW4gMywwMDAgdGF4b25vbWlzdHPigJkgZXhwZXJ0IG9waW5pb25zIFxuaW4gYSB1bmlmaWVkIGFuZCBjb2hlcmVudCwgaGllcmFyY2hpY2FsbHkgcmFua2VkIHN5c3RlbSBrbm93biBhcyB0aGUgQ2F0YWxvZ3VlIG9mIExpZmUgKENvTCkuIiwib3JnYW5pc2F0aW9ucyI6W3sibmFtZSI6IlNwZWNpZXMyMDAwIiwibGFiZWwiOiJTcGVjaWVzMjAwMCJ9LHsibmFtZSI6IklUSVMiLCJsYWJlbCI6IklUSVMifV0sImNvbnRhY3QiOnsiZmFtaWx5TmFtZSI6Ik1hcmt1cyBEw7ZyaW5nIDxtYXJrdXNAbWFpbGluYXRvci5jb20+IiwibmFtZSI6Ik1hcmt1cyBEw7ZyaW5nIDxtYXJrdXNAbWFpbGluYXRvci5jb20+In0sImF1dGhvcnMiOlt7ImZhbWlseU5hbWUiOiJNaWNoYWVsIEEuIFJ1Z2dpZXJvIiwibmFtZSI6Ik1pY2hhZWwgQS4gUnVnZ2llcm8ifSx7ImZhbWlseU5hbWUiOiJEZW5uaXMgUC4gR29yZG9uIiwibmFtZSI6IkRlbm5pcyBQLiBHb3Jkb24ifSx7ImZhbWlseU5hbWUiOiJUaG9tYXMgTS4gT3JyZWxsIiwibmFtZSI6IlRob21hcyBNLiBPcnJlbGwifSx7ImdpdmVuTmFtZSI6Ik5pY29sYXMiLCJmYW1pbHlOYW1lIjoiQmFpbGx5IiwibmFtZSI6IkJhaWxseSBOLiJ9LHsiZ2l2ZW5OYW1lIjoiVGhpZXJyeSIsImZhbWlseU5hbWUiOiJCb3VyZ29pbiIsIm5hbWUiOiJCb3VyZ29pbiBULiJ9LHsiZmFtaWx5TmFtZSI6IlJpY2hhcmQgQy4gQnJ1c2NhIiwibmFtZSI6IlJpY2hhcmQgQy4gQnJ1c2NhIn0seyJnaXZlbk5hbWUiOiJUaG9tYXMiLCJmYW1pbHlOYW1lIjoiQ2F2YWxpZXItU21pdGgiLCJuYW1lIjoiQ2F2YWxpZXItU21pdGggVC4ifSx7ImZhbWlseU5hbWUiOiJNaWNoYWVsIEQuIEd1aXJ5IiwibmFtZSI6Ik1pY2hhZWwgRC4gR3VpcnkifSx7ImZhbWlseU5hbWUiOiJQYXVsIE0uIEtpcmsiLCJuYW1lIjoiUGF1bCBNLiBLaXJrIn1dLCJsaWNlbnNlIjoiY2MgYnkiLCJ2ZXJzaW9uIjoiMS40IiwicmVsZWFzZWQiOiIyMDE5LTA1LTA2IiwiY29tcGxldGVuZXNzIjowLCJpbXBvcnRlZCI6IjIwMjAtMDctMDJUMjM6NTA6NTUuNDg2NjcxIiwic2l6ZSI6Mjg0NCwicHJpdmF0ZSI6ZmFsc2V9
+  recorded_at: 2020-12-09 02:16:52 GMT
   recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
@@ -162,73 +122,20 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: 'HTTP/2 200 '
-      date: Wed, 09 Dec 2020 01:42:36 GMT
+      date: Wed, 09 Dec 2020 02:16:52 GMT
       content-type: application/json
       cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
       content-length: '2135'
       vary: Accept-Encoding
-      x-varnish: '8985345'
+      x-varnish: '6376940'
       age: '0'
       via: 1.1 varnish (Varnish/6.0)
       x-cache: miss uncacheable
       accept-ranges: bytes
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       file: no
-      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":102,"modified":"2020-10-08T11:57:02.702684","modifiedBy":102,"key":1014,"importAttempt":15,"type":"taxonomic","origin":"external","title":"ICTV
-        Master Species List","alias":"ICTV MSL","description":"The 7th lCTV Report
-        formalized for the first time the concept of the virus species as the lowest
-        taxon (group) in a branching hierarchy of viral taxa. As defined therein,
-        “a virus species is a polythetic class of viruses that constitute a replicating
-        lineage and occupy a particular ecological niche”. A “polythetic class” is
-        one whose members have several properties in common, although they do not
-        necessarily all share a single common defining property. In other words, the
-        members of a virus species are defined collectively by a consensus group of
-        properties. Virus species thus differ from the higher viral taxa, which are
-        “universal” classes and as such are defined by properties that are necessary
-        for membership.\n\nViruses are real physical entities produced by biological
-        evolution and genetics, whereas virus species and higher taxa are abstract
-        concepts produced by rational thought and logic. The virus/species relationship
-        thus represents the front line of the interface between biology and logic.\nViruses
-        (including virus isolates, strains, variants, types, sub-types, serotypes,
-        etc.) should wherever possible be assigned as members of the appropriate virus
-        species, although many viruses remain unassigned because they are inadequately
-        characterized.\nAll virus species must be represented by at least one virus
-        isolate.\nAlmost all virus species are members of recognized genera. A few
-        species remain unassigned in their families although they have been clearly
-        identified as new species.\nSome genera are members of recognized sub-families.\nAll
-        sub-families and most genera are members of recognized families. Some genera
-        are not yet assigned to a family; in the future they may either join an existing
-        family or constitute a new family with other unassigned genera.\nSome families
-        are members of the following recognized orders: Caudovirales, Nidovirales
-        and Mononegavirales.\nThe hierarchy of recognized viral taxa is therefore:\n\n(Order),
-        Family, (Sub-family), Genus, Species\n\nOnly the aforementioned taxa are recognized
-        by the ICTV. Other groupings (from clade to super-family), may communicate
-        useful descriptive information in some circumstances but they have no formally
-        recognized taxonomic meaning. Similarly, the term “quasi-species”, although
-        it captures an important concept, has no recognized taxonomic meaning.\nThe
-        creation or elimination, (re)naming, and (re)assignment of a virus species,
-        genus, (sub)family, or order are all taxonomic acts that require public scrutiny
-        and debate, leading to formal approval by the full membership of the ICTV.
-        In contrast, the naming of a virus isolate and its assignment to a pre-existing
-        species are not considered taxonomic acts and therefore do not require formal
-        ICTV approval. Instead they will typically be accomplished by publication
-        of a paper describing the virus isolate in the peer-reviewed virology literature.","organisations":[{"name":"International
-        Committee on Taxonomy of Viruses (ICTV)","label":"International Committee
-        on Taxonomy of Viruses (ICTV)"}],"contact":{"familyName":"info@ictvonline.org","name":"info@ictvonline.org"},"authors":[{"familyName":"Davison,
-        Andrew J.","name":"Davison, Andrew J."},{"givenName":"Stuart","familyName":"Siddell","name":"Siddell
-        S."},{"givenName":"Arcady","familyName":"Mushegian","name":"Mushegian A."},{"familyName":"Walker,
-        Peter J.","name":"Walker, Peter J."},{"familyName":"Lefkowitz, Elliot J.","name":"Lefkowitz,
-        Elliot J."},{"familyName":"Adriaenssens, Evelien","name":"Adriaenssens, Evelien"},{"givenName":"Balázs","familyName":"Harrach","name":"Harrach
-        B."},{"familyName":"Kuhn, Jens H.","name":"Kuhn, Jens H."},{"familyName":"Knowles,
-        Nick J.","name":"Knowles, Nick J."},{"givenName":"Peter","familyName":"Simmonds","name":"Simmonds
-        P."},{"familyName":"Zerbini, F. Murilo","name":"Zerbini, F. Murilo"},{"givenName":"Bas","familyName":"Dutilh","name":"Dutilh
-        B."},{"givenName":"Robert","familyName":"Harrison","name":"Harrison R."},{"givenName":"Sandra","familyName":"Junglen","name":"Junglen
-        S."},{"givenName":"Mart","familyName":"Krupovic","name":"Krupovic M."},{"familyName":"Nibert,
-        Max L.","name":"Nibert, Max L."},{"givenName":"Luisa","familyName":"Rubino","name":"Rubino
-        L."},{"givenName":"Sead","familyName":"Sabanadzovic","name":"Sabanadzovic
-        S."},{"givenName":"Arvind","familyName":"Varsani","name":"Varsani A."}],"license":"cc
-        by","version":"MSL35, 2019, v1","released":"2020-04-23","geographicScope":"Global","website":"https://talk.ictvonline.org/taxonomy/w/ictv-taxonomy","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/ICTV_MSL.png","group":"Viruses","confidence":5,"completeness":100,"imported":"2020-09-01T21:26:21.73713","size":8476,"private":false}'
-  recorded_at: 2020-12-09 01:42:36 GMT
+      string: eyJjcmVhdGVkIjoiMjAxOS0xMS0yMFQxMTowNzo0Ni4yNTU3NzciLCJjcmVhdGVkQnkiOjEwMiwibW9kaWZpZWQiOiIyMDIwLTEwLTA4VDExOjU3OjAyLjcwMjY4NCIsIm1vZGlmaWVkQnkiOjEwMiwia2V5IjoxMDE0LCJpbXBvcnRBdHRlbXB0IjoxNSwidHlwZSI6InRheG9ub21pYyIsIm9yaWdpbiI6ImV4dGVybmFsIiwidGl0bGUiOiJJQ1RWIE1hc3RlciBTcGVjaWVzIExpc3QiLCJhbGlhcyI6IklDVFYgTVNMIiwiZGVzY3JpcHRpb24iOiJUaGUgN3RoIGxDVFYgUmVwb3J0IGZvcm1hbGl6ZWQgZm9yIHRoZSBmaXJzdCB0aW1lIHRoZSBjb25jZXB0IG9mIHRoZSB2aXJ1cyBzcGVjaWVzIGFzIHRoZSBsb3dlc3QgdGF4b24gKGdyb3VwKSBpbiBhIGJyYW5jaGluZyBoaWVyYXJjaHkgb2YgdmlyYWwgdGF4YS4gQXMgZGVmaW5lZCB0aGVyZWluLCDigJxhIHZpcnVzIHNwZWNpZXMgaXMgYSBwb2x5dGhldGljIGNsYXNzIG9mIHZpcnVzZXMgdGhhdCBjb25zdGl0dXRlIGEgcmVwbGljYXRpbmcgbGluZWFnZSBhbmQgb2NjdXB5IGEgcGFydGljdWxhciBlY29sb2dpY2FsIG5pY2hl4oCdLiBBIOKAnHBvbHl0aGV0aWMgY2xhc3PigJ0gaXMgb25lIHdob3NlIG1lbWJlcnMgaGF2ZSBzZXZlcmFsIHByb3BlcnRpZXMgaW4gY29tbW9uLCBhbHRob3VnaCB0aGV5IGRvIG5vdCBuZWNlc3NhcmlseSBhbGwgc2hhcmUgYSBzaW5nbGUgY29tbW9uIGRlZmluaW5nIHByb3BlcnR5LiBJbiBvdGhlciB3b3JkcywgdGhlIG1lbWJlcnMgb2YgYSB2aXJ1cyBzcGVjaWVzIGFyZSBkZWZpbmVkIGNvbGxlY3RpdmVseSBieSBhIGNvbnNlbnN1cyBncm91cCBvZiBwcm9wZXJ0aWVzLiBWaXJ1cyBzcGVjaWVzIHRodXMgZGlmZmVyIGZyb20gdGhlIGhpZ2hlciB2aXJhbCB0YXhhLCB3aGljaCBhcmUg4oCcdW5pdmVyc2Fs4oCdIGNsYXNzZXMgYW5kIGFzIHN1Y2ggYXJlIGRlZmluZWQgYnkgcHJvcGVydGllcyB0aGF0IGFyZSBuZWNlc3NhcnkgZm9yIG1lbWJlcnNoaXAuXG5cblZpcnVzZXMgYXJlIHJlYWwgcGh5c2ljYWwgZW50aXRpZXMgcHJvZHVjZWQgYnkgYmlvbG9naWNhbCBldm9sdXRpb24gYW5kIGdlbmV0aWNzLCB3aGVyZWFzIHZpcnVzIHNwZWNpZXMgYW5kIGhpZ2hlciB0YXhhIGFyZSBhYnN0cmFjdCBjb25jZXB0cyBwcm9kdWNlZCBieSByYXRpb25hbCB0aG91Z2h0IGFuZCBsb2dpYy4gVGhlIHZpcnVzL3NwZWNpZXMgcmVsYXRpb25zaGlwIHRodXMgcmVwcmVzZW50cyB0aGUgZnJvbnQgbGluZSBvZiB0aGUgaW50ZXJmYWNlIGJldHdlZW4gYmlvbG9neSBhbmQgbG9naWMuXG5WaXJ1c2VzIChpbmNsdWRpbmcgdmlydXMgaXNvbGF0ZXMsIHN0cmFpbnMsIHZhcmlhbnRzLCB0eXBlcywgc3ViLXR5cGVzLCBzZXJvdHlwZXMsIGV0Yy4pIHNob3VsZCB3aGVyZXZlciBwb3NzaWJsZSBiZSBhc3NpZ25lZCBhcyBtZW1iZXJzIG9mIHRoZSBhcHByb3ByaWF0ZSB2aXJ1cyBzcGVjaWVzLCBhbHRob3VnaCBtYW55IHZpcnVzZXMgcmVtYWluIHVuYXNzaWduZWQgYmVjYXVzZSB0aGV5IGFyZSBpbmFkZXF1YXRlbHkgY2hhcmFjdGVyaXplZC5cbkFsbCB2aXJ1cyBzcGVjaWVzIG11c3QgYmUgcmVwcmVzZW50ZWQgYnkgYXQgbGVhc3Qgb25lIHZpcnVzIGlzb2xhdGUuXG5BbG1vc3QgYWxsIHZpcnVzIHNwZWNpZXMgYXJlIG1lbWJlcnMgb2YgcmVjb2duaXplZCBnZW5lcmEuIEEgZmV3IHNwZWNpZXMgcmVtYWluIHVuYXNzaWduZWQgaW4gdGhlaXIgZmFtaWxpZXMgYWx0aG91Z2ggdGhleSBoYXZlIGJlZW4gY2xlYXJseSBpZGVudGlmaWVkIGFzIG5ldyBzcGVjaWVzLlxuU29tZSBnZW5lcmEgYXJlIG1lbWJlcnMgb2YgcmVjb2duaXplZCBzdWItZmFtaWxpZXMuXG5BbGwgc3ViLWZhbWlsaWVzIGFuZCBtb3N0IGdlbmVyYSBhcmUgbWVtYmVycyBvZiByZWNvZ25pemVkIGZhbWlsaWVzLiBTb21lIGdlbmVyYSBhcmUgbm90IHlldCBhc3NpZ25lZCB0byBhIGZhbWlseTsgaW4gdGhlIGZ1dHVyZSB0aGV5IG1heSBlaXRoZXIgam9pbiBhbiBleGlzdGluZyBmYW1pbHkgb3IgY29uc3RpdHV0ZSBhIG5ldyBmYW1pbHkgd2l0aCBvdGhlciB1bmFzc2lnbmVkIGdlbmVyYS5cblNvbWUgZmFtaWxpZXMgYXJlIG1lbWJlcnMgb2YgdGhlIGZvbGxvd2luZyByZWNvZ25pemVkIG9yZGVyczogQ2F1ZG92aXJhbGVzLCBOaWRvdmlyYWxlcyBhbmQgTW9ub25lZ2F2aXJhbGVzLlxuVGhlIGhpZXJhcmNoeSBvZiByZWNvZ25pemVkIHZpcmFsIHRheGEgaXMgdGhlcmVmb3JlOlxuXG4oT3JkZXIpLCBGYW1pbHksIChTdWItZmFtaWx5KSwgR2VudXMsIFNwZWNpZXNcblxuT25seSB0aGUgYWZvcmVtZW50aW9uZWQgdGF4YSBhcmUgcmVjb2duaXplZCBieSB0aGUgSUNUVi4gT3RoZXIgZ3JvdXBpbmdzIChmcm9tIGNsYWRlIHRvIHN1cGVyLWZhbWlseSksIG1heSBjb21tdW5pY2F0ZSB1c2VmdWwgZGVzY3JpcHRpdmUgaW5mb3JtYXRpb24gaW4gc29tZSBjaXJjdW1zdGFuY2VzIGJ1dCB0aGV5IGhhdmUgbm8gZm9ybWFsbHkgcmVjb2duaXplZCB0YXhvbm9taWMgbWVhbmluZy4gU2ltaWxhcmx5LCB0aGUgdGVybSDigJxxdWFzaS1zcGVjaWVz4oCdLCBhbHRob3VnaCBpdCBjYXB0dXJlcyBhbiBpbXBvcnRhbnQgY29uY2VwdCwgaGFzIG5vIHJlY29nbml6ZWQgdGF4b25vbWljIG1lYW5pbmcuXG5UaGUgY3JlYXRpb24gb3IgZWxpbWluYXRpb24sIChyZSluYW1pbmcsIGFuZCAocmUpYXNzaWdubWVudCBvZiBhIHZpcnVzIHNwZWNpZXMsIGdlbnVzLCAoc3ViKWZhbWlseSwgb3Igb3JkZXIgYXJlIGFsbCB0YXhvbm9taWMgYWN0cyB0aGF0IHJlcXVpcmUgcHVibGljIHNjcnV0aW55IGFuZCBkZWJhdGUsIGxlYWRpbmcgdG8gZm9ybWFsIGFwcHJvdmFsIGJ5IHRoZSBmdWxsIG1lbWJlcnNoaXAgb2YgdGhlIElDVFYuIEluIGNvbnRyYXN0LCB0aGUgbmFtaW5nIG9mIGEgdmlydXMgaXNvbGF0ZSBhbmQgaXRzIGFzc2lnbm1lbnQgdG8gYSBwcmUtZXhpc3Rpbmcgc3BlY2llcyBhcmUgbm90IGNvbnNpZGVyZWQgdGF4b25vbWljIGFjdHMgYW5kIHRoZXJlZm9yZSBkbyBub3QgcmVxdWlyZSBmb3JtYWwgSUNUViBhcHByb3ZhbC4gSW5zdGVhZCB0aGV5IHdpbGwgdHlwaWNhbGx5IGJlIGFjY29tcGxpc2hlZCBieSBwdWJsaWNhdGlvbiBvZiBhIHBhcGVyIGRlc2NyaWJpbmcgdGhlIHZpcnVzIGlzb2xhdGUgaW4gdGhlIHBlZXItcmV2aWV3ZWQgdmlyb2xvZ3kgbGl0ZXJhdHVyZS4iLCJvcmdhbmlzYXRpb25zIjpbeyJuYW1lIjoiSW50ZXJuYXRpb25hbCBDb21taXR0ZWUgb24gVGF4b25vbXkgb2YgVmlydXNlcyAoSUNUVikiLCJsYWJlbCI6IkludGVybmF0aW9uYWwgQ29tbWl0dGVlIG9uIFRheG9ub215IG9mIFZpcnVzZXMgKElDVFYpIn1dLCJjb250YWN0Ijp7ImZhbWlseU5hbWUiOiJpbmZvQGljdHZvbmxpbmUub3JnIiwibmFtZSI6ImluZm9AaWN0dm9ubGluZS5vcmcifSwiYXV0aG9ycyI6W3siZmFtaWx5TmFtZSI6IkRhdmlzb24sIEFuZHJldyBKLiIsIm5hbWUiOiJEYXZpc29uLCBBbmRyZXcgSi4ifSx7ImdpdmVuTmFtZSI6IlN0dWFydCIsImZhbWlseU5hbWUiOiJTaWRkZWxsIiwibmFtZSI6IlNpZGRlbGwgUy4ifSx7ImdpdmVuTmFtZSI6IkFyY2FkeSIsImZhbWlseU5hbWUiOiJNdXNoZWdpYW4iLCJuYW1lIjoiTXVzaGVnaWFuIEEuIn0seyJmYW1pbHlOYW1lIjoiV2Fsa2VyLCBQZXRlciBKLiIsIm5hbWUiOiJXYWxrZXIsIFBldGVyIEouIn0seyJmYW1pbHlOYW1lIjoiTGVma293aXR6LCBFbGxpb3QgSi4iLCJuYW1lIjoiTGVma293aXR6LCBFbGxpb3QgSi4ifSx7ImZhbWlseU5hbWUiOiJBZHJpYWVuc3NlbnMswqBFdmVsaWVuIiwibmFtZSI6IkFkcmlhZW5zc2VucyzCoEV2ZWxpZW4ifSx7ImdpdmVuTmFtZSI6IkJhbMOhenMiLCJmYW1pbHlOYW1lIjoiSGFycmFjaCIsIm5hbWUiOiJIYXJyYWNoIEIuIn0seyJmYW1pbHlOYW1lIjoiS3VobiwgSmVucyBILiIsIm5hbWUiOiJLdWhuLCBKZW5zIEguIn0seyJmYW1pbHlOYW1lIjoiS25vd2xlcywgTmljayBKLiIsIm5hbWUiOiJLbm93bGVzLCBOaWNrIEouIn0seyJnaXZlbk5hbWUiOiJQZXRlciIsImZhbWlseU5hbWUiOiJTaW1tb25kcyIsIm5hbWUiOiJTaW1tb25kcyBQLiJ9LHsiZmFtaWx5TmFtZSI6IlplcmJpbmksIEYuIE11cmlsbyIsIm5hbWUiOiJaZXJiaW5pLCBGLiBNdXJpbG8ifSx7ImdpdmVuTmFtZSI6IkJhcyIsImZhbWlseU5hbWUiOiJEdXRpbGgiLCJuYW1lIjoiRHV0aWxoIEIuIn0seyJnaXZlbk5hbWUiOiJSb2JlcnQiLCJmYW1pbHlOYW1lIjoiSGFycmlzb24iLCJuYW1lIjoiSGFycmlzb24gUi4ifSx7ImdpdmVuTmFtZSI6IlNhbmRyYSIsImZhbWlseU5hbWUiOiJKdW5nbGVuIiwibmFtZSI6Ikp1bmdsZW4gUy4ifSx7ImdpdmVuTmFtZSI6Ik1hcnQiLCJmYW1pbHlOYW1lIjoiS3J1cG92aWMiLCJuYW1lIjoiS3J1cG92aWMgTS4ifSx7ImZhbWlseU5hbWUiOiJOaWJlcnQsIE1heCBMLiIsIm5hbWUiOiJOaWJlcnQsIE1heCBMLiJ9LHsiZ2l2ZW5OYW1lIjoiTHVpc2EiLCJmYW1pbHlOYW1lIjoiUnViaW5vIiwibmFtZSI6IlJ1YmlubyBMLiJ9LHsiZ2l2ZW5OYW1lIjoiU2VhZCIsImZhbWlseU5hbWUiOiJTYWJhbmFkem92aWMiLCJuYW1lIjoiU2FiYW5hZHpvdmljIFMuIn0seyJnaXZlbk5hbWUiOiJBcnZpbmQiLCJmYW1pbHlOYW1lIjoiVmFyc2FuaSIsIm5hbWUiOiJWYXJzYW5pIEEuIn1dLCJsaWNlbnNlIjoiY2MgYnkiLCJ2ZXJzaW9uIjoiTVNMMzUsIDIwMTksIHYxIiwicmVsZWFzZWQiOiIyMDIwLTA0LTIzIiwiZ2VvZ3JhcGhpY1Njb3BlIjoiR2xvYmFsIiwid2Vic2l0ZSI6Imh0dHBzOi8vdGFsay5pY3R2b25saW5lLm9yZy90YXhvbm9teS93L2ljdHYtdGF4b25vbXkiLCJsb2dvIjoiaHR0cHM6Ly9naXRodWIuY29tL1NwMjAwMC9jb2xwbHVzLXJlcG8vcmF3L21hc3Rlci9sb2dvcy9JQ1RWX01TTC5wbmciLCJncm91cCI6IlZpcnVzZXMiLCJjb25maWRlbmNlIjo1LCJjb21wbGV0ZW5lc3MiOjEwMCwiaW1wb3J0ZWQiOiIyMDIwLTA5LTAxVDIxOjI2OjIxLjczNzEzIiwic2l6ZSI6ODQ3NiwicHJpdmF0ZSI6ZmFsc2V9
+  recorded_at: 2020-12-09 02:16:52 GMT
   recorded_with: vcr/0.5.4, webmockr/0.7.0

@@ -1,46 +1,46 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.catalogue.life/nameusage/suggest?q=Apis&datasetKey=3&vernaculars=false&limit=10
+    uri: https://api.catalogueoflife.org/dataset/3/nameusage/suggest?q=Apis&fuzzy=false&reverse=false&accepted=false&limit=10
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:10 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 02:04:09 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '530'
+      content-length: '618'
+      vary: Accept-Encoding
+      x-varnish: '1771822'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"suggestions":[{"match":"Candida apis var. apis","rank":"variety","nomCode":"botanical","score":13.3089075,"suggestion":"Candida
-        apis var. apis (nomen nudum)"},{"match":"Torulopsis apis var. apis","rank":"variety","nomCode":"botanical","score":12.620583,"suggestion":"Torulopsis
-        apis var. apis (nomen nudum)"},{"match":"Ascosphaera apis var. apis","rank":"variety","nomCode":"botanical","score":12.620583,"suggestion":"Ascosphaera
-        apis var. apis (nomen nudum)"},{"match":"Pericystis apis var. apis","rank":"variety","nomCode":"botanical","score":12.598628,"suggestion":"Pericystis
-        apis var. apis (nomen nudum)"},{"match":"Apis rufa","acceptedName":"Osmia
-        rufa","usageId":"cbad67c7-1b60-4adb-9735-4d77abdd645f","rank":"species","status":"synonym","nomCode":"zoological","score":12.523764,"suggestion":"Apis
-        rufa (synonym of Osmia rufa)"},{"match":"Apis cerana","usageId":"381fe54a-28c4-4329-84eb-79c1f90249c3","rank":"species","status":"accepted","nomCode":"zoological","score":11.740428,"suggestion":"Apis
-        cerana"},{"match":"Apis florea","usageId":"a8e36e63-3f84-4366-9b28-4b674276f4cd","rank":"species","status":"accepted","nomCode":"zoological","score":11.740428,"suggestion":"Apis
-        florea"},{"match":"Hister apis","usageId":"5c56b923-ae14-445a-a42e-20f21b0c2e16","rank":"species","status":"accepted","nomCode":"zoological","score":11.740428,"suggestion":"Hister
-        apis"},{"match":"Apis alpina","acceptedName":"Bombus alpinus","usageId":"eb255132-9506-4d85-bca3-a403245b1958","rank":"species","status":"synonym","nomCode":"zoological","score":11.720157,"suggestion":"Apis
-        alpina (synonym of Bombus alpinus)"},{"match":"Apisa cleta","usageId":"012da2f3-6a95-45e2-a794-be569bde840c","rank":"species","status":"accepted","nomCode":"zoological","score":11.720157,"suggestion":"Apisa
-        cleta"}]}'
-  recorded_at: 2020-04-17 23:49:10 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '{"suggestions":[{"match":"Apistidae","parentOrAcceptedName":"Scorpaeniformes","usageId":"382e8442-7c54-4e43-8721-2bd1b95d7e08","rank":"family","status":"accepted","score":0.0,"suggestion":"Apistidae
+        (family in Scorpaeniformes)"},{"match":"Apistobranchidae","parentOrAcceptedName":"Spionida","usageId":"9d89b038-9f6b-4180-bb60-0bb7051fae9b","rank":"family","status":"accepted","score":0.0,"suggestion":"Apistobranchidae
+        (family in Spionida)"},{"match":"Apis","parentOrAcceptedName":"Apini","usageId":"5eecbda1-2f16-41a7-94c3-a9f7813ad8a3","rank":"genus","status":"accepted","nomCode":"zoological","score":0.0,"suggestion":"Apis
+        (genus in Apini)"},{"match":"Apisa","parentOrAcceptedName":"Arctiidae","usageId":"da6bee8f-f197-4b62-aec5-a4c8b6f957d7","rank":"genus","status":"accepted","score":0.0,"suggestion":"Apisa
+        (genus in Arctiidae)"},{"match":"Apispiralia","parentOrAcceptedName":"Mangeliidae","usageId":"4a2734aa-0829-482d-aab0-cc19f542e0cf","rank":"genus","status":"accepted","score":0.0,"suggestion":"Apispiralia
+        (genus in Mangeliidae)"},{"match":"Apistaeschra","parentOrAcceptedName":"Notodontidae","usageId":"2deb9907-1a72-48e8-b89a-4ce609b4ade6","rank":"genus","status":"accepted","score":0.0,"suggestion":"Apistaeschra
+        (genus in Notodontidae)"},{"match":"Apistobranchus","parentOrAcceptedName":"Apistobranchidae","usageId":"9f5ef30a-a0ab-409c-bb69-1d9d2c7cd199","rank":"genus","status":"accepted","score":0.0,"suggestion":"Apistobranchus
+        (genus in Apistobranchidae)"},{"match":"Apistobuthus","parentOrAcceptedName":"Buthidae","usageId":"e9ffbc3d-cbc4-4fc7-8157-22d7e9ce9c73","rank":"genus","status":"accepted","nomCode":"zoological","score":0.0,"suggestion":"Apistobuthus
+        (genus in Buthidae)"},{"match":"Apistogramma","parentOrAcceptedName":"Cichlidae","usageId":"a3d969ca-f218-4d0c-8554-768cfdd7fe87","rank":"genus","status":"accepted","score":0.0,"suggestion":"Apistogramma
+        (genus in Cichlidae)"},{"match":"Apistogrammoides","parentOrAcceptedName":"Cichlidae","usageId":"d6ded63a-5729-40d0-9e3d-bb64a2630278","rank":"genus","status":"accepted","score":0.0,"suggestion":"Apistogrammoides
+        (genus in Cichlidae)"}]}'
+  recorded_at: 2020-12-09 02:04:10 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

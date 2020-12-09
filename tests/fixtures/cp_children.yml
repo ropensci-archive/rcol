@@ -1,35 +1,36 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.catalogue.life/dataset/1000/taxon/1/children
+    uri: https://api.catalogueoflife.org/dataset/1000/taxon/1/children
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:02 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:34 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '421'
+      content-length: '353'
+      vary: Accept-Encoding
+      x-varnish: '8985340'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"offset":0,"limit":10,"total":2,"result":[{"created":"2019-12-23T17:43:32.069142","createdBy":10,"modified":"2019-12-23T17:43:32.069142","modifiedBy":10,"datasetKey":1000,"id":"2","verbatimKey":856,"name":{"created":"2019-12-23T17:43:31.408887","createdBy":10,"modified":"2019-12-23T17:43:31.408887","modifiedBy":10,"datasetKey":1000,"id":"2","verbatimKey":1660,"homotypicNameId":"2","nameIndexId":"D6J","nameIndexMatchType":"exact","scientificName":"Archaea","rank":"kingdom","uninomial":"Archaea","origin":"source","type":"scientific","parsed":true,"formattedName":"<i>Archaea</i>"},"status":"accepted","origin":"source","parentId":"1","label":"Archaea","labelHtml":"<i>Archaea</i>","synonym":false,"taxon":true,"bareName":false},{"created":"2019-12-23T17:43:32.069142","createdBy":10,"modified":"2019-12-23T17:43:32.069142","modifiedBy":10,"datasetKey":1000,"id":"41","verbatimKey":319,"name":{"created":"2019-12-23T17:43:31.408887","createdBy":10,"modified":"2019-12-23T17:43:31.408887","modifiedBy":10,"datasetKey":1000,"id":"41","verbatimKey":4830,"homotypicNameId":"41","nameIndexId":"AS6","nameIndexMatchType":"exact","scientificName":"Bacteria","rank":"kingdom","uninomial":"Bacteria","origin":"source","type":"scientific","parsed":true,"formattedName":"<i>Bacteria</i>"},"status":"accepted","origin":"source","parentId":"1","label":"Bacteria","labelHtml":"<i>Bacteria</i>","synonym":false,"taxon":true,"bareName":false}],"last":true,"empty":false}'
-  recorded_at: 2020-04-17 23:49:02 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '{"offset":0,"limit":10,"total":2,"result":[{"created":"2020-07-02T23:50:52.600532","createdBy":10,"modified":"2020-07-02T23:50:52.600532","modifiedBy":10,"datasetKey":1000,"id":"2","verbatimKey":856,"name":{"created":"2020-07-02T23:50:52.226718","createdBy":10,"modified":"2020-07-13T01:40:01.160395","modifiedBy":10,"datasetKey":1000,"id":"2","verbatimKey":1660,"homotypicNameId":"2","scientificName":"Archaea","rank":"kingdom","uninomial":"Archaea","origin":"source","type":"scientific","parsed":true},"status":"accepted","origin":"source","parentId":"1","label":"Archaea","labelHtml":"Archaea"},{"created":"2020-07-02T23:50:52.600532","createdBy":10,"modified":"2020-07-02T23:50:52.600532","modifiedBy":10,"datasetKey":1000,"id":"41","verbatimKey":319,"name":{"created":"2020-07-02T23:50:52.226718","createdBy":10,"modified":"2020-07-13T01:40:01.160395","modifiedBy":10,"datasetKey":1000,"id":"41","verbatimKey":4830,"homotypicNameId":"41","scientificName":"Bacteria","rank":"kingdom","uninomial":"Bacteria","origin":"source","type":"scientific","parsed":true},"status":"accepted","origin":"source","parentId":"1","label":"Bacteria","labelHtml":"Bacteria"}],"last":true,"empty":false}'
+  recorded_at: 2020-12-09 01:42:35 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

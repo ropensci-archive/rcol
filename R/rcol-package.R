@@ -1,6 +1,6 @@
 #' @title rcol
 #' @description Catalogue of Life Plus (CoL+) Client
-#' @note CoL+ API docs are at https://api.catalogue.life/
+#' @note CoL+ API docs are at https://api.catalogueoflife.org/
 #' @importFrom crul HttpClient
 #' @importFrom tibble tibble
 #' @importFrom jsonlite fromJSON

@@ -48,3 +48,6 @@ handle_taxon <- function(x) {
   df <- move_cols(df, first_cols)
   return(tibble::as_tibble(df))
 }
+
+tou <- function(x) if (is.character(x)) toupper(x) else x
+tol <- function(x) if (is.character(x)) tolower(x) else x

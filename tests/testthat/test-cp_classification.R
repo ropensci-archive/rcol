@@ -1,7 +1,7 @@
 test_that("cp_classification", {
   vcr::use_cassette("cp_classification", {
     x <- cp_classification(dataset_key=3, 
-      taxon_id='709dfa66-43fe-4736-a774-59f821a2ee23')
+      taxon_id='7ddea2bf-8fa4-4f0a-968f-002bbc6529cf')
   })
 
   expect_is(x, "data.frame")

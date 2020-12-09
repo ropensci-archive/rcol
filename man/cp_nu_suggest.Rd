@@ -4,15 +4,31 @@
 \alias{cp_nu_suggest}
 \title{Name Usage: Suggest}
 \usage{
-cp_nu_suggest(q, dataset_key, vernaculars = FALSE, limit = 10, ...)
+cp_nu_suggest(
+  q,
+  dataset_key,
+  fuzzy = FALSE,
+  min_rank = NULL,
+  max_rank = NULL,
+  sort = NULL,
+  reverse = FALSE,
+  accepted = FALSE,
+  limit = 10,
+  ...
+)
 }
 \arguments{
 \item{q}{(character) main query string. required}
 
-\item{dataset_key}{(character/integer/numeric) dataset key. required}
+\item{fuzzy}{(logical) Whether or not to do fuzzy search (default: \code{FALSE})}
 
-\item{vernaculars}{(logical) Whether or not to include vernacular names
-in the suggestions (default: \code{FALSE})}
+\item{min_rank, max_rank}{(character) See rank options in \code{\link[=cp_name_match]{cp_name_match()}}}
+
+\item{sort}{(character) one of name, taxonomic, index_name_id, native, relevance}
+
+\item{reverse}{(logical) reverse order i assume (default: \code{FALSE})}
+
+\item{accepted}{(logical) limit to accepted names (default: \code{FALSE})}
 
 \item{limit}{(integer) requested number of maximum records to be returned.
 Default: 10; max: 1000}
@@ -27,6 +43,6 @@ Name Usage: Suggest
 }
 \examples{
 \dontrun{
-cp_nu_suggest(q="Apis", dataset_key = 3)
+cp_nu_suggest(q="Apis", 3)
 }
 }

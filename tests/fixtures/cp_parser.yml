@@ -1,15 +1,15 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.catalogue.life/parser/name
+    uri: https://api.catalogueoflife.org/parser/name
     body:
       encoding: ''
       string: Apis mellifera
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
-      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
       Content-Type: text/plain
   response:
     status:
@@ -17,21 +17,24 @@ http_interactions:
       message: Created
       explanation: Document created, URL follows
     headers:
-      status: HTTP/1.1 201 Created
-      date: Thu, 15 Oct 2020 22:59:21 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 201 '
+      date: Wed, 09 Dec 2020 01:43:01 GMT
       content-type: application/json
       cache-control: must-revalidate,no-cache,no-store
       content-length: '133'
+      x-varnish: '8985389'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: pass uncacheable
     body:
       encoding: UTF-8
       file: no
       string: '[{"scientificName":"Apis mellifera","rank":"species","genus":"Apis","specificEpithet":"mellifera","type":"scientific","parsed":true}]'
-  recorded_at: 2020-10-15 22:59:22 GMT
+  recorded_at: 2020-12-09 01:43:01 GMT
   recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: post
-    uri: https://api.catalogue.life/parser/name
+    uri: https://api.catalogueoflife.org/parser/name
     body:
       encoding: ''
       string: |-
@@ -40,8 +43,8 @@ http_interactions:
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
-      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(colpluz/0.1.0)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
       Content-Type: text/plain
   response:
     status:
@@ -49,16 +52,19 @@ http_interactions:
       message: Created
       explanation: Document created, URL follows
     headers:
-      status: HTTP/1.1 201 Created
-      date: Thu, 15 Oct 2020 22:59:22 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 201 '
+      date: Wed, 09 Dec 2020 01:43:01 GMT
       content-type: application/json
       cache-control: must-revalidate,no-cache,no-store
       content-length: '307'
+      x-varnish: '8985390'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: pass uncacheable
     body:
       encoding: UTF-8
       file: no
       string: '[{"scientificName":"Apis mellifera","rank":"species","genus":"Apis","specificEpithet":"mellifera","type":"scientific","parsed":true},{"scientificName":"Homo
         sapiens var. sapiens","rank":"variety","genus":"Homo","specificEpithet":"sapiens","infraspecificEpithet":"sapiens","type":"scientific","parsed":true}]'
-  recorded_at: 2020-10-15 22:59:22 GMT
+  recorded_at: 2020-12-09 01:43:01 GMT
   recorded_with: vcr/0.5.4, webmockr/0.7.0

@@ -1,37 +1,42 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.catalogue.life/vocab/rank
+    uri: https://api.catalogueoflife.org/vocab/rank
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.2.91)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.2.91)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Sat, 23 May 2020 15:41:41 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Tue, 08 Dec 2020 16:54:53 GMT
       content-type: application/json
-      vary: Accept-Encoding
+      cache-control: public, max-age=86400, s-maxage=86400
       content-encoding: gzip
-      content-length: '668'
+      content-length: '983'
+      vary: Accept-Encoding
+      x-varnish: 8985391 262172
+      age: '31688'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: hit cached
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '[{"marker":"dom.","name":"domain"},{"marker":"realm","name":"realm"},{"marker":"subrealm","name":"subrealm"},{"marker":"superreg.","name":"superkingdom"},{"marker":"reg.","name":"kingdom"},{"marker":"subreg.","name":"subkingdom"},{"marker":"infrareg.","name":"infrakingdom"},{"marker":"superphyl.","name":"superphylum"},{"marker":"phyl.","name":"phylum"},{"marker":"subphyl.","name":"subphylum"},{"marker":"infraphyl.","name":"infraphylum"},{"marker":"supercl.","name":"superclass"},{"marker":"cl.","name":"class"},{"marker":"subcl.","name":"subclass"},{"marker":"infracl.","name":"infraclass"},{"marker":"parvcl.","name":"parvclass"},{"marker":"superleg.","name":"superlegion"},{"marker":"leg.","name":"legion"},{"marker":"subleg.","name":"sublegion"},{"marker":"infraleg.","name":"infralegion"},{"marker":"supercohort","name":"supercohort"},{"marker":"cohort","name":"cohort"},{"marker":"subcohort","name":"subcohort"},{"marker":"infracohort","name":"infracohort"},{"marker":"gigaord.","name":"gigaorder"},{"marker":"magnord.","name":"magnorder"},{"marker":"grandord.","name":"grandorder"},{"marker":"mirord.","name":"mirorder"},{"marker":"superord.","name":"superorder"},{"marker":"ord.","name":"order"},{"marker":"nanord.","name":"nanorder"},{"marker":"hypoord.","name":"hypoorder"},{"marker":"minord.","name":"minorder"},{"marker":"subord.","name":"suborder"},{"marker":"infraord.","name":"infraorder"},{"marker":"parvord.","name":"parvorder"},{"marker":"megafam.","name":"megafamily"},{"marker":"grandfam.","name":"grandfamily"},{"marker":"superfam.","name":"superfamily"},{"marker":"epifam.","name":"epifamily"},{"marker":"fam.","name":"family"},{"marker":"subfam.","name":"subfamily"},{"marker":"infrafam.","name":"infrafamily"},{"marker":"supertrib.","name":"supertribe"},{"marker":"trib.","name":"tribe"},{"marker":"subtrib.","name":"subtribe"},{"marker":"infratrib.","name":"infratribe"},{"marker":"supragen.","name":"suprageneric
-        name"},{"marker":"gen.","name":"genus"},{"marker":"subgen.","name":"subgenus"},{"marker":"infrag.","name":"infragenus"},{"marker":"supersect.","name":"supersection"},{"marker":"sect.","name":"section"},{"marker":"subsect.","name":"subsection"},{"marker":"superser.","name":"superseries"},{"marker":"ser.","name":"series"},{"marker":"subser.","name":"subseries"},{"marker":"infragen.","name":"infrageneric
-        name"},{"marker":"agg.","name":"species aggregate"},{"marker":"sp.","name":"species"},{"marker":"infrasp.","name":"infraspecific
-        name"},{"marker":"gx","name":"grex"},{"marker":"subsp.","name":"subspecies"},{"name":"cultivar
-        group"},{"marker":"convar.","name":"convariety"},{"marker":"infrasubsp.","name":"infrasubspecific
-        name"},{"marker":"prol.","name":"proles"},{"marker":"natio","name":"natio"},{"marker":"ab.","name":"aberration"},{"marker":"morph","name":"morph"},{"marker":"var.","name":"variety"},{"marker":"subvar.","name":"subvariety"},{"marker":"f.","name":"form"},{"marker":"subf.","name":"subform"},{"marker":"pv.","name":"pathovar"},{"marker":"biovar","name":"biovar"},{"marker":"chemovar","name":"chemovar"},{"marker":"morphovar","name":"morphovar"},{"marker":"phagovar","name":"phagovar"},{"marker":"serovar","name":"serovar"},{"marker":"chemoform","name":"chemoform"},{"marker":"f.sp.","name":"forma
-        specialis"},{"marker":"cv.","name":"cultivar"},{"marker":"strain","name":"strain"},{"name":"other"},{"name":"unranked"}]'
-  recorded_at: 2020-05-23 15:41:41 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '[{"plural":"domains","marker":"dom.","name":"domain"},{"plural":"realms","marker":"realm","name":"realm"},{"plural":"subrealms","marker":"subrealm","name":"subrealm"},{"plural":"superkingdoms","marker":"superreg.","name":"superkingdom"},{"plural":"kingdoms","marker":"reg.","name":"kingdom"},{"plural":"subkingdoms","marker":"subreg.","name":"subkingdom"},{"plural":"infrakingdoms","marker":"infrareg.","name":"infrakingdom"},{"plural":"superphyla","marker":"superphyl.","name":"superphylum"},{"plural":"phyla","marker":"phyl.","name":"phylum"},{"plural":"subphyla","marker":"subphyl.","name":"subphylum"},{"plural":"infraphyla","marker":"infraphyl.","name":"infraphylum"},{"plural":"superclasses","marker":"supercl.","name":"superclass"},{"plural":"classes","marker":"cl.","name":"class"},{"plural":"subclasses","marker":"subcl.","name":"subclass"},{"plural":"infraclasses","marker":"infracl.","name":"infraclass"},{"plural":"parvclasses","marker":"parvcl.","name":"parvclass"},{"plural":"superdivisions","marker":"superdiv.","name":"superdivision"},{"plural":"divisions","marker":"div.","name":"division"},{"plural":"subdivisions","marker":"subdiv.","name":"subdivision"},{"plural":"infradivisions","marker":"infradiv.","name":"infradivision"},{"plural":"superlegions","marker":"superleg.","name":"superlegion"},{"plural":"legions","marker":"leg.","name":"legion"},{"plural":"sublegions","marker":"subleg.","name":"sublegion"},{"plural":"infralegions","marker":"infraleg.","name":"infralegion"},{"plural":"supercohorts","marker":"supercohort","name":"supercohort"},{"plural":"cohorts","marker":"cohort","name":"cohort"},{"plural":"subcohorts","marker":"subcohort","name":"subcohort"},{"plural":"infracohorts","marker":"infracohort","name":"infracohort"},{"plural":"gigaorders","marker":"gigaord.","name":"gigaorder"},{"plural":"magnorders","marker":"magnord.","name":"magnorder"},{"plural":"grandorders","marker":"grandord.","name":"grandorder"},{"plural":"mirorders","marker":"mirord.","name":"mirorder"},{"plural":"superorders","marker":"superord.","name":"superorder"},{"plural":"orders","marker":"ord.","name":"order"},{"plural":"nanorders","marker":"nanord.","name":"nanorder"},{"plural":"hypoorders","marker":"hypoord.","name":"hypoorder"},{"plural":"minorders","marker":"minord.","name":"minorder"},{"plural":"suborders","marker":"subord.","name":"suborder"},{"plural":"infraorders","marker":"infraord.","name":"infraorder"},{"plural":"parvorders","marker":"parvord.","name":"parvorder"},{"plural":"megafamilies","marker":"megafam.","name":"megafamily"},{"plural":"grandfamilies","marker":"grandfam.","name":"grandfamily"},{"plural":"superfamilies","marker":"superfam.","name":"superfamily"},{"plural":"epifamilies","marker":"epifam.","name":"epifamily"},{"plural":"families","marker":"fam.","name":"family"},{"plural":"subfamilies","marker":"subfam.","name":"subfamily"},{"plural":"infrafamilies","marker":"infrafam.","name":"infrafamily"},{"plural":"supertribes","marker":"supertrib.","name":"supertribe"},{"plural":"tribes","marker":"trib.","name":"tribe"},{"plural":"subtribes","marker":"subtrib.","name":"subtribe"},{"plural":"infratribes","marker":"infratrib.","name":"infratribe"},{"plural":"suprageneric_names","marker":"supragen.","name":"suprageneric
+        name"},{"plural":"genera","marker":"gen.","name":"genus"},{"plural":"subgenera","marker":"subgen.","name":"subgenus"},{"plural":"infragenera","marker":"infrag.","name":"infragenus"},{"plural":"supersections","marker":"supersect.","name":"supersection"},{"plural":"sections","marker":"sect.","name":"section"},{"plural":"subsections","marker":"subsect.","name":"subsection"},{"plural":"superseries","marker":"superser.","name":"superseries"},{"plural":"series","marker":"ser.","name":"series"},{"plural":"subseries","marker":"subser.","name":"subseries"},{"plural":"infrageneric_names","marker":"infragen.","name":"infrageneric
+        name"},{"plural":"species_aggregates","marker":"agg.","name":"species aggregate"},{"plural":"species","marker":"sp.","name":"species"},{"plural":"infraspecific_names","marker":"infrasp.","name":"infraspecific
+        name"},{"plural":"grexs","marker":"gx","name":"grex"},{"plural":"subspecies","marker":"subsp.","name":"subspecies"},{"plural":"cultivar_groups","name":"cultivar
+        group"},{"plural":"convarieties","marker":"convar.","name":"convariety"},{"plural":"infrasubspecific_names","marker":"infrasubsp.","name":"infrasubspecific
+        name"},{"plural":"proles","marker":"prol.","name":"proles"},{"plural":"natios","marker":"natio","name":"natio"},{"plural":"aberrations","marker":"ab.","name":"aberration"},{"plural":"morphs","marker":"morph","name":"morph"},{"plural":"varieties","marker":"var.","name":"variety"},{"plural":"subvarieties","marker":"subvar.","name":"subvariety"},{"plural":"forms","marker":"f.","name":"form"},{"plural":"subforms","marker":"subf.","name":"subform"},{"plural":"pathovars","marker":"pv.","name":"pathovar"},{"plural":"biovars","marker":"biovar","name":"biovar"},{"plural":"chemovars","marker":"chemovar","name":"chemovar"},{"plural":"morphovars","marker":"morphovar","name":"morphovar"},{"plural":"phagovars","marker":"phagovar","name":"phagovar"},{"plural":"serovars","marker":"serovar","name":"serovar"},{"plural":"chemoforms","marker":"chemoform","name":"chemoform"},{"plural":"forma_specialiss","marker":"f.sp.","name":"forma
+        specialis"},{"plural":"cultivars","marker":"cv.","name":"cultivar"},{"plural":"strains","marker":"strain","name":"strain"},{"plural":"others","name":"other"},{"plural":"unrankeds","name":"unranked"}]'
+  recorded_at: 2020-12-09 01:43:02 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

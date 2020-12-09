@@ -1,69 +1,72 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.catalogue.life/name/matching?q=Apis&rank=genus&offset=0&limit=10
+    uri: https://api.catalogueoflife.org/name/matching?q=Apis&rank=genus&offset=0&limit=10
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:09 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:59 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '242'
+      content-length: '342'
+      vary: Accept-Encoding
+      x-varnish: '8985385'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"name":{"created":"2019-11-20T11:09:57.999149","createdBy":11,"modified":"2019-11-20T11:09:57.999149","modifiedBy":11,"datasetKey":1,"id":"5U73","sectorKey":4452,"homotypicNameId":"5U73","scientificName":"Apis","rank":"genus","uninomial":"Apis","nomStatus":"doubtful","origin":"name
-        matching","type":"scientific","parsed":true,"formattedName":"<i>Apis</i>"},"type":"exact"}'
-  recorded_at: 2020-04-17 23:49:09 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '{"name":{"created":"2020-11-16T22:14:18.767644","modified":"2020-11-16T22:14:18.767644","canonicalId":39385,"scientificName":"Apis","rank":"genus","uninomial":"Apis","labelHtml":"<i>Apis</i>","parsed":true,"id":39385},"type":"exact","alternatives":[{"created":"2020-11-16T22:14:18.767644","modified":"2020-11-16T22:14:18.767644","canonicalId":39385,"scientificName":"Apis","rank":"genus","uninomial":"Apis","labelHtml":"<i>Apis</i>","parsed":true,"id":39385},{"created":"2020-11-16T22:14:18.76813","modified":"2020-11-16T22:14:18.76813","canonicalId":39385,"scientificName":"Apis","authorship":"Linnaeus,
+        1758","rank":"genus","uninomial":"Apis","combinationAuthorship":{"authors":["Linnaeus"],"year":"1758"},"labelHtml":"<i>Apis</i>
+        Linnaeus, 1758","parsed":true,"id":39386},{"created":"2020-07-01T22:08:42.329076","modified":"2020-07-12T22:58:00.945192","canonicalId":39385,"scientificName":"Apis","authorship":"Fabricius","rank":"genus","uninomial":"Apis","combinationAuthorship":{"authors":["Fabricius"]},"labelHtml":"<i>Apis</i>
+        Fabricius","parsed":true,"id":12953057}],"nameKey":39385}'
+  recorded_at: 2020-12-09 01:42:59 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
-    uri: https://api.catalogue.life/name/matching?q=Apis%20mellifer&offset=0&limit=10
+    uri: https://api.catalogueoflife.org/name/matching?q=Apis%20mellifer&offset=0&limit=10
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:09 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:59 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-length: '15'
+      x-varnish: '8985386'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
       string: '{"type":"none"}'
-  recorded_at: 2020-04-17 23:49:09 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+  recorded_at: 2020-12-09 01:42:59 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

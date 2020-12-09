@@ -9,7 +9,7 @@
 Catalogue of Life Plus (CoL+) Client
 }
 \note{
-CoL+ API docs are at https://api.catalogue.life/
+CoL+ API docs are at https://api.catalogueoflife.org/
 }
 \author{
 Scott Chamberlain

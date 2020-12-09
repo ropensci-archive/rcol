@@ -1,171 +1,234 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.catalogue.life/dataset/1000
+    uri: https://api.catalogueoflife.org/dataset/1000
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:03 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:35 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '674'
+      content-length: '717'
+      vary: Accept-Encoding
+      x-varnish: '8985342'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T17:43:32.521608","modifiedBy":0,"key":1000,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":101,"modified":"2020-10-09T12:01:27.209485","modifiedBy":101,"key":1000,"importAttempt":8,"type":"taxonomic","origin":"external","title":"Catalogue
         of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
         of life to embrace the more than 1.6 million species \nalready provided by
         more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
-        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":["Species2000","ITIS"],"contact":"Markus
-        Döring <markus@mailinator.com>","authorsAndEditors":["Michael A. Ruggiero","Dennis
-        P. Gordon","Thomas M. Orrell","Nicolas Bailly orcid:0000-0003-4994-0653","Thierry
-        Bourgoin","Richard C. Brusca","Thomas Cavalier-Smith","Michael D. Guiry","Paul
-        M. Kirk"],"license":"cc by","version":"1.4","released":"2019-05-06","dataFormat":"coldp","dataAccess":"https://github.com/Sp2000/col-hierarchy/archive/master.zip","importFrequency":"daily","size":5688,"imported":"2019-12-23T17:43:41.65462"}'
-  recorded_at: 2020-04-17 23:49:05 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":[{"name":"Species2000","label":"Species2000"},{"name":"ITIS","label":"ITIS"}],"contact":{"familyName":"Markus
+        Döring <markus@mailinator.com>","name":"Markus Döring <markus@mailinator.com>"},"authors":[{"familyName":"Michael
+        A. Ruggiero","name":"Michael A. Ruggiero"},{"familyName":"Dennis P. Gordon","name":"Dennis
+        P. Gordon"},{"familyName":"Thomas M. Orrell","name":"Thomas M. Orrell"},{"givenName":"Nicolas","familyName":"Bailly","name":"Bailly
+        N."},{"givenName":"Thierry","familyName":"Bourgoin","name":"Bourgoin T."},{"familyName":"Richard
+        C. Brusca","name":"Richard C. Brusca"},{"givenName":"Thomas","familyName":"Cavalier-Smith","name":"Cavalier-Smith
+        T."},{"familyName":"Michael D. Guiry","name":"Michael D. Guiry"},{"familyName":"Paul
+        M. Kirk","name":"Paul M. Kirk"}],"license":"cc by","version":"1.4","released":"2019-05-06","completeness":0,"imported":"2020-07-02T23:50:55.486671","size":2844,"private":false}'
+  recorded_at: 2020-12-09 01:42:36 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
-    uri: https://api.catalogue.life/dataset/3
+    uri: https://api.catalogueoflife.org/dataset/3
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:04 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:36 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '583'
+      content-length: '961'
+      vary: Accept-Encoding
+      x-varnish: '8985343'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"created":"2019-11-20T11:07:46.123046","createdBy":103,"modified":"2020-01-08T16:22:47.59351","modifiedBy":103,"key":3,"type":"taxonomic","origin":"managed","locked":false,"title":"Catalogue
-        of Life - Working Draft","alias":"col-draft","organisations":["Species 2000"],"contact":"Yury
-        Roskov","authorsAndEditors":["Roskov Y.","Ower G.","Orrell T.","Nicolson D.","Bailly
-        N.","Kirk P.M.","Bourgoin T.","DeWalt R.E.","Decock W.","Nieukerken E. van","Penev
-        L."],"license":"cc by","citation":"Roskov Y.; Ower G.; Orrell T.; Nicolson
-        D.; Bailly N.; Kirk P.M.; Bourgoin T.; DeWalt R.E.; Decock W.; Nieukerken
-        E. van; Penev L.; eds. (2019). Species 2000 & ITIS Catalogue of Life, [YYYY-MM-DD]
-        Beta. Digital resource at www.catalogueoflife.org/col. Species 2000: Naturalis,
-        Leiden, the Netherlands. ISSN 2405-8858. ","geographicScope":"Global","website":"https://www.catalogueoflife.org","group":"Biota","importFrequency":"never","confidence":4,"completeness":80}'
-  recorded_at: 2020-04-17 23:49:05 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '{"created":"2019-11-20T11:07:46.123046","createdBy":102,"modified":"2020-12-03T17:31:40.638259","modifiedBy":102,"key":3,"importAttempt":23,"type":"taxonomic","origin":"managed","title":"Catalogue
+        of Life - Working Draft","alias":"col-draft","description":"The Catalogue
+        of Life (CoL) is an assembly of expert-based global species checklists with
+        an aim to build a comprehensive catalogue of all known species of organisms
+        on Earth. Continuous progress is made towards completion, but for now, it
+        probably includes just over 80% of the world''s known species. The Catalogue
+        of Life estimates 2.2M extant species on the planet recognised by taxonomists
+        at present time. This means that for many groups it continues to be deficient,
+        and users may notice that many species are still missing from the Catalogue.
+        \n\nOnly ITIS checklists have been updated in this edition of the Catalogue
+        of Life.","organisations":[{"name":"Species 2000","label":"Species 2000"}],"contact":{"givenName":"Yuri","familyName":"Roskov","email":"yroskov@illinois.edu","orcid":"0000-0003-2137-2690","name":"Roskov
+        Y."},"editors":[{"givenName":"Y.","familyName":"Roskov","name":"Roskov Y."},{"givenName":"G.","familyName":"Ower","name":"Ower
+        G."},{"givenName":"T.","familyName":"Orrell","name":"Orrell T."},{"givenName":"D.","familyName":"Nicolson","name":"Nicolson
+        D."},{"givenName":"N.","familyName":"Bailly","name":"Bailly N."},{"givenName":"P.M.","familyName":"Kirk","name":"Kirk
+        P.M."},{"givenName":"T.","familyName":"Bourgoin","name":"Bourgoin T."},{"givenName":"R.E.","familyName":"DeWalt","name":"DeWalt
+        R.E."},{"givenName":"W.","familyName":"Decock","name":"Decock W."},{"givenName":"E.J.","familyName":"van
+        Nieukerken","name":"van Nieukerken E.J."},{"givenName":"L.","familyName":"Penev","name":"Penev
+        L."}],"license":"other","citation":"Species 2000 & ITIS. The Catalogue of
+        Life working draft.","geographicScope":"Global","website":"https://www.catalogueoflife.org","group":"Biota","confidence":4,"completeness":80,"imported":"2020-12-01T17:56:50.036638","size":3981745,"private":false}'
+  recorded_at: 2020-12-09 01:42:36 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
-    uri: https://api.catalogue.life/dataset/1000
+    uri: https://api.catalogueoflife.org/dataset/1000
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:04 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:36 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '674'
+      content-length: '717'
+      vary: Accept-Encoding
+      x-varnish: '8985344'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T17:43:32.521608","modifiedBy":0,"key":1000,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":101,"modified":"2020-10-09T12:01:27.209485","modifiedBy":101,"key":1000,"importAttempt":8,"type":"taxonomic","origin":"external","title":"Catalogue
         of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
         of life to embrace the more than 1.6 million species \nalready provided by
         more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
-        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":["Species2000","ITIS"],"contact":"Markus
-        Döring <markus@mailinator.com>","authorsAndEditors":["Michael A. Ruggiero","Dennis
-        P. Gordon","Thomas M. Orrell","Nicolas Bailly orcid:0000-0003-4994-0653","Thierry
-        Bourgoin","Richard C. Brusca","Thomas Cavalier-Smith","Michael D. Guiry","Paul
-        M. Kirk"],"license":"cc by","version":"1.4","released":"2019-05-06","dataFormat":"coldp","dataAccess":"https://github.com/Sp2000/col-hierarchy/archive/master.zip","importFrequency":"daily","size":5688,"imported":"2019-12-23T17:43:41.65462"}'
-  recorded_at: 2020-04-17 23:49:05 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":[{"name":"Species2000","label":"Species2000"},{"name":"ITIS","label":"ITIS"}],"contact":{"familyName":"Markus
+        Döring <markus@mailinator.com>","name":"Markus Döring <markus@mailinator.com>"},"authors":[{"familyName":"Michael
+        A. Ruggiero","name":"Michael A. Ruggiero"},{"familyName":"Dennis P. Gordon","name":"Dennis
+        P. Gordon"},{"familyName":"Thomas M. Orrell","name":"Thomas M. Orrell"},{"givenName":"Nicolas","familyName":"Bailly","name":"Bailly
+        N."},{"givenName":"Thierry","familyName":"Bourgoin","name":"Bourgoin T."},{"familyName":"Richard
+        C. Brusca","name":"Richard C. Brusca"},{"givenName":"Thomas","familyName":"Cavalier-Smith","name":"Cavalier-Smith
+        T."},{"familyName":"Michael D. Guiry","name":"Michael D. Guiry"},{"familyName":"Paul
+        M. Kirk","name":"Paul M. Kirk"}],"license":"cc by","version":"1.4","released":"2019-05-06","completeness":0,"imported":"2020-07-02T23:50:55.486671","size":2844,"private":false}'
+  recorded_at: 2020-12-09 01:42:36 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
 - request:
     method: get
-    uri: https://api.catalogue.life/dataset/1014
+    uri: https://api.catalogueoflife.org/dataset/1014
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:05 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:36 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '795'
+      content-length: '2135'
+      vary: Accept-Encoding
+      x-varnish: '8985345'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T19:08:19.652725","modifiedBy":103,"key":1014,"type":"taxonomic","origin":"external","locked":false,"title":"International
-        Committee on Taxonomy of Viruses / Master Species List","alias":"ICTV_MSL","description":"The
-        International Union of Microbiological Societies (IUMS) has charged the International
-        Committee on Taxonomy of Viruses (ICTV) with the task of developing, refining,
-        and maintaining a universal virus taxonomy. The goal of this undertaking is
-        to categorize the multitude of known virus into a single classification scheme
-        that reflects their evolutionary relationships, i.e. their individual phylogenies.","organisations":["International
-        Committee on the Taxonomy of Viruses (ICTV)"],"contact":"E Lefkowitz","authorsAndEditors":["Lefkowitz
-        E.J. (ed)."],"version":"Oct 2015","released":"2015-10-23","website":"http://ictvonline.org","group":"Viruses
-        and subviral agents","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/ICTV_MSL.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/14.tar.gz","importFrequency":"daily","code":"virus","size":3188,"confidence":5,"completeness":100,"contributesTo":[2081,3,2083,2123,2079],"imported":"2019-12-23T19:08:30.067934","settings":{"csv
-        quote escape":"\\","distribution gazetteer":"text"}}'
-  recorded_at: 2020-04-17 23:49:05 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+      string: '{"created":"2019-11-20T11:07:46.255777","createdBy":102,"modified":"2020-10-08T11:57:02.702684","modifiedBy":102,"key":1014,"importAttempt":15,"type":"taxonomic","origin":"external","title":"ICTV
+        Master Species List","alias":"ICTV MSL","description":"The 7th lCTV Report
+        formalized for the first time the concept of the virus species as the lowest
+        taxon (group) in a branching hierarchy of viral taxa. As defined therein,
+        “a virus species is a polythetic class of viruses that constitute a replicating
+        lineage and occupy a particular ecological niche”. A “polythetic class” is
+        one whose members have several properties in common, although they do not
+        necessarily all share a single common defining property. In other words, the
+        members of a virus species are defined collectively by a consensus group of
+        properties. Virus species thus differ from the higher viral taxa, which are
+        “universal” classes and as such are defined by properties that are necessary
+        for membership.\n\nViruses are real physical entities produced by biological
+        evolution and genetics, whereas virus species and higher taxa are abstract
+        concepts produced by rational thought and logic. The virus/species relationship
+        thus represents the front line of the interface between biology and logic.\nViruses
+        (including virus isolates, strains, variants, types, sub-types, serotypes,
+        etc.) should wherever possible be assigned as members of the appropriate virus
+        species, although many viruses remain unassigned because they are inadequately
+        characterized.\nAll virus species must be represented by at least one virus
+        isolate.\nAlmost all virus species are members of recognized genera. A few
+        species remain unassigned in their families although they have been clearly
+        identified as new species.\nSome genera are members of recognized sub-families.\nAll
+        sub-families and most genera are members of recognized families. Some genera
+        are not yet assigned to a family; in the future they may either join an existing
+        family or constitute a new family with other unassigned genera.\nSome families
+        are members of the following recognized orders: Caudovirales, Nidovirales
+        and Mononegavirales.\nThe hierarchy of recognized viral taxa is therefore:\n\n(Order),
+        Family, (Sub-family), Genus, Species\n\nOnly the aforementioned taxa are recognized
+        by the ICTV. Other groupings (from clade to super-family), may communicate
+        useful descriptive information in some circumstances but they have no formally
+        recognized taxonomic meaning. Similarly, the term “quasi-species”, although
+        it captures an important concept, has no recognized taxonomic meaning.\nThe
+        creation or elimination, (re)naming, and (re)assignment of a virus species,
+        genus, (sub)family, or order are all taxonomic acts that require public scrutiny
+        and debate, leading to formal approval by the full membership of the ICTV.
+        In contrast, the naming of a virus isolate and its assignment to a pre-existing
+        species are not considered taxonomic acts and therefore do not require formal
+        ICTV approval. Instead they will typically be accomplished by publication
+        of a paper describing the virus isolate in the peer-reviewed virology literature.","organisations":[{"name":"International
+        Committee on Taxonomy of Viruses (ICTV)","label":"International Committee
+        on Taxonomy of Viruses (ICTV)"}],"contact":{"familyName":"info@ictvonline.org","name":"info@ictvonline.org"},"authors":[{"familyName":"Davison,
+        Andrew J.","name":"Davison, Andrew J."},{"givenName":"Stuart","familyName":"Siddell","name":"Siddell
+        S."},{"givenName":"Arcady","familyName":"Mushegian","name":"Mushegian A."},{"familyName":"Walker,
+        Peter J.","name":"Walker, Peter J."},{"familyName":"Lefkowitz, Elliot J.","name":"Lefkowitz,
+        Elliot J."},{"familyName":"Adriaenssens, Evelien","name":"Adriaenssens, Evelien"},{"givenName":"Balázs","familyName":"Harrach","name":"Harrach
+        B."},{"familyName":"Kuhn, Jens H.","name":"Kuhn, Jens H."},{"familyName":"Knowles,
+        Nick J.","name":"Knowles, Nick J."},{"givenName":"Peter","familyName":"Simmonds","name":"Simmonds
+        P."},{"familyName":"Zerbini, F. Murilo","name":"Zerbini, F. Murilo"},{"givenName":"Bas","familyName":"Dutilh","name":"Dutilh
+        B."},{"givenName":"Robert","familyName":"Harrison","name":"Harrison R."},{"givenName":"Sandra","familyName":"Junglen","name":"Junglen
+        S."},{"givenName":"Mart","familyName":"Krupovic","name":"Krupovic M."},{"familyName":"Nibert,
+        Max L.","name":"Nibert, Max L."},{"givenName":"Luisa","familyName":"Rubino","name":"Rubino
+        L."},{"givenName":"Sead","familyName":"Sabanadzovic","name":"Sabanadzovic
+        S."},{"givenName":"Arvind","familyName":"Varsani","name":"Varsani A."}],"license":"cc
+        by","version":"MSL35, 2019, v1","released":"2020-04-23","geographicScope":"Global","website":"https://talk.ictvonline.org/taxonomy/w/ictv-taxonomy","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/ICTV_MSL.png","group":"Viruses","confidence":5,"completeness":100,"imported":"2020-09-01T21:26:21.73713","size":8476,"private":false}'
+  recorded_at: 2020-12-09 01:42:36 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

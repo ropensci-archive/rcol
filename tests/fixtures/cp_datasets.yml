@@ -1,61 +1,78 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.catalogue.life/dataset?offset=0&limit=5
+    uri: https://api.catalogueoflife.org/dataset?offset=0&limit=5
     body:
       encoding: ''
       string: ''
     headers:
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
-      User-Agent: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
-      X-USER-AGENT: r-curl/4.3 crul/0.9.0 rOpenSci(colpluz/0.0.1.93)
+      User-Agent: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
+      X-USER-AGENT: r-curl/4.3 crul/1.0.0 rOpenSci(rcol/0.1.0)
   response:
     status:
       status_code: '200'
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 17 Apr 2020 23:49:05 GMT
-      server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+      status: 'HTTP/2 200 '
+      date: Wed, 09 Dec 2020 01:42:36 GMT
       content-type: application/json
-      access-control-allow-origin: '*'
-      access-control-allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
-      access-control-allow-headers: Authorization, Content-Type, Accept-Language,
-        X-Requested-With
-      vary: Accept-Encoding
+      cache-control: must-revalidate,no-cache,no-store
       content-encoding: gzip
-      content-length: '2457'
+      content-length: '2803'
+      vary: Accept-Encoding
+      x-varnish: '8985346'
+      age: '0'
+      via: 1.1 varnish (Varnish/6.0)
+      x-cache: miss uncacheable
+      accept-ranges: bytes
     body:
       encoding: UTF-8
       file: no
-      string: '{"offset":0,"limit":5,"total":269,"result":[{"created":"2019-11-20T11:07:46.123046","createdBy":103,"modified":"2020-01-08T16:22:47.59351","modifiedBy":103,"key":3,"type":"taxonomic","origin":"managed","locked":false,"title":"Catalogue
-        of Life - Working Draft","alias":"col-draft","organisations":["Species 2000"],"contact":"Yury
-        Roskov","authorsAndEditors":["Roskov Y.","Ower G.","Orrell T.","Nicolson D.","Bailly
-        N.","Kirk P.M.","Bourgoin T.","DeWalt R.E.","Decock W.","Nieukerken E. van","Penev
-        L."],"license":"cc by","citation":"Roskov Y.; Ower G.; Orrell T.; Nicolson
-        D.; Bailly N.; Kirk P.M.; Bourgoin T.; DeWalt R.E.; Decock W.; Nieukerken
-        E. van; Penev L.; eds. (2019). Species 2000 & ITIS Catalogue of Life, [YYYY-MM-DD]
-        Beta. Digital resource at www.catalogueoflife.org/col. Species 2000: Naturalis,
-        Leiden, the Netherlands. ISSN 2405-8858. ","geographicScope":"Global","website":"https://www.catalogueoflife.org","group":"Biota","importFrequency":"never","confidence":4,"completeness":80},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T17:43:32.521608","modifiedBy":0,"key":1000,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+      string: '{"offset":0,"limit":5,"total":298,"result":[{"created":"2019-11-20T11:07:46.123046","createdBy":102,"modified":"2020-12-03T17:31:40.638259","modifiedBy":102,"key":3,"importAttempt":23,"type":"taxonomic","origin":"managed","title":"Catalogue
+        of Life - Working Draft","alias":"col-draft","description":"The Catalogue
+        of Life (CoL) is an assembly of expert-based global species checklists with
+        an aim to build a comprehensive catalogue of all known species of organisms
+        on Earth. Continuous progress is made towards completion, but for now, it
+        probably includes just over 80% of the world''s known species. The Catalogue
+        of Life estimates 2.2M extant species on the planet recognised by taxonomists
+        at present time. This means that for many groups it continues to be deficient,
+        and users may notice that many species are still missing from the Catalogue.
+        \n\nOnly ITIS checklists have been updated in this edition of the Catalogue
+        of Life.","organisations":[{"name":"Species 2000","label":"Species 2000"}],"contact":{"givenName":"Yuri","familyName":"Roskov","email":"yroskov@illinois.edu","orcid":"0000-0003-2137-2690","name":"Roskov
+        Y."},"editors":[{"givenName":"Y.","familyName":"Roskov","name":"Roskov Y."},{"givenName":"G.","familyName":"Ower","name":"Ower
+        G."},{"givenName":"T.","familyName":"Orrell","name":"Orrell T."},{"givenName":"D.","familyName":"Nicolson","name":"Nicolson
+        D."},{"givenName":"N.","familyName":"Bailly","name":"Bailly N."},{"givenName":"P.M.","familyName":"Kirk","name":"Kirk
+        P.M."},{"givenName":"T.","familyName":"Bourgoin","name":"Bourgoin T."},{"givenName":"R.E.","familyName":"DeWalt","name":"DeWalt
+        R.E."},{"givenName":"W.","familyName":"Decock","name":"Decock W."},{"givenName":"E.J.","familyName":"van
+        Nieukerken","name":"van Nieukerken E.J."},{"givenName":"L.","familyName":"Penev","name":"Penev
+        L."}],"license":"other","citation":"Species 2000 & ITIS. The Catalogue of
+        Life working draft.","geographicScope":"Global","website":"https://www.catalogueoflife.org","group":"Biota","confidence":4,"completeness":80,"imported":"2020-12-01T17:56:50.036638","size":3981745,"private":false},{"created":"2019-11-20T11:07:46.255777","createdBy":101,"modified":"2020-10-09T12:01:27.209485","modifiedBy":101,"key":1000,"importAttempt":8,"type":"taxonomic","origin":"external","title":"Catalogue
         of Life Hierarchy","alias":"ColH","description":"We present a consensus classification
         of life to embrace the more than 1.6 million species \nalready provided by
         more than 3,000 taxonomists’ expert opinions \nin a unified and coherent,
-        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":["Species2000","ITIS"],"contact":"Markus
-        Döring <markus@mailinator.com>","authorsAndEditors":["Michael A. Ruggiero","Dennis
-        P. Gordon","Thomas M. Orrell","Nicolas Bailly orcid:0000-0003-4994-0653","Thierry
-        Bourgoin","Richard C. Brusca","Thomas Cavalier-Smith","Michael D. Guiry","Paul
-        M. Kirk"],"license":"cc by","version":"1.4","released":"2019-05-06","dataFormat":"coldp","dataAccess":"https://github.com/Sp2000/col-hierarchy/archive/master.zip","importFrequency":"daily","size":5688,"imported":"2019-12-23T17:43:41.65462"},{"created":"2019-11-20T11:07:46.255777","createdBy":102,"modified":"2020-02-10T17:09:11.015297","modifiedBy":102,"key":1005,"type":"taxonomic","origin":"external","locked":false,"title":"Catalogue
+        hierarchically ranked system known as the Catalogue of Life (CoL).","organisations":[{"name":"Species2000","label":"Species2000"},{"name":"ITIS","label":"ITIS"}],"contact":{"familyName":"Markus
+        Döring <markus@mailinator.com>","name":"Markus Döring <markus@mailinator.com>"},"authors":[{"familyName":"Michael
+        A. Ruggiero","name":"Michael A. Ruggiero"},{"familyName":"Dennis P. Gordon","name":"Dennis
+        P. Gordon"},{"familyName":"Thomas M. Orrell","name":"Thomas M. Orrell"},{"givenName":"Nicolas","familyName":"Bailly","name":"Bailly
+        N."},{"givenName":"Thierry","familyName":"Bourgoin","name":"Bourgoin T."},{"familyName":"Richard
+        C. Brusca","name":"Richard C. Brusca"},{"givenName":"Thomas","familyName":"Cavalier-Smith","name":"Cavalier-Smith
+        T."},{"familyName":"Michael D. Guiry","name":"Michael D. Guiry"},{"familyName":"Paul
+        M. Kirk","name":"Paul M. Kirk"}],"license":"cc by","version":"1.4","released":"2019-05-06","completeness":0,"imported":"2020-07-02T23:50:55.486671","size":2844,"private":false},{"created":"2019-11-20T11:07:46.255777","createdBy":102,"modified":"2020-10-08T11:57:02.476028","modifiedBy":102,"key":1005,"importAttempt":9,"type":"taxonomic","origin":"external","title":"Catalogue
         of Craneflies of the World","alias":"CCW","description":"The Catalogue of
         the Craneflies of the World (CCW) covers all genera, subgenera, species, subspecies,
         and synonyms of the World Tipuloidea (Insecta – Diptera – Nematocera – families
         Pediciidae, Limoniidae, Cylindrotomidae, Tipulidae), in total 17,307 taxa.
         It also includes up to date information on the distribution of the species
         and subspecies, specified by countries and, for the larger countries, states,
-        provinces, islands.","organisations":["Entomology Section","Zoological Museum","University
-        of Amsterdam / ETI BioInformatics","The  Netherlands"],"contact":"P Oosterbroek","authorsAndEditors":["Oosterbroek
-        P."],"license":"other","version":"Jul 2013","released":"2013-07-17","geographicScope":"Global","website":"http://nlbif.eti.uva.nl/ccw/","group":"Craneflies","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/CCW.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/5.tar.gz","importFrequency":"daily","code":"zoological","size":32212,"confidence":5,"completeness":100,"contributesTo":[2081,3,2083,2123,2079],"imported":"2020-02-10T17:09:56.840215"},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T18:58:53.654972","modifiedBy":103,"key":1006,"type":"taxonomic","origin":"external","locked":false,"title":"Computer
+        provinces, islands.","organisations":[{"name":"Entomology Section","label":"Entomology
+        Section"},{"name":"Zoological Museum","label":"Zoological Museum"},{"name":"University
+        of Amsterdam / ETI BioInformatics","label":"University of Amsterdam / ETI
+        BioInformatics"},{"name":"The  Netherlands","label":"The  Netherlands"}],"contact":{"givenName":"P","familyName":"Oosterbroek","name":"Oosterbroek
+        P"},"authors":[{"givenName":"P.","familyName":"Oosterbroek","name":"Oosterbroek
+        P."}],"license":"other","version":"Jul 2013","released":"2013-07-17","geographicScope":"Global","website":"http://nlbif.eti.uva.nl/ccw/","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/CCW.png","group":"Craneflies","confidence":5,"completeness":100,"imported":"2020-07-02T23:52:13.439658","size":17386,"private":false},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2020-10-14T19:21:48.008126","modifiedBy":103,"key":1006,"importAttempt":9,"type":"taxonomic","origin":"external","title":"Computer
         Aided Identification of Phlebotomine sandflies of Americas","alias":"CIPA","description":"CIPA
         includes information on 418 neotropical sandfly (Phlebotominae) species. These
         blood-sucking insects are important as vectors transmitting human and animal
@@ -65,17 +82,18 @@ http_interactions:
         project involving experts from 9 countries and was supported by the Program
         for Science & Technology Cooperation, Office of the Science Advisor, USA;
         Agency for International Development, and the Scientific & Technical Cooperation,
-        Ministry of Foreign Affairs, France.","organisations":["Université Pierre
-        et Marie Curie","Paris","France"],"contact":"R Vignes-Lebbe & C Gallut","authorsAndEditors":["Vignes-Lebbe
-        R. & Gallut C."],"version":"3, Mar 2011","released":"2011-03-16","website":"http://cipa.snv.jussieu.fr","group":"Phlebotomine
-        sandflies","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/CIPA.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/6.tar.gz","importFrequency":"daily","code":"zoological","size":2440,"confidence":3,"completeness":50,"contributesTo":[2081,3,2083,2123,2079],"imported":"2019-12-23T17:43:35.816291","settings":{"csv
-        quote escape":"\\","distribution gazetteer":"text"}},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2019-12-23T18:58:54.164504","modifiedBy":103,"key":1008,"type":"taxonomic","origin":"external","locked":false,"title":"The
+        Ministry of Foreign Affairs, France.","organisations":[{"name":"Université
+        Pierre et Marie Curie","label":"Université Pierre et Marie Curie"},{"name":"Paris","label":"Paris"},{"name":"France","label":"France"}],"contact":{"familyName":"R
+        Vignes-Lebbe & C Gallut","name":"R Vignes-Lebbe & C Gallut"},"authors":[{"familyName":"Vignes-Lebbe
+        R. & Gallut C.","name":"Vignes-Lebbe R. & Gallut C."}],"version":"3, Mar 2011","released":"2011-03-16","website":"http://cipa.snv.jussieu.fr","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/CIPA.png","group":"Phlebotomine
+        sandflies","confidence":3,"completeness":50,"imported":"2020-10-14T19:21:49.950932","size":941,"private":false},{"created":"2019-11-20T11:07:46.255777","createdBy":0,"modified":"2020-10-20T09:36:56.689993","modifiedBy":101,"key":1008,"importAttempt":9,"type":"taxonomic","origin":"external","title":"The
         Reptile Database","alias":"ReptileDB","description":"The Reptile Database
         is a taxonomic database that provides basic information about all living reptile
         species, such as turtles, snakes, lizards, and crocodiles, as well as tuataras
-        and amphisbaenians, but does not include dinosaurs.","organisations":["Virginia
-        Commonwealth University","Richmond VA","USA"],"contact":"P Uetz","authorsAndEditors":["Uetz
-        P. & Hošek J."],"version":"Dec 2015","released":"2015-12-15","website":"http://www.reptile-database.org","group":"Reptiles","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/ReptileDB.png","dataFormat":"acef","dataAccess":"https://raw.githubusercontent.com/Sp2000/colplus-repo/master/ACEF/8.tar.gz","importFrequency":"daily","code":"zoological","size":110703,"confidence":4,"completeness":99,"contributesTo":[2081,3,2083,2123,2079],"imported":"2019-12-23T17:47:55.449305","settings":{"csv
-        quote escape":"\\","distribution gazetteer":"text"}}],"last":false,"empty":false}'
-  recorded_at: 2020-04-17 23:49:05 GMT
-  recorded_with: vcr/0.5.4, webmockr/0.6.2
+        and amphisbaenians, but does not include dinosaurs.","organisations":[{"name":"Virginia
+        Commonwealth University","label":"Virginia Commonwealth University"},{"name":"Richmond
+        VA","label":"Richmond VA"},{"name":"USA","label":"USA"}],"contact":{"givenName":"P","familyName":"Uetz","name":"Uetz
+        P"},"authors":[{"givenName":"P.","familyName":"Uetz","name":"Uetz P."},{"givenName":"J.","familyName":"Hošek","name":"Hošek
+        J."}],"version":"Dec 2015","released":"2015-12-15","website":"http://www.reptile-database.org","logo":"https://github.com/Sp2000/colplus-repo/raw/master/logos/ReptileDB.png","group":"Reptiles","confidence":4,"completeness":99,"imported":"2020-08-13T09:40:01.769935","size":45360,"private":false}],"last":false,"empty":false}'
+  recorded_at: 2020-12-09 01:42:37 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

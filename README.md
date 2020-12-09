@@ -14,8 +14,8 @@ Package documentation: https://docs.ropensci.org/rcol/
 
 * Catalogue of Life: http://www.catalogueoflife.org/
 * Catalogue of Life Plus: https://github.com/CatalogueOfLife/general
-* COL+ API docs: https://api.catalogue.life/
-* Web portal for COL+: https://data.catalogue.life/
+* COL+ API docs: https://api.catalogueoflife.org/
+* Web portal for COL+: https://data.catalogueoflife.org/
 
 ## Installation
 

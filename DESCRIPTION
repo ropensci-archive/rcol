@@ -1,9 +1,9 @@
 Package: rcol
 Type: Package
-Title: Catalogue of Life Plus Client
-Description: Client for the Catalogue of Life Plus ('CoL+') webservice 
-    (<https://github.com/CatalogueOfLife/general>). The CoL+ webservice is
-    a new interface to the Catalogue of Life. Includes functions for each
+Title: Catalogue of Life Client
+Description: Client for the Catalogue of Life ('CoL') webservice 
+    (<https://api.catalogueoflife.org/>); based on the new
+    CoL webservice, not the old one. Includes functions for each
     of the API methods, including searching for names, and more.
 Version: 0.1.0
 Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),

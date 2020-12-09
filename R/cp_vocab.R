@@ -1,4 +1,4 @@
-#' CoL+ Vocabularies
+#' CoL Vocabularies
 #'
 #' @export
 #' @param vocab (character) a vocabulary name

@@ -8,14 +8,14 @@ rcol
 [![R-CMD-check](https://github.com/ropensci/rcol/workflows/R-CMD-check/badge.svg)](https://github.com/ropensci/rcol/actions)
 [![codecov](https://codecov.io/gh/ropensci/rcol/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/rcol)
 
-`rcol` is a R client for the Catalogue of Life Plus
+`rcol` is a R client for the Catalogue of Life
 
 Package documentation: https://docs.ropensci.org/rcol/
 
 * Catalogue of Life: http://www.catalogueoflife.org/
-* Catalogue of Life Plus: https://github.com/CatalogueOfLife/general
-* COL+ API docs: https://api.catalogueoflife.org/
-* Web portal for COL+: https://data.catalogueoflife.org/
+* Catalogue of Life GitHub repository: https://github.com/CatalogueOfLife/general
+* COL API docs: https://api.catalogueoflife.org/
+* Web portal for COL: https://data.catalogueoflife.org/
 
 ## Installation
 
@@ -30,9 +30,6 @@ install.packages("rcol", repos="https://dev.ropensci.org")
 ```r
 library("rcol")
 ```
-
-<!-- API notes
-* `/dataset/{dataset_key}/taxon/` routes contain the data given in `/dataset/{dataset_key}/name/` routes -->
 
 ## Meta
 

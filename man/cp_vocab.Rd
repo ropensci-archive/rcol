@@ -2,7 +2,7 @@
 % Please edit documentation in R/cp_vocab.R
 \name{cp_vocab}
 \alias{cp_vocab}
-\title{CoL+ Vocabularies}
+\title{CoL Vocabularies}
 \usage{
 cp_vocab(vocab, ...)
 }
@@ -15,7 +15,7 @@ cp_vocab(vocab, ...)
 character vector of words
 }
 \description{
-CoL+ Vocabularies
+CoL Vocabularies
 }
 \examples{
 \dontrun{

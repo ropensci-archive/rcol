@@ -6,9 +6,10 @@ Description: Client for the Catalogue of Life Plus ('CoL+') webservice
     a new interface to the Catalogue of Life. Includes functions for each
     of the API methods, including searching for names, and more.
 Version: 0.1.0
-Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com",
-    comment = c(ORCID = "0000-0003-1444-9135"))
+    comment = c(ORCID = "0000-0003-1444-9135")),
+    person(given = "rOpenSci", role = "fnd", comment = "https://ropensci.org/"))
 License: MIT + file LICENSE
 URL: https://docs.ropensci.org/rcol/, https://github.com/ropensci/rcol
 BugReports: https://github.com/ropensci/rcol/issues

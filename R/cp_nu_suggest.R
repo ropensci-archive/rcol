@@ -5,7 +5,8 @@
 #' @param dataset_key (character) a dataset key. required
 #' @param fuzzy (logical) Whether or not to do fuzzy search (default: `FALSE`)
 #' @param min_rank,max_rank (character) See rank options in [cp_name_match()]
-#' @param sort (character) one of name, taxonomic, index_name_id, native, relevance
+#' @param sort (character) one of name, taxonomic, index_name_id, native,
+#' relevance
 #' @param reverse (logical) reverse order i assume (default: `FALSE`)
 #' @param accepted (logical) limit to accepted names (default: `FALSE`)
 #' @param limit (integer) requested number of maximum records to be returned.

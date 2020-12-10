@@ -26,7 +26,8 @@ cp_nu_suggest(
 
 \item{min_rank, max_rank}{(character) See rank options in \code{\link[=cp_name_match]{cp_name_match()}}}
 
-\item{sort}{(character) one of name, taxonomic, index_name_id, native, relevance}
+\item{sort}{(character) one of name, taxonomic, index_name_id, native,
+relevance}
 
 \item{reverse}{(logical) reverse order i assume (default: \code{FALSE})}
 

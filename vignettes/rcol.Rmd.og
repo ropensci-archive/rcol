@@ -1,5 +1,5 @@
 ---
-title: "copluz"
+title: "rcol"
 author: "Scott Chamberlain"
 date: "`r Sys.Date()`"
 output:
@@ -8,7 +8,7 @@ output:
     toc_float: true
     theme: readable
 vignette: >
-  %\VignetteIndexEntry{Introduction to copluz}
+  %\VignetteIndexEntry{Introduction to rcol}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

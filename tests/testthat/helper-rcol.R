@@ -1,6 +1,5 @@
-# set up vcr
 library("vcr")
-invisible(vcr::vcr_configure(dir = "../fixtures", serialize_with = "json"))
+vcr::vcr_configure(dir = "../fixtures", serialize_with = "json")
 
 has_internet <- function() {
   z <- try(suppressWarnings(readLines('https://www.google.com', n = 1)), 

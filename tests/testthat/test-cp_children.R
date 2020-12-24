@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("cp_children", {
   vcr::use_cassette("cp_children", {
     x <- cp_children(dataset_key=1000, taxon_id=1)

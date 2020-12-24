@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("cp_vocab", {
   vcr::use_cassette("cp_vocab", {
     x <- cp_vocab("rank")

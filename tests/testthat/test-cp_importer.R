@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("cp_importer", {
   vcr::use_cassette("cp_importer", {
     x <- cp_importer()

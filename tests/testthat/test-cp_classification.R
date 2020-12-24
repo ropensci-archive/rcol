@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("cp_classification", {
   vcr::use_cassette("cp_classification", {
     x <- cp_classification(dataset_key=3, 

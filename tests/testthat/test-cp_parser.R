@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("cp_parser", {
   vcr::use_cassette("cp_parser", {
     x <- cp_parser(names = "Apis mellifera")

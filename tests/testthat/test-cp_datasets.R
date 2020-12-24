@@ -1,5 +1,9 @@
 context("cp_dataset")
+
+skip_on_cran()
+
 test_that("cp_dataset", {
+
   vcr::use_cassette("cp_dataset", {
     x <- cp_dataset(dataset_keys = 1000)
     w <- cp_dataset(dataset_keys = c(3, 1000, 1014))
@@ -15,6 +19,7 @@ test_that("cp_dataset", {
   expect_named(w[[1]])
   expect_equal(length(w), 3)
 })
+
 test_that("cp_dataset fails well", {
   # dataset_keys not given
   expect_error(cp_dataset(), class = "error")

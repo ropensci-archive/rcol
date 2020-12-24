@@ -11,7 +11,7 @@ Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0003-1444-9135")),
     person(given = "rOpenSci", role = "fnd", comment = "https://ropensci.org/"))
 License: MIT + file LICENSE
-URL: https://docs.ropensci.org/rcol/, https://github.com/ropensci/rcol
+URL: https://docs.ropensci.org/rcol/ (docs), https://github.com/ropensci/rcol
 BugReports: https://github.com/ropensci/rcol/issues
 LazyData: true
 Roxygen: list(markdown = TRUE)

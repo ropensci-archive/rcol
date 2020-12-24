@@ -1,3 +1,5 @@
+skip_on_cran()
+
 ds_routes <- c(
 "/dataset/{key}",
 # "/dataset/{key}/import/{attempt}/tree",

@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("cp_name_match", {
   vcr::use_cassette("cp_name_match", {
     x <- cp_name_match(q="Apis", rank = "genus")

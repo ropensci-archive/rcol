@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("cp_nu_suggest", {
   vcr::use_cassette("cp_nu_suggest", {
     x <- cp_nu_suggest(q="Apis", dataset_key = 3)

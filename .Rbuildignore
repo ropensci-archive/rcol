@@ -7,6 +7,7 @@ cran-comments.md
 man-roxygen
 appveyor.yml
 ^README\.Rmd$
+^README\.md$
 ^README-.*\.png$
 Makefile
 inst/vign
@@ -17,3 +18,4 @@ revdep
 vignettes/rcol.Rmd
 inst/scripts
 inst/spec
+vignettes/

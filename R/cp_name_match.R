@@ -51,5 +51,5 @@ cp_name_match <- function(q = NULL, rank = NULL, code = NULL, trusted = NULL,
   assert(limit, c("numeric", "integer"))
   args <- cc(list(q = q, rank = rank, code = code, trusted = trusted,
     verbose = ver_bose, offset = start, limit = limit))
-  cp_GET(colplus_base(), "name/matching", query = args, ...)
+  cp_GET(col_base(), "name/matching", query = args, ...)
 }

@@ -1,33 +1,33 @@
 ---
-title: "copluz"
+title: "rcol"
 author: "Scott Chamberlain"
-date: "2020-10-15"
+date: "2021-01-08"
 output:
   html_document:
     toc: true
     toc_float: true
     theme: readable
 vignette: >
-  %\VignetteIndexEntry{Introduction to copluz}
+  %\VignetteIndexEntry{Introduction to rcol}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
 
 
-`colpluz` is a R client for the Catalogue of Life Plus (COL+)
+`rcol` is a R client for the new Catalogue of Life (COL)
 
-COL+ is a follow up to the original Catalogue of Life. The API is
-completely different so don't expect the same interface. The 
-`taxize` package used to have some COL functionality but was 
-deprecated when the old COL API was just too unreliable. COL+
+The API is completely different from the  old one, so don't expect
+the same interface. The `taxize` package used to have some COL
+functionality but was 
+deprecated when the old COL API was just too unreliable. COL
 has a lot of different routes, many of which aren't relavant to
-us here (e.g., creating/editing data in COL+, user profile actions,
+us here (e.g., creating/editing data in COL, user profile actions,
 etc.). 
 
-Package documentation: https://docs.ropensci.org/colpluz/
+Package documentation: https://docs.ropensci.org/rcol/
 
-Check out COL+ API docs https://api.catalogue.life/ where you
+Check out COL API docs https://api.catalogue.life/ where you
 can get more info on each API route and try the routes.
 
 The following are a few examples.
@@ -36,14 +36,14 @@ The following are a few examples.
 
 
 ```r
-remotes::install_github("ropensci/colpluz")
+remotes::install_github("ropensci/rcol")
 # OR
-install.packages("colpluz", repos="https://dev.ropensci.org")
+install.packages("rcol", repos="https://dev.ropensci.org")
 ```
 
 
 ```r
-library("colpluz")
+library("rcol")
 ```
 
 ## Search
@@ -60,7 +60,7 @@ cp_nu_suggest(q="Apis", dataset_key = 3)
 #>    <chr>   <chr>             <chr>      <chr> <chr>  <dbl> <chr>         <chr>  
 #>  1 Apisti… Scorpaeniformes   382e8442-… fami… accep…     0 Apistidae (f… <NA>   
 #>  2 Apisto… Spionida          9d89b038-… fami… accep…     0 Apistobranch… <NA>   
-#>  3 Apis    Apini             44f73e4c-… genus accep…     0 Apis (genus … zoolog…
+#>  3 Apis    Apini             5eecbda1-… genus accep…     0 Apis (genus … zoolog…
 #>  4 Apisa   Arctiidae         da6bee8f-… genus accep…     0 Apisa (genus… <NA>   
 #>  5 Apispi… Mangeliidae       4a2734aa-… genus accep…     0 Apispiralia … <NA>   
 #>  6 Apista… Notodontidae      2deb9907-… genus accep…     0 Apistaeschra… <NA>   
@@ -73,34 +73,33 @@ cp_nu_search(q="Apis", rank = "genus")
 #> # A tibble: 10 x 5
 #>    id    classification usage$created $createdBy $modified $modifiedBy
 #>    <chr> <list>         <chr>              <int> <chr>           <int>
-#>  1 7459  <df[,3] [27 ×… 2020-08-18T1…         10 2020-08-…          10
-#>  2 4e10… <df[,3] [8 × … 2020-03-18T2…        103 2020-03-…         103
-#>  3 4e10… <df[,3] [8 × … 2020-02-19T1…        103 2020-02-…         103
-#>  4 4e10… <df[,3] [8 × … 2020-01-06T1…        103 2020-01-…         103
-#>  5 4e10… <df[,3] [8 × … 2020-02-24T2…        103 2020-02-…         103
-#>  6 1271… <df[,3] [8 × … 2020-07-02T1…         10 2020-07-…          10
-#>  7 xFU   <df[,3] [1 × … 2020-07-02T2…         10 2020-07-…          10
-#>  8 4aa3… <df[,3] [6 × … 2020-07-02T2…         10 2020-07-…          10
-#>  9 beb4… <df[,3] [8 × … 2020-07-18T0…        103 2020-07-…         103
-#> 10 44f7… <df[,3] [10 ×… 2020-09-23T1…        103 2020-09-…         103
-#> # … with 40 more variables: $datasetKey <int>, $id <chr>, $verbatimKey <int>,
+#>  1 1271… <df[,3] [8 × … 2020-07-02T1…         10 2020-07-…          10
+#>  2 1647… <df[,3] [10 ×… 2020-07-02T0…         10 2020-07-…          10
+#>  3 x6KS  <df[,3] [6 × … 2020-07-02T1…         10 2020-07-…          10
+#>  4 x32YJ <df[,3] [6 × … 2020-07-03T0…         10 2020-07-…          10
+#>  5 4e10… <df[,3] [8 × … 2020-03-18T2…        103 2020-03-…         103
+#>  6 x3KBG <df[,3] [7 × … 2020-07-02T0…         10 2020-07-…          10
+#>  7 1024… <df[,3] [9 × … 2020-07-01T2…         10 2020-07-…          10
+#>  8 1005… <df[,3] [6 × … 2020-07-03T0…         10 2020-07-…          10
+#>  9 553e… <df[,3] [10 ×… 2020-08-20T1…        103 2020-08-…         103
+#> 10 4WXV8 <df[,3] [10 ×… 2020-10-28T1…        102 2020-10-…         102
+#> # … with 38 more variables: $datasetKey <int>, $id <chr>, $verbatimKey <int>,
 #> #   $name$created <chr>, $$createdBy <int>, $$modified <chr>,
 #> #   $$modifiedBy <int>, $$datasetKey <int>, $$id <chr>, $$verbatimKey <int>,
-#> #   $$homotypicNameId <chr>, $$nameIndexMatchType <chr>,
-#> #   $$scientificName <chr>, $$rank <chr>, $$uninomial <chr>, $$origin <chr>,
-#> #   $$type <chr>, $$parsed <lgl>, $$sectorKey <int>, $$nameIndexId <int>,
-#> #   $$authorship <chr>, $$combinationAuthorship$authors <list>, $$$year <chr>,
-#> #   $$code <chr>, $$publishedInId <chr>, $$link <chr>, $$nomStatus <chr>,
-#> #   $status <chr>, $origin <chr>, $parentId <chr>, $label <chr>,
-#> #   $labelHtml <chr>, $sectorKey <int>, $link <chr>, $referenceIds <list>,
-#> #   $scrutinizer <chr>, $scrutinizerDate <chr>, $extinct <lgl>,
-#> #   sectorDatasetKey <int>, issues <list>
+#> #   $$homotypicNameId <chr>, $$scientificName <chr>, $$authorship <chr>,
+#> #   $$rank <chr>, $$uninomial <chr>, $$combinationAuthorship$authors <list>,
+#> #   $$$year <chr>, $$code <chr>, $$publishedInId <chr>, $$origin <chr>,
+#> #   $$type <chr>, $$link <chr>, $$parsed <lgl>, $$sectorKey <int>,
+#> #   $$nomStatus <chr>, $status <chr>, $origin <chr>, $parentId <chr>,
+#> #   $link <chr>, $referenceIds <list>, $label <chr>, $labelHtml <chr>,
+#> #   $sectorKey <int>, $scrutinizerDate <chr>, $extinct <lgl>,
+#> #   $scrutinizer <chr>, issues <list>, sectorDatasetKey <int>
 #> 
 #> $meta
 #> # A tibble: 1 x 5
 #>   offset limit total last  empty
 #>    <int> <int> <int> <lgl> <lgl>
-#> 1      0    10    25 FALSE FALSE
+#> 1      0    10  4343 FALSE FALSE
 ```
 
 ## Parsing names
@@ -121,7 +120,7 @@ cp_parser(names = c("Apis mellifera", "Homo sapiens var. sapiens"))
 
 ## Vocab
 
-If you're curious about COL+ vocabularies see the function `cp_vocab()`
+If you're curious about COL vocabularies see the function `cp_vocab()`
 
 
 ```r
@@ -169,28 +168,28 @@ cp_datasets(q = "life")
 #> # A tibble: 10 x 28
 #>    title   key alias group license   size created createdBy modified modifiedBy
 #>    <chr> <int> <chr> <chr> <chr>    <int> <chr>       <int> <chr>         <int>
-#>  1 Cata…  1000 ColH  <NA>  cc by   2.84e3 2019-1…       101 2020-10…        101
-#>  2 Cata…  2166 CoL2… Biota cc by   3.95e6 2020-0…       103 2020-10…        103
-#>  3 Cata…  2081 CoL2… Biota cc by   3.91e6 2020-0…       101 2020-10…        101
-#>  4 Cata…  2206 CoL2… Biota cc by   4.00e6 2020-0…       103 2020-10…        103
+#>  1 Cata…  2242 COL2… Biota other   3.98e6 2020-1…       101 2020-12…        101
+#>  2 Cata…     3 col-… Biota other   3.99e6 2019-1…       102 2020-12…        102
+#>  3 Cata…  2230 COL2… Biota cc by   3.98e6 2020-1…       101 2020-11…        101
+#>  4 Cata…  1000 ColH  <NA>  cc by   2.84e3 2019-1…       101 2020-10…        101
 #>  5 Cata…  2123 CoL2… Biota cc by   4.52e6 2020-0…       101 2020-10…        101
 #>  6 Cata…  2079 CoL2… Biota cc by   4.01e6 2020-0…       101 2020-10…        103
-#>  7 Cata…  2140 CoL2… Biota cc by   3.94e6 2020-0…       103 2020-10…        103
-#>  8 Cata…  2083 CoL2… Biota cc by   4.22e6 2020-0…       101 2020-10…        101
-#>  9 Cata…     3 col-… Biota cc by   4.04e6 2019-1…       101 2020-10…        101
-#> 10 Cata…  2165 CoL2… Biota cc by   3.95e6 2020-0…       103 2020-10…        103
-#> # … with 22 more variables: importAttempt <int>, type <chr>, origin <chr>,
-#> #   description <chr>, organisations <list>, contact$familyName <chr>,
-#> #   $name <chr>, $givenName <chr>, $email <chr>, $orcid <chr>, authors <list>,
-#> #   version <chr>, released <chr>, completeness <int>, imported <chr>,
-#> #   private <lgl>, sourceKey <int>, citation <chr>, geographicScope <chr>,
-#> #   website <chr>, confidence <int>, editors <list>
+#>  7 Cata…  2165 CoL2… Biota cc by   3.95e6 2020-0…       103 2020-10…        103
+#>  8 Cata…  2206 CoL2… Biota cc by   4.00e6 2020-0…       103 2020-10…        103
+#>  9 Cata…  2083 CoL2… Biota cc by   4.22e6 2020-0…       101 2020-10…        101
+#> 10 Cata…  2081 CoL2… Biota cc by   3.91e6 2020-0…       101 2020-10…        101
+#> # … with 22 more variables: sourceKey <int>, importAttempt <int>, type <chr>,
+#> #   origin <chr>, description <chr>, organisations <list>,
+#> #   contact$givenName <chr>, $familyName <chr>, $email <chr>, $orcid <chr>,
+#> #   $name <chr>, editors <list>, version <chr>, released <chr>, citation <chr>,
+#> #   geographicScope <chr>, website <chr>, confidence <int>, completeness <int>,
+#> #   imported <chr>, private <lgl>, authors <list>
 #> 
 #> $meta
 #> # A tibble: 1 x 5
 #>   offset limit total last  empty
 #>    <int> <int> <int> <lgl> <lgl>
-#> 1      0    10    92 FALSE FALSE
+#> 1      0    10    93 FALSE FALSE
 ```
 
 There are A LOT of datasets API routes. Instead of making
@@ -247,12 +246,6 @@ cp_ds(route = "{key}/name/{id}", key = 1005, id = 100003)
 #> 
 #> $homotypicNameId
 #> [1] "100003"
-#> 
-#> $nameIndexId
-#> [1] 2772243
-#> 
-#> $nameIndexMatchType
-#> [1] "exact"
 #> 
 #> $scientificName
 #> [1] "Cylindrotoma aurantia"
@@ -320,12 +313,6 @@ cp_ds("{key}/name/{id}", .list = args)
 #> $homotypicNameId
 #> [1] "100003"
 #> 
-#> $nameIndexId
-#> [1] 2772243
-#> 
-#> $nameIndexMatchType
-#> [1] "exact"
-#> 
 #> $scientificName
 #> [1] "Cylindrotoma aurantia"
 #> 
@@ -367,16 +354,16 @@ cp_ds("{key}/name/{id}", .list = args)
 
 ```r
 cp_classification(dataset_key=1000, taxon_id=10)
-#> # A tibble: 4 x 17
+#> # A tibble: 4 x 16
 #>   scientificName rank  id    status created createdBy modified modifiedBy
 #>   <chr>          <chr> <chr> <chr>  <chr>       <int> <chr>         <int>
 #> 1 Thermoprotei   class 6     accep… 2020-0…        10 2020-07…         10
 #> 2 Crenarchaeota  phyl… 3     accep… 2020-0…        10 2020-07…         10
 #> 3 Archaea        king… 2     accep… 2020-0…        10 2020-07…         10
 #> 4 Prokaryota     supe… 1     accep… 2020-0…        10 2020-07…         10
-#> # … with 9 more variables: datasetKey <int>, verbatimKey <int>,
-#> #   homotypicNameId <chr>, nameIndexMatchType <chr>, uninomial <chr>,
-#> #   origin <chr>, type <chr>, parsed <lgl>, parentId <chr>
+#> # … with 8 more variables: datasetKey <int>, verbatimKey <int>,
+#> #   homotypicNameId <chr>, uninomial <chr>, origin <chr>, type <chr>,
+#> #   parsed <lgl>, parentId <chr>
 ```
 
 ## Children
@@ -385,14 +372,14 @@ cp_classification(dataset_key=1000, taxon_id=10)
 ```r
 cp_children(dataset_key=1000, taxon_id='1')
 #> $result
-#> # A tibble: 2 x 17
+#> # A tibble: 2 x 16
 #>   scientificName rank  id    status created createdBy modified modifiedBy
 #>   <chr>          <chr> <chr> <chr>  <chr>       <int> <chr>         <int>
 #> 1 Archaea        king… 2     accep… 2020-0…        10 2020-07…         10
 #> 2 Bacteria       king… 41    accep… 2020-0…        10 2020-07…         10
-#> # … with 9 more variables: datasetKey <int>, verbatimKey <int>,
-#> #   homotypicNameId <chr>, nameIndexMatchType <chr>, uninomial <chr>,
-#> #   origin <chr>, type <chr>, parsed <lgl>, parentId <chr>
+#> # … with 8 more variables: datasetKey <int>, verbatimKey <int>,
+#> #   homotypicNameId <chr>, uninomial <chr>, origin <chr>, type <chr>,
+#> #   parsed <lgl>, parentId <chr>
 #> 
 #> $meta
 #> # A tibble: 1 x 5

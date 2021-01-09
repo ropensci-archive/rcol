@@ -15,6 +15,6 @@ cp_classification <- function(dataset_key, taxon_id, ...) {
   assert(dataset_key, c("character", "integer", "numeric"))
   assert(taxon_id, c("character", "integer", "numeric"))
   path <- sprintf("dataset/%s/taxon/%s/classification", dataset_key, taxon_id)
-  tmp <- cp_GET(colplus_base(), path, ...)
+  tmp <- cp_GET(col_base(), path, ...)
   handle_taxon(tmp)
 }

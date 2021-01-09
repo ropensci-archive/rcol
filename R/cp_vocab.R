@@ -13,5 +13,5 @@
 #' }
 cp_vocab <- function(vocab, ...) {
   assert(vocab, "character")
-  cp_GET(colplus_base(), file.path("vocab", vocab), ...)$name
+  cp_GET(col_base(), file.path("vocab", vocab), ...)$name
 }

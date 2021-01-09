@@ -19,7 +19,7 @@ cp_datasets <- function(q = NULL, start = 0, limit = 10, ...) {
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
   args <- cc(list(q = q, offset = start, limit = limit))
-  tmp <- cp_GET(colplus_base(), "dataset", query = args, ...)
+  tmp <- cp_GET(col_base(), "dataset", query = args, ...)
   tmp$result <- tibble::as_tibble(tmp$result)
   tmp <- cp_meta(tmp)
   first_cols <- c("title", "key", "alias", "group", "license", "size")
@@ -32,5 +32,5 @@ cp_datasets <- function(q = NULL, start = 0, limit = 10, ...) {
 cp_dataset <- function(dataset_keys, ...) {
   assert(dataset_keys, c("numeric", "integer", "character"))
   paths <- file.path("dataset", dataset_keys)
-  lapply(paths, function(z) cp_GET(colplus_base(), z, ...))
+  lapply(paths, function(z) cp_GET(col_base(), z, ...))
 }

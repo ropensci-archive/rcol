@@ -15,7 +15,7 @@ cp_children <- function(dataset_key, taxon_id, ...) {
   assert(dataset_key, c("character", "integer", "numeric"))
   assert(taxon_id, c("character", "integer", "numeric"))
   path <- sprintf("dataset/%s/taxon/%s/children", dataset_key, taxon_id)
-  tmp <- cp_GET(colplus_base(), path, ...)
+  tmp <- cp_GET(col_base(), path, ...)
   tmp$result <- handle_taxon(tmp$result)
   tmp <- cp_meta(tmp)
   return(tmp)

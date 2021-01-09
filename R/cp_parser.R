@@ -11,6 +11,6 @@
 cp_parser <- function(names, ...) {
   assert(names, "character")
   names <- paste(names, collapse="\n")
-  tmp <- cp_POST(colplus_base(), "parser/name", body = names, ...)
+  tmp <- cp_POST(col_base(), "parser/name", body = names, ...)
   return(tibble::as_tibble(tmp))
 }

@@ -31,7 +31,7 @@ cp_nu_suggest <- function(q, dataset_key, fuzzy = FALSE, min_rank = NULL,
   args <- cc(list(q = q, fuzzy = as_log(fuzzy), minRank = tou(min_rank),
     maxRank = tou(max_rank), sortBy = sort, reverse = as_log(reverse),
     accepted = as_log(accepted), limit = limit))
-  tmp <- cp_GET(colplus_base(),
+  tmp <- cp_GET(col_base(),
     sprintf("dataset/%s/nameusage/suggest", dataset_key), query = args, ...)
   return(tibble::as_tibble(tmp$suggestions))
 }

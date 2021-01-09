@@ -38,5 +38,5 @@ cp_ds <- function(route, ..., .list = list()) {
     glue::glue_data(.list, route)
   else 
     glue::glue(route, ...)
-  cp_GET(colplus_base(), path)
+  cp_GET(col_base(), path)
 }

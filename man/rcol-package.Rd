@@ -6,10 +6,10 @@
 \alias{rcol}
 \title{rcol}
 \description{
-Catalogue of Life Plus (CoL) Client
+Catalogue of Life (CoL) Client
 }
 \note{
-CoL API docs are at https://api.catalogueoflife.org/
+CoL API docs: https://api.catalogueoflife.org/
 }
 \author{
 Scott Chamberlain

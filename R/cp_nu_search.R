@@ -68,7 +68,7 @@ cp_nu_search <- function(q = NULL, dataset_key = NULL, minRank = NULL,
     nomstatus = nomstatus, status = status, issue = issue,
     publishedIn = publishedIn, facet = facet,
     sortBy = sortBy, offset = start, limit = limit))
-  tmp <- cp_GET(colplus_base(), "nameusage/search", query = args, ...)
+  tmp <- cp_GET(col_base(), "nameusage/search", query = args, ...)
   tmp$result <- tibble::as_tibble(tmp$result)
   tmp <- cp_meta(tmp)
   return(tmp)

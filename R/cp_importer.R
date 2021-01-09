@@ -22,5 +22,5 @@ cp_importer <- function(dataset_key = NULL, state = NULL, running = FALSE,
   assert(limit, c("numeric", "integer"))
   args <- cc(list(datasetKey = dataset_key, state = state, running = running,
     offset = start, limit = limit))
-  cp_GET(colplus_base(), "importer", query = args, parse = FALSE, ...)
+  cp_GET(col_base(), "importer", query = args, parse = FALSE, ...)
 }

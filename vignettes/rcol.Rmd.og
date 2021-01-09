@@ -20,19 +20,19 @@ knitr::opts_chunk$set(
 )
 ```
 
-`colpluz` is a R client for the Catalogue of Life Plus (COL+)
+`rcol` is a R client for the new Catalogue of Life (COL)
 
-COL+ is a follow up to the original Catalogue of Life. The API is
-completely different so don't expect the same interface. The 
-`taxize` package used to have some COL functionality but was 
-deprecated when the old COL API was just too unreliable. COL+
+The API is completely different from the  old one, so don't expect
+the same interface. The `taxize` package used to have some COL
+functionality but was 
+deprecated when the old COL API was just too unreliable. COL
 has a lot of different routes, many of which aren't relavant to
-us here (e.g., creating/editing data in COL+, user profile actions,
+us here (e.g., creating/editing data in COL, user profile actions,
 etc.). 
 
-Package documentation: https://docs.ropensci.org/colpluz/
+Package documentation: https://docs.ropensci.org/rcol/
 
-Check out COL+ API docs https://api.catalogue.life/ where you
+Check out COL API docs https://api.catalogue.life/ where you
 can get more info on each API route and try the routes.
 
 The following are a few examples.
@@ -40,13 +40,13 @@ The following are a few examples.
 ## Installation
 
 ```{r eval=FALSE}
-remotes::install_github("ropensci/colpluz")
+remotes::install_github("ropensci/rcol")
 # OR
-install.packages("colpluz", repos="https://dev.ropensci.org")
+install.packages("rcol", repos="https://dev.ropensci.org")
 ```
 
 ```{r}
-library("colpluz")
+library("rcol")
 ```
 
 ## Search
@@ -72,7 +72,7 @@ cp_parser(names = c("Apis mellifera", "Homo sapiens var. sapiens"))
 
 ## Vocab
 
-If you're curious about COL+ vocabularies see the function `cp_vocab()`
+If you're curious about COL vocabularies see the function `cp_vocab()`
 
 ```{r}
 cp_vocab("rank")

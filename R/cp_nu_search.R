@@ -57,9 +57,14 @@ cp_nu_search <- function(q = NULL, dataset_key = NULL, minRank = NULL,
 
   assert(start, c("numeric", "integer"))
   assert(limit, c("numeric", "integer"))
+  assert(highlight, "logical")
+  assert(content, "logical")
+  assert(reverse, "logical")
+  assert(fuzzy, "logical")
   args <- cc(list(q = q, dataset_key = dataset_key, minRank = minRank,
-    maxRank = maxRank, content = content, highlight = highlight,
-    reverse = reverse, fuzzy = fuzzy, type = type,
+    maxRank = maxRank, content = as_log(content),
+    highlight = as_log(highlight), reverse = as_log(reverse),
+    fuzzy = as_log(fuzzy), type = type,
     nomstatus = nomstatus, status = status, issue = issue,
     publishedIn = publishedIn, facet = facet,
     sortBy = sortBy, offset = start, limit = limit))

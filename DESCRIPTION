@@ -26,7 +26,6 @@ Imports:
 Suggests:
     testthat,
     vcr
-Remotes: ropensci/vcr
 RoxygenNote: 7.1.1
 X-schema.org-applicationCategory: Biology
 X-schema.org-keywords: biology, science, API, web, api-client, taxonomy, species

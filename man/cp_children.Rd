@@ -18,7 +18,7 @@ Children
 }
 \examples{
 \dontrun{
-z <- cp_children(dataset_key=1000, taxon_id='1')
+z <- cp_children(dataset_key=1000, taxon_id='1', verbose=TRUE)
 z
 z$result
 z$result$scientificName

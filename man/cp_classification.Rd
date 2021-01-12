@@ -18,10 +18,10 @@ Classification
 }
 \examples{
 \dontrun{
-z <- cp_classification(dataset_key=1000, taxon_id=10)
+z <- cp_classification(dataset_key=1000, taxon_id=10, verbose=TRUE)
 z
-cp_classification(dataset_key=1000, taxon_id=20)
+cp_classification(dataset_key=1000, taxon_id=20, verbose=TRUE)
 cp_classification(dataset_key=3,
- taxon_id="cd879691-187f-48ca-8142-f1b7d9522948")
+ taxon_id="cd879691-187f-48ca-8142-f1b7d9522948", verbose=TRUE)
 }
 }

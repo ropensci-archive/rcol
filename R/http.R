@@ -1,12 +1,14 @@
 col_base <- function() "https://api.catalogueoflife.org"
 
-cp_ua <- function() {
+cp_ua <- function(on_gh_actions = FALSE) {
   versions <- c(paste0("r-curl/", utils::packageVersion("curl")),
     paste0("crul/", utils::packageVersion("crul")),
     sprintf("rOpenSci(rcol/%s)", utils::packageVersion("rcol")))
+  if (on_gh_actions) versions <- c(versions, "GitHub Actions")
   paste0(versions, collapse = " ")
 }
-cp_ual <- list(`User-Agent` = cp_ua(), `X-USER-AGENT` = cp_ua())
+ongha <- as.logical(Sys.getenv('ON_GH_ACTIONS', FALSE))
+cp_ual <- list(`User-Agent` = cp_ua(ongha), `X-USER-AGENT` = cp_ua())
 
 cp_GET <- function(url, path = NULL, query = list(), headers = list(),
   opts = list(), parse = TRUE, ...) {

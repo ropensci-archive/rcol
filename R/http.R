@@ -8,7 +8,7 @@ cp_ua <- function(on_gh_actions = FALSE) {
   paste0(versions, collapse = " ")
 }
 ongha <- as.logical(Sys.getenv('ON_GH_ACTIONS', FALSE))
-cp_ual <- list(`User-Agent` = cp_ua(ongha), `X-USER-AGENT` = cp_ua())
+cp_ual <- list(`User-Agent` = cp_ua(ongha), `X-USER-AGENT` = cp_ua(ongha))
 
 cp_GET <- function(url, path = NULL, query = list(), headers = list(),
   opts = list(), parse = TRUE, ...) {

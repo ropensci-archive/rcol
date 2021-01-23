@@ -48,14 +48,9 @@ jobs:
 
       - name: Install system dependencies
         if: runner.os == 'Linux'
-        env:
-          RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
         run: |
-          sudo apt-get install -y libssl-dev
-          while read -r cmd
-          do
-            eval sudo $cmd
-          done < <(Rscript -e 'writeLines(pak::local_system_requirements("ubuntu", "16.04"))')
+          sudo apt-get -y update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev zlib1g-dev
       
       - name: Install dependencies
         run: |

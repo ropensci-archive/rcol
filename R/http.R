@@ -14,7 +14,7 @@ cp_GET <- function(url, path = NULL, query = list(), headers = list(),
   opts = list(), parse = TRUE, ...) {
   
   cli <- crul::HttpClient$new(url,
-    headers = c(headers, cp_ual), opts = c(opts, http_version = 0L, list(...)))
+    headers = c(headers, cp_ual), opts = c(opts, http_version = 3L, list(...)))
   out <- cli$get(path = path, query = query)
   return(cp_error_handle(out, parse = parse))
 }
@@ -25,7 +25,7 @@ cp_POST <- function(url, path = NULL, query = list(), body = list(),
   
   cli <- crul::HttpClient$new(url,
     headers = c(headers, cp_ual, "Content-Type" = "text/plain"),
-    opts = c(opts, http_version = 0L, list(...)))
+    opts = c(opts, http_version = 3L, list(...)))
   out <- cli$post(path = path, query = query, body = body)
   return(cp_error_handle(out, parse = parse))
 }

@@ -1,4 +1,4 @@
-col_base <- function() "http://api.catalogueoflife.org"
+col_base <- function() "https://api.catalogueoflife.org"
 
 cp_ua <- function(on_gh_actions = FALSE) {
   versions <- c(paste0("r-curl/", utils::packageVersion("curl")),

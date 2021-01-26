@@ -17,11 +17,17 @@ cp_children(dataset_key, taxon_id, ...)
 Children
 }
 \examples{
-\dontrun{
+chk <- function(x) {
+  z <- tryCatch(crul::ok(x), error = function(e) e)
+  if (inherits(z, "error")) FALSE else z
+}
+if (chk("https://api.catalogueoflife.org/version")) {
 z <- cp_children(dataset_key=1000, taxon_id='1')
 z
 z$result
+if (NROW(z$result) > 0) {
 z$result$scientificName
 z$result$created
+}
 }
 }

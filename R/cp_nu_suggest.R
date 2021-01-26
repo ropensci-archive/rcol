@@ -13,7 +13,8 @@
 #' Default: 10; max: 1000
 #' @param ... curl options passed on to [crul::verb-GET]
 #' @return a tibble
-#' @examples \dontrun{
+#' @examples
+#' if (cp_up("/dataset/3/nameusage/suggest?q=Apis")) {
 #' cp_nu_suggest(q="Apis", 3)
 #' }
 cp_nu_suggest <- function(q, dataset_key, fuzzy = FALSE, min_rank = NULL,

@@ -33,8 +33,11 @@
 #' epithets (silent h, gender suffix, double letters, i/y), but not in
 #' uninomials. Suprageneric ranks are all considered to be the same,
 #' otherwise a different rank results in a different match.
-#' @examples \dontrun{
-#' cp_name_match(q="Apis", rank = "genus")
+#' @examples
+#' if (cp_up("/name/matching?q=Apis")) { 
+#' cp_name_match(q="Apis")
+#' }
+#' \dontrun{
 #' cp_name_match(q="Agapostemon")
 #' cp_name_match(q="Apis mellifera")
 #' cp_name_match(q="Apis mellifer") # no fuzzy match apparently

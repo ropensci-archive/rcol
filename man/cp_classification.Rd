@@ -17,9 +17,10 @@ cp_classification(dataset_key, taxon_id, ...)
 Classification
 }
 \examples{
+if (cp_up("/dataset/1000/taxon/10/classification")) {
+cp_classification(dataset_key=1000, taxon_id=10)
+}
 \dontrun{
-z <- cp_classification(dataset_key=1000, taxon_id=10)
-z
 cp_classification(dataset_key=1000, taxon_id=20)
 cp_classification(dataset_key=3,
  taxon_id="6565450e-1cf2-4dc2-acbb-db728e42e635")

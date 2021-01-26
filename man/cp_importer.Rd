@@ -37,7 +37,7 @@ list
 Importer metrics
 }
 \examples{
-\dontrun{
-cp_importer()
+if (cp_up("/importer?limit=1")) {
+cp_importer(limit = 1)
 }
 }

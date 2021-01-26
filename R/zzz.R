@@ -51,3 +51,12 @@ handle_taxon <- function(x) {
 
 tou <- function(x) if (is.character(x)) toupper(x) else x
 tol <- function(x) if (is.character(x)) tolower(x) else x
+
+#' check if api up in examples
+#' @export
+#' @keywords internal
+cp_up <- function(x) {
+  z <- tryCatch(crul::ok(paste0("https://api.catalogueoflife.org", x)),
+     error = function(e) e)
+  if (inherits(z, "error")) FALSE else z
+}

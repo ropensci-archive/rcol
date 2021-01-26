@@ -33,8 +33,11 @@
 #' @param fuzzy (logical) `TRUE` or `FALSE`. default: `NULL`
 #' @param type (character) one of: 'prefix', 'whole_words', 'exact'
 #' @template args
-#' @examples \dontrun{
-#' cp_nu_search(q="Apis", minRank = "genus")
+#' @examples 
+#' if (cp_up("/nameusage/search?q=Apis")) {
+#' cp_nu_search(q="Apis", limit = 1)
+#' }
+#' \dontrun{
 #' cp_nu_search(q="Agapostemon")
 #' cp_nu_search(q="Agapostemon", dataset_key = 3)
 #' cp_nu_search(q="Agapostemon", minRank = "genus")

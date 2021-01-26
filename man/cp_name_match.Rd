@@ -63,8 +63,10 @@ uninomials. Suprageneric ranks are all considered to be the same,
 otherwise a different rank results in a different match.
 }
 \examples{
+if (cp_up("/name/matching?q=Apis")) { 
+cp_name_match(q="Apis")
+}
 \dontrun{
-cp_name_match(q="Apis", rank = "genus")
 cp_name_match(q="Agapostemon")
 cp_name_match(q="Apis mellifera")
 cp_name_match(q="Apis mellifer") # no fuzzy match apparently

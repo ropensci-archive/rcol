@@ -4,12 +4,19 @@
 #' @param dataset_key (character/integer/numeric) dataset identifier
 #' @param taxon_id (character/integer/numeric) taxon identifier
 #' @param ... curl options passed on to [crul::verb-GET]
-#' @examples \dontrun{
+#' @examples
+#' chk <- function(x) {
+#'   z <- tryCatch(crul::ok(x), error = function(e) e)
+#'   if (inherits(z, "error")) FALSE else z
+#' }
+#' if (chk("https://api.catalogueoflife.org/version")) {
 #' z <- cp_children(dataset_key=1000, taxon_id='1')
 #' z
 #' z$result
+#' if (NROW(z$result) > 0) {
 #' z$result$scientificName
 #' z$result$created
+#' }
 #' }
 cp_children <- function(dataset_key, taxon_id, ...) {
   assert(dataset_key, c("character", "integer", "numeric"))

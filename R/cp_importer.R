@@ -9,8 +9,9 @@
 #' @param running (logical) if only a list of running imports should
 #' be returned. default: `FALSE`. optional
 #' @return list
-#' @examples \dontrun{
-#' cp_importer()
+#' @examples
+#' if (cp_up("/importer?limit=1")) {
+#' cp_importer(limit = 1)
 #' }
 cp_importer <- function(dataset_key = NULL, state = NULL, running = FALSE,
   start = 0, limit = 10, ...) {

@@ -82,8 +82,10 @@ Default: 10; max: 1000}
 Name Usage: Search
 }
 \examples{
+if (cp_up("/nameusage/search?q=Apis")) {
+cp_nu_search(q="Apis", limit = 1)
+}
 \dontrun{
-cp_nu_search(q="Apis", minRank = "genus")
 cp_nu_search(q="Agapostemon")
 cp_nu_search(q="Agapostemon", dataset_key = 3)
 cp_nu_search(q="Agapostemon", minRank = "genus")

@@ -31,8 +31,10 @@ each dataset key because the nested structure of the data is hard to
 rectangularize
 }
 \examples{
+if (cp_up("/dataset")) {
+cp_datasets(limit = 1)
+}
 \dontrun{
-cp_datasets()
 cp_datasets(q = "life")
 cp_dataset(dataset_keys = 1000)
 cp_dataset(dataset_keys = c(3, 1000, 1014))

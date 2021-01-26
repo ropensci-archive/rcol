@@ -45,7 +45,7 @@ a tibble
 Name Usage: Suggest
 }
 \examples{
-\dontrun{
+if (cp_up("/dataset/3/nameusage/suggest?q=Apis")) {
 cp_nu_suggest(q="Apis", 3)
 }
 }

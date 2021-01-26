@@ -9,7 +9,7 @@
 #' z
 #' cp_classification(dataset_key=1000, taxon_id=20, verbose=TRUE)
 #' cp_classification(dataset_key=3,
-#'  taxon_id="cd879691-187f-48ca-8142-f1b7d9522948", verbose=TRUE)
+#'  taxon_id="6565450e-1cf2-4dc2-acbb-db728e42e635", verbose=TRUE)
 #' }
 cp_classification <- function(dataset_key, taxon_id, ...) {
   assert(dataset_key, c("character", "integer", "numeric"))

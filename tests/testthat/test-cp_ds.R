@@ -78,7 +78,7 @@ test_that("cp_ds_all_routes", {
   nameusage <- list(datasetKey=3, key=3, id='0000082e-d375-497a-838b-4312b253b9bd', q="poa")
   ref <- list(datasetKey=3, key=3, id='00000486-5f68-499f-bab6-403eaea47339')
   sector <- list(datasetKey=3, key=3, id=1131)
-  syn <- list(datasetKey=3, key=3, id='0000001b-4a37-4fbe-9996-760ca91c5096')
+  syn <- list(datasetKey=3, key=3, id='000005d2-2ef3-4734-8612-577c95877c0e')
   params <- list(key=1005, datasetKey=3, key=3, id=230686, attempt=10, q="poa", id='00000486-5f68-499f-bab6-403eaea47339')
   out <- list()
   for (i in seq_along(ds_routes)) {

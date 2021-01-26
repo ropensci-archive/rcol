@@ -19,3 +19,4 @@ vignettes/
 inst/scripts
 inst/spec
 vignettes/
+^codemeta\.json$

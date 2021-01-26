@@ -1,9 +1,9 @@
 Package: rcol
 Type: Package
 Title: Catalogue of Life Client
-Description: Client for the Catalogue of Life ('CoL') webservice 
-    (<https://api.catalogueoflife.org/>); based on the new
-    CoL webservice, not the old one. Catalogue of Life is a database of
+Description: Client for the Catalogue of Life ('CoL')
+    (<https://www.catalogueoflife.org/>); based on the new
+    'CoL' service, not the old one. Catalogue of Life is a database of
     taxonomic names. Includes functions for each
     of the API methods, including searching for names, and more.
 Version: 0.1.0

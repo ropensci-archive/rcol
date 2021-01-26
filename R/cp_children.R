@@ -5,7 +5,7 @@
 #' @param taxon_id (character/integer/numeric) taxon identifier
 #' @param ... curl options passed on to [crul::verb-GET]
 #' @examples \dontrun{
-#' z <- cp_children(dataset_key=1000, taxon_id='1', verbose=TRUE)
+#' z <- cp_children(dataset_key=1000, taxon_id='1')
 #' z
 #' z$result
 #' z$result$scientificName

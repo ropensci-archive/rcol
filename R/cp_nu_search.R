@@ -3,7 +3,7 @@
 #' @export
 #' @param q (character) vector of one or more scientific names
 #' @param dataset_key (character) dataset key
-#' @param minRank,maxRank (character) filter by rank. one of: domain, superkingdom,
+#' @param min_rank,max_rank (character) filter by rank. one of: domain, superkingdom,
 #' kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
 #' infraphylum, superclass, class, subclass, infraclass, parvclass,
 #' superlegion, legion, sublegion, infralegion, supercohort, cohort,
@@ -21,7 +21,7 @@
 #' @param status (character) filter by taxonomic status. one of: accepted,
 #' doubtful, ambiguous synonym
 #' @param issue (character) filter by issue found
-#' @param publishedIn (character) reference id to filter names by
+#' @param published_in (character) reference id to filter names by
 #' @param facet (character) request a facet to be returned. one of:
 #' dataset_key, rank, nom_status, status, issue, type, field. facet
 #' limit default: 50
@@ -40,7 +40,7 @@
 #' \dontrun{
 #' cp_nu_search(q="Agapostemon")
 #' cp_nu_search(q="Agapostemon", dataset_key = 3)
-#' cp_nu_search(q="Agapostemon", minRank = "genus")
+#' cp_nu_search(q="Agapostemon", min_rank = "genus")
 #' cp_nu_search(q="Agapostemon", nomstatus = "doubtful")
 #' cp_nu_search(q="Agapostemon", status = "accepted")
 #' cp_nu_search(q="Bombus", facet = "rank")
@@ -52,10 +52,10 @@
 #' x$result$usage
 #' x$result$usage$name
 #' }
-cp_nu_search <- function(q = NULL, dataset_key = NULL, minRank = NULL,
-  maxRank = NULL, content = NULL, highlight = NULL, reverse = NULL,
+cp_nu_search <- function(q = NULL, dataset_key = NULL, min_rank = NULL,
+  max_rank = NULL, content = NULL, highlight = NULL, reverse = NULL,
   fuzzy = NULL, type = NULL, nomstatus = NULL, status = NULL, issue = NULL,
-  publishedIn = NULL, facet = NULL, sortBy = NULL,
+  published_in = NULL, facet = NULL, sortBy = NULL,
   start = 0, limit = 10, ...) {
 
   assert(start, c("numeric", "integer"))
@@ -64,12 +64,12 @@ cp_nu_search <- function(q = NULL, dataset_key = NULL, minRank = NULL,
   assert(content, "character")
   assert(reverse, "logical")
   assert(fuzzy, "logical")
-  args <- cc(list(q = q, dataset_key = dataset_key, minRank = minRank,
-    maxRank = maxRank, content = content,
+  args <- cc(list(q = q, dataset_key = dataset_key, minRank = min_rank,
+    maxRank = max_rank, content = content,
     highlight = as_log(highlight), reverse = as_log(reverse),
     fuzzy = as_log(fuzzy), type = type,
     nomstatus = nomstatus, status = status, issue = issue,
-    publishedIn = publishedIn, facet = facet,
+    publishedIn = published_in, facet = facet,
     sortBy = sortBy, offset = start, limit = limit))
   tmp <- cp_GET(col_base(), "nameusage/search", query = args, ...)
   tmp$result <- tibble::as_tibble(tmp$result)

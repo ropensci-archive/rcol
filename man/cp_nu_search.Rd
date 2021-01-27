@@ -7,8 +7,8 @@
 cp_nu_search(
   q = NULL,
   dataset_key = NULL,
-  minRank = NULL,
-  maxRank = NULL,
+  min_rank = NULL,
+  max_rank = NULL,
   content = NULL,
   highlight = NULL,
   reverse = NULL,
@@ -17,7 +17,7 @@ cp_nu_search(
   nomstatus = NULL,
   status = NULL,
   issue = NULL,
-  publishedIn = NULL,
+  published_in = NULL,
   facet = NULL,
   sortBy = NULL,
   start = 0,
@@ -30,7 +30,7 @@ cp_nu_search(
 
 \item{dataset_key}{(character) dataset key}
 
-\item{minRank, maxRank}{(character) filter by rank. one of: domain, superkingdom,
+\item{min_rank, max_rank}{(character) filter by rank. one of: domain, superkingdom,
 kingdom, subkingdom, infrakingdom, superphylum, phylum, subphylum,
 infraphylum, superclass, class, subclass, infraclass, parvclass,
 superlegion, legion, sublegion, infralegion, supercohort, cohort,
@@ -62,7 +62,7 @@ doubtful, ambiguous synonym}
 
 \item{issue}{(character) filter by issue found}
 
-\item{publishedIn}{(character) reference id to filter names by}
+\item{published_in}{(character) reference id to filter names by}
 
 \item{facet}{(character) request a facet to be returned. one of:
 dataset_key, rank, nom_status, status, issue, type, field. facet
@@ -88,7 +88,7 @@ cp_nu_search(q="Apis", limit = 1)
 \dontrun{
 cp_nu_search(q="Agapostemon")
 cp_nu_search(q="Agapostemon", dataset_key = 3)
-cp_nu_search(q="Agapostemon", minRank = "genus")
+cp_nu_search(q="Agapostemon", min_rank = "genus")
 cp_nu_search(q="Agapostemon", nomstatus = "doubtful")
 cp_nu_search(q="Agapostemon", status = "accepted")
 cp_nu_search(q="Bombus", facet = "rank")

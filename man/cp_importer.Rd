@@ -31,7 +31,10 @@ Default: 10; max: 1000}
 \item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
 }
 \value{
-list
+a named list, with slots \code{offset} (integer), \code{limit} (integer),
+\code{total} (integer), \code{result} (list), \code{empty} (boolean),
+and \code{last} (boolean). The \code{result} slot is a list itself, with any
+number of results as named lists
 }
 \description{
 Importer metrics

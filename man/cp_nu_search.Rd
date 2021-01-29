@@ -78,6 +78,14 @@ Default: 10; max: 1000}
 
 \item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
 }
+\value{
+list with two slots
+\itemize{
+\item \code{result} (data.frame/tibble): results, a zero row data.frame
+if no results found
+\item \code{meta} (data.frame/tibble): number of results found
+}
+}
 \description{
 Name Usage: Search
 }

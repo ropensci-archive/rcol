@@ -12,7 +12,7 @@
 #' @param limit (integer) requested number of maximum records to be returned.
 #' Default: 10; max: 1000
 #' @param ... curl options passed on to [crul::verb-GET]
-#' @return a tibble
+#' @return a data.frame/tibble of results. a zero row data.frame if no results
 #' @examples
 #' if (cp_up("/dataset/3/nameusage/suggest?q=Apis")) {
 #' cp_nu_suggest(q="Apis", 3)

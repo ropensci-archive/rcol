@@ -8,6 +8,10 @@
 #' dataset key. unfortunately, the output of `cp_dataset()` is a list for 
 #' each dataset key because the nested structure of the data is hard to 
 #' rectangularize
+#' @return list with two slots
+#' - `result` (data.frame/tibble): results, a zero row data.frame
+#' if no results found
+#' - `meta` (data.frame/tibble): number of results found
 #' @examples 
 #' if (cp_up("/dataset")) {
 #' cp_datasets(limit = 1)

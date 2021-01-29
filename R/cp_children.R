@@ -4,6 +4,10 @@
 #' @param dataset_key (character/integer/numeric) dataset identifier
 #' @param taxon_id (character/integer/numeric) taxon identifier
 #' @param ... curl options passed on to [crul::verb-GET]
+#' @return list with two slots
+#' - `result` (data.frame/tibble): results, a zero row data.frame
+#' if no results found
+#' - `meta` (data.frame/tibble): number of results found
 #' @examples
 #' chk <- function(x) {
 #'   z <- tryCatch(crul::ok(x), error = function(e) e)

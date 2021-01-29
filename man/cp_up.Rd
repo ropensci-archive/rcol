@@ -6,6 +6,9 @@
 \usage{
 cp_up(x)
 }
+\value{
+boolean. \code{TRUE} if http request succeeds, \code{FALSE} if not
+}
 \description{
 check if api up in examples
 }

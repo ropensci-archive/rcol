@@ -24,6 +24,11 @@ doing if you match the names to the route parts.}
 through \code{...}, you can pre-prepare a named list and give to this
 parameter}
 }
+\value{
+output varies depending on the route requested, but output will
+always be a named list. when no results found, an error message
+will be returned
+}
 \description{
 Datasets API route catch all method
 }

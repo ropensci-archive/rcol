@@ -33,6 +33,8 @@
 #' epithets (silent h, gender suffix, double letters, i/y), but not in
 #' uninomials. Suprageneric ranks are all considered to be the same,
 #' otherwise a different rank results in a different match.
+#' @return a named list, with slots `name` (list), `type` (character),
+#' `alternatives` (data.frame), and `nameKey` (integer)
 #' @examples
 #' if (cp_up("/name/matching?q=Apis")) { 
 #' cp_name_match(q="Apis")

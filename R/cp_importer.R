@@ -8,7 +8,10 @@
 #' unchanged, finished, canceled, failed. optional
 #' @param running (logical) if only a list of running imports should
 #' be returned. default: `FALSE`. optional
-#' @return list
+#' @return a named list, with slots `offset` (integer), `limit` (integer),
+#' `total` (integer), `result` (list), `empty` (boolean),
+#' and `last` (boolean). The `result` slot is a list itself, with any
+#' number of results as named lists
 #' @examples
 #' if (cp_up("/importer?limit=1")) {
 #' cp_importer(limit = 1)

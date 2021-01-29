@@ -55,6 +55,7 @@ tol <- function(x) if (is.character(x)) tolower(x) else x
 #' check if api up in examples
 #' @export
 #' @keywords internal
+#' @return boolean. `TRUE` if http request succeeds, `FALSE` if not
 cp_up <- function(x) {
   z <- tryCatch(crul::ok(paste0("https://api.catalogueoflife.org", x)),
      error = function(e) e)

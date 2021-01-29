@@ -13,6 +13,14 @@ cp_children(dataset_key, taxon_id, ...)
 
 \item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
+\value{
+list with two slots
+\itemize{
+\item \code{result} (data.frame/tibble): results, a zero row data.frame
+if no results found
+\item \code{meta} (data.frame/tibble): number of results found
+}
+}
 \description{
 Children
 }

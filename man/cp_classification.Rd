@@ -13,6 +13,10 @@ cp_classification(dataset_key, taxon_id, ...)
 
 \item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
+\value{
+a data.frame/tibble with results, a zero row data.frame
+if no results found
+}
 \description{
 Classification
 }

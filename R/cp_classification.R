@@ -4,6 +4,8 @@
 #' @param dataset_key (character/integer/numeric) dataset identifier
 #' @param taxon_id (character/integer/numeric) taxon identifier
 #' @param ... curl options passed on to [crul::verb-GET]
+#' @return a data.frame/tibble with results, a zero row data.frame
+#' if no results found
 #' @examples
 #' if (cp_up("/dataset/1000/taxon/10/classification")) {
 #' cp_classification(dataset_key=1000, taxon_id=10)

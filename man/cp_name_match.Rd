@@ -51,6 +51,10 @@ Default: 10; max: 1000}
 
 \item{...}{curl options passed on to \code{\link[crul]{verb-GET}}}
 }
+\value{
+a named list, with slots \code{name} (list), \code{type} (character),
+\code{alternatives} (data.frame), and \code{nameKey} (integer)
+}
 \description{
 Match name against the name index
 }

@@ -21,6 +21,14 @@ Default: 10; max: 1000}
 
 \item{dataset_keys}{(character) one or more dataset keys. required}
 }
+\value{
+list with two slots
+\itemize{
+\item \code{result} (data.frame/tibble): results, a zero row data.frame
+if no results found
+\item \code{meta} (data.frame/tibble): number of results found
+}
+}
 \description{
 Datasets
 }

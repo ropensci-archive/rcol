@@ -39,7 +39,7 @@ Default: 10; max: 1000}
 \item{...}{curl options passed on to \link[crul:verb-GET]{crul::verb-GET}}
 }
 \value{
-a tibble
+a data.frame/tibble of results. a zero row data.frame if no results
 }
 \description{
 Name Usage: Suggest

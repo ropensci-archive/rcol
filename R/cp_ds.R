@@ -22,6 +22,9 @@
 #' @section Not supported dataset routes:
 #' Some dataset routes do not return JSON so we don't support those. 
 #' Thus far, the only route we don't support is `/dataset/\\{key\\}/logo`
+#' @return output varies depending on the route requested, but output will
+#' always be a named list. when no results found, an error message
+#' will be returned
 #' @examples \dontrun{
 #' cp_ds(route = "{key}/tree", key = "1000")
 #' cp_ds(route = "{key}/tree", key = "1014")

@@ -27,7 +27,8 @@ cp_meta <- function(x) {
 }
 
 move_cols <- function(x, cols) {
-  x[c(cols, names(x)[!names(x) %in% cols])]
+  colz <- c(cols, names(x)[!names(x) %in% cols])
+  x[colz[colz %in% names(x)]]
 }
 
 bind <- function(x) {

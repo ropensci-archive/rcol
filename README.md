@@ -32,7 +32,7 @@ Dev version
 
 
 ```r
-remotes::install_github("ropensci/rcol")
+pak::pkg_install("ropensci/rcol")
 # OR
 install.packages("rcol", repos="https://dev.ropensci.org")
 ```

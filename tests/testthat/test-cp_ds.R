@@ -14,7 +14,7 @@ ds_routes <- c(
 # "/dataset/{key}/patch",
 # "/dataset/{key}/settings",
 # "/dataset/{key}/editor",
-"/dataset/{key}/latest",
+# "/dataset/{key}/latest",
 "/dataset/{key}/assembly",
 # "/dataset/{key}/logo",
 "/dataset/{key}/source",
@@ -75,12 +75,12 @@ test_that("cp_ds_all_routes", {
   estimate <- list(datasetKey=3, key=3, id=68)
   namez <- list(datasetKey=3, key=3, id=0)
   taxon <- latest <- namez
-  nameusage <- list(datasetKey=3, key=3, id='0000082e-d375-497a-838b-4312b253b9bd', q="poa")
-  ref <- list(datasetKey=3, key=3, id='00000486-5f68-499f-bab6-403eaea47339')
+  nameusage <- list(datasetKey=3, key=3, id=0, q="poa")
+  ref <- list(datasetKey=3, key=3, id='000007c7-d8dc-4c8c-9380-f405e846b07d')
   sector <- list(datasetKey=3, key=3, id=1131)
-  syn <- list(datasetKey=3, key=3, id='000005d2-2ef3-4734-8612-577c95877c0e')
+  syn <- list(datasetKey=3, key=3, id='0000008d-30e8-489b-b3ed-49f82c98ce27')
   params <- list(key=1005, datasetKey=3, key=3, id=230686, attempt=10, q="poa", id='00000486-5f68-499f-bab6-403eaea47339')
-  out <- list()
+  # out <- list()
   for (i in seq_along(ds_routes)) {
     route <- sub("/dataset/", "", ds_routes[i])
     pars <- if (grepl("latest", route)) latest else params

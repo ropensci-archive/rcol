@@ -1,6 +1,6 @@
 ## Test environments
-* local R installation, R 4.0.3
-* ubuntu 16.04 (on travis-ci), R 4.0.3
+* local R installation on macOS, R 4.1.0
+* ubuntu 16.04 (on github actions), R 4.1.0
 * win-builder (devel)
 
 ## R CMD check results
@@ -9,9 +9,7 @@
 
 -----
 
-This is a new release. I have read and agree to the the CRAN policies at https://cran.r-project.org/web/packages/policies.html
-
-This is a re-submission of v0.1.0 adding \value to .Rd files where they were missing.
+This submission fixes broken examples.
 
 Thanks!
 Scott Chamberlain

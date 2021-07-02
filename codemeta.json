@@ -1,5 +1,8 @@
 {
-  "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
   "identifier": "rcol",
   "description": "Client for the Catalogue of Life ('CoL')\n    (<https://www.catalogueoflife.org/>); based on the new\n    'CoL' service, not the old one. Catalogue of Life is a database of\n    taxonomic names. Includes functions for each\n    of the API methods, including searching for names, and more.",
@@ -8,13 +11,13 @@
   "relatedLink": "https://docs.ropensci.org/rcol/",
   "issueTracker": "https://github.com/ropensci/rcol/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.0.3 Patched (2021-01-08 r79819)",
+  "runtimePlatform": "R version 4.1.0 (2021-05-18)",
   "author": [
     {
       "@type": "Person",
@@ -134,6 +137,13 @@
   "keywords": ["biology", "science", "API", "web", "api-client", "taxonomy", "species", "rstats", "r"],
   "releaseNotes": "https://github.com/ropensci/rcol/blob/master/NEWS.md",
   "readme": "https://github.com/ropensci/rcol/blob/master/README.md",
-  "fileSize": "215.34KB",
-  "contIntegration": "https://codecov.io/gh/ropensci/rcol"
+  "fileSize": "212.515KB",
+  "contIntegration": "https://codecov.io/gh/ropensci/rcol",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Comprehensive R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  },
+  "developmentStatus": "https://www.repostatus.org/#active"
 }
